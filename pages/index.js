@@ -14,8 +14,9 @@ export default function Home() {
 				<Navbar />
 				<div className='flex-1 flex flex-col items-center justify-center p-8'>
 					<h2 className='uppercase text-3xl md:text-4xl text-secondary font-bold tracking-wide text-center'>
-						Hola, soy <span className='text-primary'>Ian Carlos.</span> <br />
-						Desarrollador Frontend.
+						Hola, soy <span className='text-primary'>Ian Carlos</span> &#128516;{' '}
+						<br />
+						Desarrollador Web
 					</h2>
 					<div className='flex flex-col gap-4 md:flex-row md:flex-wrap justify-center mt-[5rem]'>
 						<a href='#skills' className='btn'>
