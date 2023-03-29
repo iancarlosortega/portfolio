@@ -8,8 +8,8 @@ export const Skills = () => {
 	return (
 		<section
 			id='skills'
-			className='min-h-[100%] h-screen flex flex-col justify-center items-center skill-bg'>
-			<h3 className='text-[40px] text-white font-bold uppercase mb-16'>
+			className='h-[100%] min-h-screen flex flex-col justify-center items-center skill-bg'>
+			<h3 className='text-[40px] text-white font-bold uppercase mt-32 mb-16 md:mt-0'>
 				Habilidades
 			</h3>
 			<Tab.Group>
@@ -19,7 +19,7 @@ export const Skills = () => {
 							key={category}
 							className={({ selected }) =>
 								classNames(
-									'md:mx-4 py-2.5 px-8 font-bold rounded-md ',
+									'md:mx-4 py-2.5 px-8 font-bold',
 									'focus:outline-none transition duration-200 ease',
 									selected
 										? 'bg-white drop-shadow-lg text-primary'
@@ -32,7 +32,7 @@ export const Skills = () => {
 				</Tab.List>
 				<Tab.Panels className='mt-16 mb-32 md:mb-0'>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] min-h-full h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
 							<SkillItem imagePath='/icons/html.svg' alt='HTML 5' />
 							<SkillItem imagePath='/icons/css3.svg' alt='CSS 3' />
 							<SkillItem imagePath='/icons/javascript.svg' alt='JavaScript' />
@@ -43,7 +43,7 @@ export const Skills = () => {
 						</ul>
 					</Tab.Panel>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] min-h-full h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
 							<SkillItem imagePath='/icons/nodejs.svg' alt='Node JS' />
 							<SkillItem imagePath='/icons/express.svg' alt='Express' />
 							<SkillItem imagePath='/icons/mongo.svg' alt='MongoDB' />
@@ -54,7 +54,7 @@ export const Skills = () => {
 						</ul>
 					</Tab.Panel>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] min-h-full h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
 							<SkillItem imagePath='/icons/git.svg' alt='Git' />
 							<SkillItem imagePath='/icons/postman.svg' alt='Postman' />
 							<SkillItem imagePath='/icons/vscode.svg' alt='Vscode' />
