@@ -1,4 +1,11 @@
-import { Navbar, Skills } from '../components';
+import {
+	About,
+	Contact,
+	Footer,
+	Navbar,
+	Projects,
+	Skills,
+} from '../components';
 
 export default function Home() {
 	return (
@@ -27,6 +34,10 @@ export default function Home() {
 				</div>
 			</main>
 			<Skills />
+			<Projects />
+			<About />
+			<Contact />
+			<Footer />
 		</>
 	);
 }
