@@ -8,7 +8,7 @@ export const Projects = () => {
 			</h3>
 			<div className='pb-32'>
 				<ProjectCard
-					title='FreeMove'
+					title='FreeMove &#128692;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt Lorem quis incididunt magna tempor pariatur
 					est. Cillum aliqua mollit amet ut dolor aliqua adipisicing
@@ -23,7 +23,7 @@ export const Projects = () => {
 					projectImg='/projects/freemove.png'
 				/>
 				<ProjectCard
-					title='UTPL Play'
+					title='UTPL Play &#127909;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt Lorem quis incididunt magna tempor pariatur
 					est. Cillum aliqua mollit amet ut dolor aliqua adipisicing
@@ -40,7 +40,7 @@ export const Projects = () => {
 					order={true}
 				/>
 				<ProjectCard
-					title='Teslo Shop'
+					title='Teslo Shop &#128085;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt Lorem quis incididunt magna tempor pariatur
 					est. Cillum aliqua mollit amet ut dolor aliqua adipisicing
@@ -56,7 +56,7 @@ export const Projects = () => {
 					projectImg='/test.jpg'
 				/>
 				<ProjectCard
-					title='Creando Cariño'
+					title='Creando Cariño &#128154;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt Lorem quis incididunt magna tempor pariatur
 					est. Cillum aliqua mollit amet ut dolor aliqua adipisicing
@@ -73,7 +73,7 @@ export const Projects = () => {
 					order={true}
 				/>
 				<ProjectCard
-					title='Arch Studio'
+					title='Arch Studio &#127961;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt..'
 					stack={['Astro', 'React', 'TailwindCSS']}

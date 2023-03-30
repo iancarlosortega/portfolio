@@ -9,6 +9,7 @@ html {
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'DM Sans', sans-serif;
   scroll-behavior: smooth;
+  background-color: rgb(249 250 251 / 1);
 }
 
 .skill-bg {
