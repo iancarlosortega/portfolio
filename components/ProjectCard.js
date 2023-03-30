@@ -7,10 +7,17 @@ export const ProjectCard = ({
 	demoUrl,
 	codeUrl,
 	projectImg,
+	order,
 }) => {
 	return (
-		<div className='grid bg-white gap-10 md:grid-cols-[40%_60%] my-16 py-8 px-6 md:px-16 shadow shadow-gray-400 drop-shadow-4xl'>
-			<div>
+		<div className='bg-white max-w-[60rem] md:min-h-[50rem] lg:min-h-[30rem] flex flex-col gap-10 lg:flex-row my-16 mx-auto py-8 px-6 md:px-16 shadow shadow-gray-400 drop-shadow-4xl'>
+			<div
+				className={`${
+					order ? 'lg:order-2' : ''
+				} scroll-image shadow shadow-teal-200 drop-shadow-2xl lg:basis-1/2`}>
+				<Image src={projectImg} alt='FreeMove' width={600} height={400} />
+			</div>
+			<div className='lg:basis-1/2'>
 				<h5 className='text-center text-2xl text-primary font-bold'>{title}</h5>
 				<p className='my-6 text-sm text-center md:text-left text-gray-500 font-light leading-6'>
 					{description}
@@ -35,9 +42,6 @@ export const ProjectCard = ({
 						</a>
 					)}
 				</div>
-			</div>
-			<div className='order-first md:order-2 relative'>
-				<Image className='object-cover' src={projectImg} alt='FreeMove' fill />
 			</div>
 		</div>
 	);

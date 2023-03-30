@@ -64,3 +64,21 @@ html {
 .btn:hover:after {
   width: 100%;
 }
+
+.scroll-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scroll-image img {
+  object-fit: cover;
+  width: 100%;
+  transform: translateY(0);
+  transition: 7s ease-out;
+}
+
+.scroll-image:hover img {
+  transform: translateY(calc(-100% + 400px));
+}
