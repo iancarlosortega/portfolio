@@ -35,7 +35,9 @@ export default function Home() {
 				</div>
 			</main>
 			<Skills />
-			<Projects />
+			<div className='bg-gray-50'>
+				<Projects />
+			</div>
 			<About />
 			<Contact />
 			<Footer />
