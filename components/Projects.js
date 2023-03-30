@@ -56,7 +56,7 @@ export const Projects = () => {
 					projectImg='/test.jpg'
 				/>
 				<ProjectCard
-					title='Creando Cariño &#128154;'
+					title='Creando Cariño &#127873;'
 					description='Consequat labore nulla nisi sunt ullamco aliqua in anim. Esse anim et
 					velit velit incididunt Lorem quis incididunt magna tempor pariatur
 					est. Cillum aliqua mollit amet ut dolor aliqua adipisicing
