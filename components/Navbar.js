@@ -5,7 +5,9 @@ export const Navbar = () => {
 		<nav className='p-8'>
 			<ul className='flex items-center justify-center gap-16 md:justify-end'>
 				<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
-					<a href='https://ec.linkedin.com/' target='_blank'>
+					<a
+						href='https://www.linkedin.com/in/ian-carlos-ortega-05a3a0270/'
+						target='_blank'>
 						<LinkedInIcon fillColor='#0E8388' />
 					</a>
 				</li>

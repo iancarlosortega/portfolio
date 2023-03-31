@@ -15,11 +15,11 @@ export const ProjectCard = ({
 				className={`${
 					order ? 'lg:order-2' : ''
 				} scroll-image shadow shadow-teal-200 drop-shadow-2xl lg:basis-1/2`}>
-				<Image src={projectImg} alt='FreeMove' width={600} height={400} />
+				<Image src={projectImg} alt={title} width={600} height={400} />
 			</div>
 			<div className='lg:basis-1/2'>
 				<h5 className='text-center text-2xl text-primary font-bold'>{title}</h5>
-				<p className='my-6 text-sm text-center md:text-left text-gray-500 font-light leading-6'>
+				<p className='my-6 text-sm text-center text-gray-500 font-light leading-6'>
 					{description}
 				</p>
 				{/* Stack */}

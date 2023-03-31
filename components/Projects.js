@@ -20,7 +20,7 @@ export const Projects = () => {
 					aliqua consectetur sit.'
 					stack={['Angular', 'Firebase', 'Mapbox']}
 					demoUrl='https://freemove-aa0c5.web.app/'
-					projectImg='/projects/freemove.png'
+					projectImg='/projects/freemove.jpg'
 				/>
 				<ProjectCard
 					title='UTPL Play &#127909;'
@@ -36,7 +36,7 @@ export const Projects = () => {
 					stack={['Angular', 'Firebase']}
 					demoUrl='https://play.liidutpl.ec/'
 					codeUrl='https://github.com/iancarlosortega/utplPlay'
-					projectImg='/test.jpg'
+					projectImg='/projects/utpl-play.jpg'
 					order={true}
 				/>
 				<ProjectCard
@@ -50,10 +50,10 @@ export const Projects = () => {
 					incididunt dolore enim laboris dolore eiusmod cupidatat. Lorem
 					pariatur ad consectetur ex ipsum exercitation Lorem aliqua sunt velit
 					aliqua consectetur sit.'
-					stack={['Next.Js', 'React', 'Material UI', 'MongoDB', 'Docker']}
+					stack={['Next.Js', 'React', 'MongoDB', 'Docker']}
 					demoUrl='#'
 					codeUrl='https://github.com/Curso-NextJs/teslo-shop'
-					projectImg='/test.jpg'
+					projectImg='/projects/teslo-shop.jpg'
 				/>
 				<ProjectCard
 					title='Creando Cariño &#127873;'
@@ -67,9 +67,9 @@ export const Projects = () => {
 					pariatur ad consectetur ex ipsum exercitation Lorem aliqua sunt velit
 					aliqua consectetur sit.'
 					stack={['Angular', 'Firebase']}
-					demoUrl='#'
+					demoUrl='https://creando-carino.web.app/'
 					codeUrl='https://github.com/iancarlosortega/creandoCarino'
-					projectImg='/test.jpg'
+					projectImg='/projects/creando-carino.jpg'
 					order={true}
 				/>
 				<ProjectCard
@@ -79,7 +79,7 @@ export const Projects = () => {
 					stack={['Astro', 'React', 'TailwindCSS']}
 					demoUrl='https://arch-studio-iota.vercel.app/'
 					codeUrl='https://github.com/iancarlosortega/astro-studio'
-					projectImg='/test.jpg'
+					projectImg='/projects/arch-studio.jpg'
 				/>
 			</div>
 		</section>
