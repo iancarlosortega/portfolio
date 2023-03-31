@@ -32,7 +32,7 @@ export const Skills = () => {
 				</Tab.List>
 				<Tab.Panels className='mt-16 mb-32 md:mb-0'>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
 							<SkillItem imagePath='/icons/html.svg' alt='HTML 5' />
 							<SkillItem imagePath='/icons/css3.svg' alt='CSS 3' />
 							<SkillItem imagePath='/icons/javascript.svg' alt='JavaScript' />
@@ -43,7 +43,7 @@ export const Skills = () => {
 						</ul>
 					</Tab.Panel>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
 							<SkillItem imagePath='/icons/nodejs.svg' alt='Node JS' />
 							<SkillItem imagePath='/icons/express.svg' alt='Express' />
 							<SkillItem imagePath='/icons/mongo.svg' alt='MongoDB' />
@@ -54,7 +54,7 @@ export const Skills = () => {
 						</ul>
 					</Tab.Panel>
 					<Tab.Panel>
-						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center'>
+						<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
 							<SkillItem imagePath='/icons/git.svg' alt='Git' />
 							<SkillItem imagePath='/icons/postman.svg' alt='Postman' />
 							<SkillItem imagePath='/icons/vscode.svg' alt='Vscode' />

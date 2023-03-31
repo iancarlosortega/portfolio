@@ -89,3 +89,55 @@ html {
 .scroll-image:hover img {
   transform: translateY(calc(-100% + 400px));
 }
+
+.animate-fade-in {
+  animation: 2s ease fade-in;
+}
+
+@media (min-width: 768px){
+  .animate-left-right {
+    animation: 2s ease left-right;
+  }
+  
+  .animate-right-left {
+    animation: 2s ease right-left;
+  }
+} 
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes left-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    left: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    left: 0%;
+  }
+}
+
+@keyframes right-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+    left: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    left: 0%;
+  }
+}
