@@ -19,6 +19,12 @@ html {
   background-size: cover;
 }
 
+@media (min-width: 992px){
+  .custom-clip {
+    clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+  }
+}
+
 .btn {
   cursor: pointer;
   display: block;
