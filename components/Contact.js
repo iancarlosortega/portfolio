@@ -1,9 +1,9 @@
+import { Title } from './Title';
+
 export const Contact = () => {
 	return (
 		<section id='contact' className='max-w-[700px] mx-auto px-4 lg:px-0'>
-			<h3 className='text-[40px] text-secondary text-center font-bold uppercase pt-24 mb-16'>
-				Contacto
-			</h3>
+			<Title text='Contacto' color='secondary' />
 			<form
 				action='https://formsubmit.co/iancarlosortegaleon@gmail.com'
 				method='POST'

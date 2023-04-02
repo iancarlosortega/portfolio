@@ -1,11 +1,10 @@
 import { ProjectCard } from './ProjectCard';
+import { Title } from './Title';
 
 export const Projects = () => {
 	return (
 		<section id='projects' className='max-w-[1110px] mx-auto px-4 lg:px-0'>
-			<h3 className='text-[40px] text-secondary text-center font-bold uppercase pt-24 mb-16'>
-				Proyectos
-			</h3>
+			<Title text='Proyectos' color='secondary' />
 			<div className='pb-32'>
 				<ProjectCard
 					title='FreeMove &#128692;'

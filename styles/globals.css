@@ -72,6 +72,15 @@ html {
   width: 100%;
 }
 
+.btn-secondary {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:after {
+  background: #2E4F4F;
+}
+
 .scroll-image {
   width: 100%;
   height: 400px;

@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { About, Contact, Footer, Main, Projects, Skills } from '../components';
 
-// Generate meta tags for SEO
-
 export default function Home() {
 	return (
 		<>
@@ -24,7 +22,6 @@ export default function Home() {
 				<meta name='googlebot' content='index, follow' />
 				<meta name='google' content='nositelinkssearchbox' />
 				<meta name='google' content='notranslate' />
-				{/* Generate meta tags for SEO with open graph */}
 				<meta property='og:url' content='https://iancarlosortega.dev/' />
 				<meta property='og:type' content='website' />
 				<meta

@@ -1,6 +1,7 @@
 import { Tab } from '@headlessui/react';
 import { classNames } from '../utils';
 import { SkillItem } from './SkillItem';
+import { Title } from './Title';
 
 const categories = ['Front End', 'Back End', 'Herramientas'];
 
@@ -9,9 +10,7 @@ export const Skills = () => {
 		<section
 			id='skills'
 			className='h-[100%] min-h-screen flex flex-col justify-center items-center skill-bg'>
-			<h3 className='text-[40px] text-white font-bold uppercase mt-32 mb-16 md:mt-0'>
-				Habilidades
-			</h3>
+			<Title text='Habilidades' color='white' />
 			<Tab.Group>
 				<Tab.List className='flex flex-wrap justify-center gap-4 md:flex-row'>
 					{categories.map(category => (

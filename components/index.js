@@ -7,3 +7,4 @@ export { ProjectCard } from './ProjectCard';
 export { Projects } from './Projects';
 export { SkillItem } from './SkillItem';
 export { Skills } from './Skills';
+export { Title } from './Title';
