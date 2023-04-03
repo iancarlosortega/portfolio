@@ -2,7 +2,7 @@ import { Title } from './Title';
 
 export const Contact = () => {
 	return (
-		<section id='contact' className='max-w-[700px] mx-auto px-4 lg:px-0'>
+		<section id='contact' className='max-w-[700px] mx-auto px-4 lg:px-0 pt-24'>
 			<Title text='Contacto' color='secondary' />
 			<form
 				action='https://formsubmit.co/iancarlosortegaleon@gmail.com'

@@ -9,8 +9,8 @@ export const Skills = () => {
 	return (
 		<section
 			id='skills'
-			className='h-[100%] min-h-screen flex flex-col justify-center items-center skill-bg'>
-			<Title text='Habilidades' color='white' />
+			className='h-[100%] min-h-screen flex flex-col justify-center items-center pt-24 md:pt-0 skill-bg'>
+			<Title text='Habilidades' color='white' padding={0} />
 			<Tab.Group>
 				<Tab.List className='flex flex-wrap justify-center gap-4 md:flex-row'>
 					{categories.map(category => (

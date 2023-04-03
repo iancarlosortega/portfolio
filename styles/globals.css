@@ -77,8 +77,12 @@ html {
   border: 2px solid #ffffff;
 }
 
+.btn-secondary:hover {
+  color: #0E8388;
+}
+
 .btn-secondary:after {
-  background: #2E4F4F;
+  background: #CBE4DE;
 }
 
 .scroll-image {

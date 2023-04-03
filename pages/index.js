@@ -26,7 +26,7 @@ export default function Home() {
 				<meta property='og:type' content='website' />
 				<meta
 					property='og:image'
-					content='https://iancarlosortega.dev/images/iancarlosortega.png'
+					content='https://iancarlosortega.dev/images/iancarlosortega.jpg'
 				/>
 				<meta
 					property='og:title'

@@ -22,7 +22,9 @@ export const Navbar = () => {
 					</a>
 				</li>
 				<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
-					<a href='' target='_blank'>
+					<a
+						href='https://drive.google.com/file/d/1RZUQ5Zct4BA9uYxNqWSipNos6uC7YDw9/view?usp=sharing'
+						target='_blank'>
 						<DocumentIcon fillColor='#0E8388' />
 					</a>
 				</li>
