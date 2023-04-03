@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { About, Contact, Footer, Main, Projects, Skills } from '../components';
 
+const origin = typeof window === 'undefined' ? '' : window.location.origin;
+
 export default function Home() {
 	return (
 		<>
@@ -24,10 +26,7 @@ export default function Home() {
 				<meta name='google' content='notranslate' />
 				<meta property='og:url' content='https://iancarlosortega.dev/' />
 				<meta property='og:type' content='website' />
-				<meta
-					property='og:image'
-					content='https://iancarlosortega.dev/images/iancarlosortega.jpg'
-				/>
+				<meta property='og:image' content={`${origin}/images/banner.jpg`} />
 				<meta
 					property='og:title'
 					content='Ian Carlos Ortega | Desarrollador Web'
