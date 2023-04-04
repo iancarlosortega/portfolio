@@ -6,7 +6,7 @@ export const Main = () => {
 			<Navbar />
 			<div className='flex-1 flex flex-col items-center justify-center p-8'>
 				<h2 className='uppercase text-3xl md:text-4xl text-secondary font-bold tracking-wide text-center animate-left-right'>
-					Hola, soy <span className='text-primary'>Ian Carlos</span> &#128516;{' '}
+					¡Hola!, soy <span className='text-primary'>Ian Carlos</span> &#128516;{' '}
 					<br />
 					Desarrollador Web
 				</h2>

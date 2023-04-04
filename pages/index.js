@@ -24,7 +24,7 @@ export default function Home() {
 				<meta name='googlebot' content='index, follow' />
 				<meta name='google' content='nositelinkssearchbox' />
 				<meta name='google' content='notranslate' />
-				<meta property='og:url' content='https://iancarlosortega.dev/' />
+				<meta property='og:url' content='https://iancarlosortega.com/' />
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content={`${origin}/images/banner.jpg`} />
 				<meta
