@@ -1,5 +1,13 @@
 import Head from 'next/head';
-import { About, Contact, Footer, Main, Projects, Skills } from '../components';
+import {
+	About,
+	Contact,
+	Footer,
+	Main,
+	Projects,
+	ScrollToTopButton,
+	Skills,
+} from '../components';
 
 const origin = typeof window === 'undefined' ? '' : window.location.origin;
 
@@ -43,6 +51,7 @@ export default function Home() {
 				<meta property='og:locale' content='es_ES' />
 				<meta property='og:locale:alternate' content='en_US' />
 			</Head>
+			<ScrollToTopButton />
 			<Main />
 			<Skills />
 			<Projects />

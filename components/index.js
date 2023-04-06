@@ -5,6 +5,7 @@ export { Main } from './Main';
 export { Navbar } from './Navbar';
 export { ProjectCard } from './ProjectCard';
 export { Projects } from './Projects';
+export { ScrollToTopButton } from './ScrollToTopButton';
 export { SkillItem } from './SkillItem';
 export { Skills } from './Skills';
 export { Title } from './Title';
