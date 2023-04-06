@@ -25,9 +25,9 @@ export const About = () => {
 							funcionales para los usuarios finales.
 						</p>
 						<p>
-							Mi formación en informática me proporcionó una base sólida en la
-							teoría y las habilidades prácticas necesarias para desarrollar
-							software de alta calidad.
+							Estoy a disposición de aprender nuevas tecnologías que se
+							requieran dentro de la empresa para así poder ofrecer un mayor
+							valor a la misma y a los proyectos que se realicen.
 						</p>
 						<p className='mb-4'>
 							Además, en mis tiempos libres me gusta escuchar música, jugar

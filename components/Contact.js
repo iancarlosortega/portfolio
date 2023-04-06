@@ -12,7 +12,7 @@ export const Contact = () => {
 					className='w-full border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
 					name='name'
 					type='text'
-					placeholder='Escribe tu nombre'
+					placeholder='Nombres y Apellidos'
 					minLength={3}
 					maxLength={50}
 					required
@@ -21,13 +21,13 @@ export const Contact = () => {
 					className='w-full border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
 					name='email'
 					type='email'
-					placeholder='Escribe tu correo'
+					placeholder='Correo Electrónico'
 					required
 				/>
 				<textarea
 					className='w-full h-[10rem] resize-none border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
 					name='message'
-					placeholder='Escribe tu mensaje'
+					placeholder='¡Hola! ¿En qué puedo ayudarte?'
 					minLength={3}
 					required
 				/>

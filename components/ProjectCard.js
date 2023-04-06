@@ -14,7 +14,7 @@ export const ProjectCard = ({
 			<div
 				className={`${
 					order ? 'lg:order-2' : ''
-				} scroll-image shadow shadow-teal-200 drop-shadow-2xl lg:basis-1/2`}>
+				} scroll-image shadow drop-shadow-2xl lg:basis-1/2`}>
 				<Image src={projectImg} alt={title} width={600} height={400} />
 			</div>
 			<div className='lg:basis-1/2'>
