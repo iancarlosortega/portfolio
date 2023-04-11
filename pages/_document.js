@@ -1,8 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import i18nextConfig from '../next-i18next.config';
 
 export default function Document() {
+	const currentLocale = i18nextConfig.i18n.defaultLocale;
+
 	return (
-		<Html>
+		<Html lang={currentLocale}>
 			<Head>
 				<link
 					rel='apple-touch-icon'
@@ -33,7 +36,7 @@ export default function Document() {
 					rel='stylesheet'
 				/>
 			</Head>
-			<body>
+			<body className='bg-gray-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 break-words leading-6 transition-colors duration-500'>
 				<Main />
 				<NextScript />
 			</body>

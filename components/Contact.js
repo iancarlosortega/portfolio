@@ -12,7 +12,7 @@ export const Contact = () => {
 				method='POST'
 				className='flex flex-col gap-8'>
 				<input
-					className='w-full border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
+					className='w-full dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
 					name='name'
 					type='text'
 					placeholder={translate('name')}
@@ -21,14 +21,14 @@ export const Contact = () => {
 					required
 				/>
 				<input
-					className='w-full border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
+					className='w-full dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
 					name='email'
 					type='email'
 					placeholder={translate('email')}
 					required
 				/>
 				<textarea
-					className='w-full h-[10rem] resize-none border-2 border-light py-3 px-6 text-secondary focus:border-primary focus:outline-none caret-secondary'
+					className='w-full h-[10rem] resize-none dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
 					name='message'
 					placeholder={translate('message')}
 					minLength={3}

@@ -1,12 +1,13 @@
-export const PhoneIcon = ({ fillColor = '#000000' }) => {
+export const PhoneIcon = ({ className = 'text-primary' }) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
 			width='30'
 			height='30'
 			viewBox='0 0 24 24'
+			className={className}
 			fill='none'
-			stroke={fillColor}
+			stroke='currentColor'
 			strokeWidth='2'
 			strokeLinecap='round'
 			strokeLinejoin='round'>

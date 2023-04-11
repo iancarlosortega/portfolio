@@ -3,5 +3,7 @@ export { ChevronUpDownIcon } from './ChevronUpDownIcon';
 export { DocumentIcon } from './DocumentIcon';
 export { GithubIcon } from './GithubIcon';
 export { LinkedInIcon } from './LinkedInIcon';
+export { MoonIcon } from './MoonIcon';
 export { PhoneIcon } from './PhoneIcon';
+export { SunnyIcon } from './SunnyIcon';
 export { YoutubeIcon } from './YoutubeIcon';

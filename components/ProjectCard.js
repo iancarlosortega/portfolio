@@ -12,16 +12,18 @@ export const ProjectCard = ({
 	const { t: translate } = useTranslation('projects');
 
 	return (
-		<div className='bg-white max-w-[60rem] md:min-h-[50rem] lg:min-h-[30rem] flex flex-col gap-10 lg:flex-row my-16 mx-auto py-8 px-6 md:px-16 shadow shadow-gray-400 drop-shadow-4xl'>
+		<div className='bg-white dark:bg-zinc-800 max-w-[60rem] md:min-h-[50rem] lg:min-h-[30rem] flex flex-col gap-10 lg:flex-row my-16 mx-auto py-8 px-6 md:px-16 shadow shadow-gray-400 dark:shadow-gray-600 drop-shadow-4xl'>
 			<div
 				className={`${
 					order ? 'lg:order-2' : ''
-				} scroll-image shadow drop-shadow-2xl lg:basis-1/2`}>
+				} scroll-image shadow drop-shadow-2xl lg:basis-1/2 dark:grayscale-[30%] dark:hover:grayscale-0 transition duration-200`}>
 				<Image src={projectImg} alt={title} width={600} height={400} />
 			</div>
 			<div className='lg:basis-1/2'>
-				<h5 className='text-center text-2xl text-primary font-bold'>{title}</h5>
-				<p className='my-6 text-sm text-center text-gray-500 font-light leading-6'>
+				<h5 className='text-center text-2xl text-primary dark:text-light font-bold'>
+					{title}
+				</h5>
+				<p className='my-6 text-sm text-center text-gray-500 dark:text-gray-100 font-light leading-6'>
 					{description}
 				</p>
 				{/* Stack */}
@@ -29,7 +31,7 @@ export const ProjectCard = ({
 					{stack.map(s => (
 						<li
 							key={s}
-							className='px-4 py-2 bg-secondary text-white font-bold text-sm'>
+							className='px-4 py-2 bg-secondary dark:bg-zinc-900 text-white font-bold text-sm'>
 							{s}
 						</li>
 					))}

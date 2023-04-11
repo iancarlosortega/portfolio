@@ -5,7 +5,6 @@
 html {
   font-family: 'DM Sans', sans-serif;
   scroll-behavior: smooth;
-  background-color: rgb(249 250 251 / 1);
 }
 
 .skill-bg {
@@ -98,6 +97,8 @@ html {
 .scroll-image:hover img {
   transform: translateY(calc(-100% + 400px));
 }
+
+/* ANIMATIONS */
 
 .animate-fade-in {
   animation: 2s ease fade-in;

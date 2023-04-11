@@ -1,9 +1,10 @@
-export const GithubIcon = ({ fillColor = '#000000' }) => {
+export const GithubIcon = ({ className = 'text-primary' }) => {
 	return (
 		<svg
 			width='30px'
 			height='30px'
-			fill={fillColor}
+			fill='currentColor'
+			className={className}
 			viewBox='0 0 24 24'
 			xmlns='http://www.w3.org/2000/svg'>
 			<title>github</title>
