@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import { useTranslation } from 'next-i18next';
 export const ProjectCard = ({
 	title,
 	description,
@@ -9,6 +9,8 @@ export const ProjectCard = ({
 	projectImg,
 	order,
 }) => {
+	const { t: translate } = useTranslation('projects');
+
 	return (
 		<div className='bg-white max-w-[60rem] md:min-h-[50rem] lg:min-h-[30rem] flex flex-col gap-10 lg:flex-row my-16 mx-auto py-8 px-6 md:px-16 shadow shadow-gray-400 drop-shadow-4xl'>
 			<div
@@ -38,7 +40,7 @@ export const ProjectCard = ({
 					</a>
 					{codeUrl && (
 						<a href={codeUrl} target='_blank' className='btn'>
-							<span>Código</span>
+							<span>{translate('code')}</span>
 						</a>
 					)}
 				</div>

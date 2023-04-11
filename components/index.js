@@ -1,6 +1,7 @@
 export { About } from './About';
 export { Contact } from './Contact';
 export { Footer } from './Footer';
+export { LanguageSwitcher } from './LanguageSwitcher';
 export { Main } from './Main';
 export { Navbar } from './Navbar';
 export { ProjectCard } from './ProjectCard';

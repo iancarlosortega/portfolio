@@ -1,3 +1,4 @@
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { DocumentIcon, GithubIcon, LinkedInIcon, YoutubeIcon } from './icons';
 
 export const Navbar = () => {
@@ -27,6 +28,9 @@ export const Navbar = () => {
 						target='_blank'>
 						<DocumentIcon fillColor='#0E8388' />
 					</a>
+				</li>
+				<li>
+					<LanguageSwitcher />
 				</li>
 			</ul>
 		</nav>

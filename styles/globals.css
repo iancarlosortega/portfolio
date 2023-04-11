@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https: //fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap'); */
-@import url('https: //fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet');
-
 html {
-  /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'DM Sans', sans-serif;
   scroll-behavior: smooth;
   background-color: rgb(249 250 251 / 1);

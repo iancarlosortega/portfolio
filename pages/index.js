@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import {
 	About,
 	Contact,
@@ -61,3 +62,15 @@ export default function Home() {
 		</>
 	);
 }
+
+export const getStaticProps = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale ?? 'es', [
+			'home',
+			'skills',
+			'projects',
+			'about',
+			'contact',
+		])),
+	},
+});

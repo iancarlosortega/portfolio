@@ -1,16 +1,18 @@
+import { useTranslation } from 'next-i18next';
 import { Tab } from '@headlessui/react';
 import { classNames } from '../utils';
 import { SkillItem } from './SkillItem';
 import { Title } from './Title';
 
-const categories = ['Front End', 'Back End', 'Herramientas'];
-
 export const Skills = () => {
+	const { t: translate } = useTranslation('skills');
+	const categories = ['Front End', 'Back End', translate('tools')];
+
 	return (
 		<section
 			id='skills'
 			className='h-[100%] min-h-screen flex flex-col justify-center items-center pt-24 md:pt-0 skill-bg'>
-			<Title text='Habilidades' color='white' padding={0} />
+			<Title text={translate('title')} color='white' padding={0} />
 			<Tab.Group>
 				<Tab.List className='flex flex-wrap justify-center gap-4 md:flex-row'>
 					{categories.map(category => (
