@@ -10,7 +10,9 @@ export const SkillItem = ({ imagePath, alt, width = 70, height = 70 }) => {
 				width={width}
 				height={height}
 			/>
-			<p className='text-sm text-light font-semibold'>{alt}</p>
+			<p className='text-sm text-secondary dark:text-light font-medium'>
+				{alt}
+			</p>
 		</li>
 	);
 };

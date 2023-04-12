@@ -7,7 +7,7 @@ export const ScrollToTopButton = () => {
 	};
 
 	return (
-		<div className='sticky bottom-5 z-10 w-full flex justify-end pr-4 mt-8'>
+		<div className='sticky bottom-5 z-40 w-full flex justify-end pr-4 mt-8'>
 			<button
 				onClick={handleClick}
 				className='rounded-full p-5 bg-teal-700 hover:bg-teal-600 transition duration-200 ease-in shadow shadow-teal-800 drop-shadow-2xl'>

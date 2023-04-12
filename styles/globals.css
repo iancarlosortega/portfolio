@@ -38,6 +38,7 @@ html {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 230px;
   padding: .5rem;
   font-size: 18px;

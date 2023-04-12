@@ -8,7 +8,7 @@ export const Projects = () => {
 	return (
 		<section
 			id='projects'
-			className='max-w-[1110px] mx-auto px-4 lg:px-0 py-24'>
+			className='max-w-[1110px] mx-auto px-4 lg:px-0 py-24 md:pt-[12rem]'>
 			<Title text={translate('title')} color='secondary' />
 			<ProjectCard
 				title='FreeMove &#128692;'
