@@ -1,10 +1,13 @@
 export { AtSignIcon } from './AtSignIcon';
 export { ChevronUpDownIcon } from './ChevronUpDownIcon';
 export { DocumentIcon } from './DocumentIcon';
+export { DownloadIcon } from './DownloadIcon';
 export { GithubIcon } from './GithubIcon';
 export { LinkedInIcon } from './LinkedInIcon';
 export { MenuIcon } from './MenuIcon';
+export { MessageIcon } from './MessageIcon';
 export { MoonIcon } from './MoonIcon';
 export { PhoneIcon } from './PhoneIcon';
+export { PreviewIcon } from './PreviewIcon';
 export { SunnyIcon } from './SunnyIcon';
 export { YoutubeIcon } from './YoutubeIcon';

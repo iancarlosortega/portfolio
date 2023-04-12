@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { Title } from './Title';
+import { MessageIcon } from './icons';
 
 export const Contact = () => {
 	const { t: translate } = useTranslation('contact');
@@ -36,7 +37,9 @@ export const Contact = () => {
 				/>
 				<div className='flex justify-center mt-8 mb-16'>
 					<button type='submit' className='btn'>
-						<span>{translate('send')}</span>
+						<span>
+							{translate('send')} <MessageIcon />
+						</span>
 					</button>
 				</div>
 			</form>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { Title } from './Title';
+import { DownloadIcon } from './icons';
 
 export const About = () => {
 	const { t: translate } = useTranslation('about');
@@ -30,7 +31,9 @@ export const About = () => {
 								href='https://drive.google.com/file/d/1RZUQ5Zct4BA9uYxNqWSipNos6uC7YDw9/view?usp=sharing'
 								target='_blank'
 								className='btn btn-secondary'>
-								<span>{translate('download')}</span>
+								<span>
+									{translate('download')} <DownloadIcon />
+								</span>
 							</a>
 						</div>
 					</div>

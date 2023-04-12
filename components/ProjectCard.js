@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
+import { GithubIcon, PreviewIcon } from './icons';
+
 export const ProjectCard = ({
 	title,
 	description,
@@ -38,11 +40,16 @@ export const ProjectCard = ({
 				</ul>
 				<div className='flex flex-col md:flex-row items-center justify-center gap-4'>
 					<a href={demoUrl} target='_blank' className='btn'>
-						<span>Live Demo</span>
+						<span>
+							Live Demo <PreviewIcon />
+						</span>
 					</a>
 					{codeUrl && (
 						<a href={codeUrl} target='_blank' className='btn'>
-							<span>{translate('code')}</span>
+							<span>
+								{translate('code')}{' '}
+								<GithubIcon className='text-primary dark:text-light' />
+							</span>
 						</a>
 					)}
 				</div>

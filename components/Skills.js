@@ -12,7 +12,7 @@ export const Skills = () => {
 		<section
 			id='skills'
 			className='h-[100%] min-h-screen flex flex-col justify-center items-center pt-24 md:pt-0 skill-bg'>
-			<Title text={translate('title')} color='white' padding={0} />
+			<Title text={translate('title')} color='white' />
 			<Tab.Group>
 				<Tab.List className='flex flex-wrap justify-center gap-4 md:flex-row'>
 					{categories.map(category => (
