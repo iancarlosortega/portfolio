@@ -31,7 +31,7 @@ export const LanguageSwitcher = () => {
 	return (
 		<Listbox value={language} onChange={handleOnChange}>
 			<div className='relative mt-1'>
-				<Listbox.Button className='relative w-[10rem] cursor-pointer rounded-lg bg-white dark:bg-zinc-600 py-2 pl-3 pr-10 text-left shadow-md dark:shadow-gray-500 focus:outline-none sm:text-sm'>
+				<Listbox.Button className='relative w-[10rem] cursor-pointer rounded-lg bg-white border border-primary dark:border-zinc-700 dark:bg-zinc-600 py-2 pl-3 pr-10 text-left shadow-sm dark:shadow-gray-500 focus:outline-none sm:text-sm'>
 					<span className='flex items-center gap-2'>
 						<Image
 							src={chooseFlag(language)}
@@ -42,7 +42,7 @@ export const LanguageSwitcher = () => {
 						{capitalize(languageNames.of(language) ?? language)}
 					</span>
 					<span className='absolute inset-y-0 right-0 flex items-center pr-2'>
-						<ChevronUpDownIcon />
+						<ChevronUpDownIcon className='text-primary dark:text-light' />
 					</span>
 				</Listbox.Button>
 				<Transition
@@ -50,7 +50,7 @@ export const LanguageSwitcher = () => {
 					leave='transition ease-in duration-100'
 					leaveFrom='opacity-100'
 					leaveTo='opacity-0'>
-					<Listbox.Options className='absolute mt-2 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-zinc-600 text-base shadow-md dark:shadow-gray-500 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+					<Listbox.Options className='absolute mt-2 max-h-60 w-full overflow-auto rounded-md bg-white border border-primary dark:border-zinc-700 dark:bg-zinc-600 text-base shadow-sm dark:shadow-gray-500 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
 						{locales.map(locale => (
 							<Listbox.Option
 								key={locale}

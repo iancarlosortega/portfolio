@@ -14,9 +14,15 @@ html {
   background-size: cover;
 }
 
+@media (min-width: 992px) {
+  .custom-clip-shadow {
+    filter: drop-shadow(0px 0px 25px rgba(91, 91, 91, 0.708))
+  }
+}
+
 @media (min-width: 992px){
   .custom-clip {
-    clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 80%, 0 100%);
   }
 }
 
@@ -35,6 +41,11 @@ html {
   text-align: center;
   position: relative;
   transition: all .35s;
+}
+
+.dark .btn {
+  color: #CBE4DE;
+  border: 2px solid #CBE4DE;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px){
@@ -59,6 +70,10 @@ html {
   transition: all .35s;
 }
 
+.dark .btn:after {
+  background: #0E8388;
+}
+
 .btn:hover {
   color: #fff;
 }
@@ -74,6 +89,10 @@ html {
 
 .btn-secondary:hover {
   color: #0E8388;
+}
+
+.dark .btn-secondary:hover {
+  color: #CBE4DE;
 }
 
 .btn-secondary:after {

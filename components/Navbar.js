@@ -4,7 +4,7 @@ import { DocumentIcon, GithubIcon, LinkedInIcon, YoutubeIcon } from './icons';
 
 export const Navbar = () => {
 	return (
-		<nav className='p-8 flex items-center justify-between animate-right-left'>
+		<nav className='max-w-[1110px] w-full mx-auto p-8 md:px-16 flex items-center justify-between animate-right-left'>
 			<LanguageSwitcher />
 			<ul className='flex items-center justify-center gap-16'>
 				<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
