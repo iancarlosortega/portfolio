@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { Listbox, Transition } from '@headlessui/react';
-import { ChevronUpDownIcon } from './icons/ChevronUpDownIcon';
+import { capitalize, getFlagFromLanguage } from '../utils';
+import { ChevronUpDownIcon } from './icons';
 
 export const LanguageSwitcher = () => {
 	const router = useRouter();
@@ -34,7 +35,7 @@ export const LanguageSwitcher = () => {
 				<Listbox.Button className='relative w-[10rem] cursor-pointer rounded-lg bg-white border border-primary dark:border-zinc-700 dark:bg-zinc-600 py-2 pl-3 pr-10 text-left shadow-sm dark:shadow-gray-500 focus:outline-none sm:text-sm'>
 					<span className='flex items-center gap-2'>
 						<Image
-							src={chooseFlag(language)}
+							src={getFlagFromLanguage(language)}
 							alt={`Flag of ${languageNames.of(language)}`}
 							width={20}
 							height={20}
@@ -70,7 +71,7 @@ export const LanguageSwitcher = () => {
 										</span>
 										<span className='absolute inset-y-0 left-0 flex items-center pl-3'>
 											<Image
-												src={chooseFlag(locale)}
+												src={getFlagFromLanguage(locale)}
 												alt={`Flag of ${languageNames.of(locale)}`}
 												width={20}
 												height={20}
@@ -86,18 +87,3 @@ export const LanguageSwitcher = () => {
 		</Listbox>
 	);
 };
-
-function capitalize(lang) {
-	return lang.slice(0, 1).toUpperCase() + lang.slice(1);
-}
-
-function chooseFlag(lang) {
-	switch (lang) {
-		case 'es':
-			return '/icons/spain.svg';
-		case 'en':
-			return '/icons/usa.svg';
-		default:
-			return '/icons/spain.svg';
-	}
-}
