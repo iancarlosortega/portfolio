@@ -1,5 +1,6 @@
 export { About } from './About';
 export { Contact } from './Contact';
+export { DropdownMenu } from './DropDownMenu';
 export { Footer } from './Footer';
 export { LanguageSwitcher } from './LanguageSwitcher';
 export { Main } from './Main';

@@ -11,15 +11,15 @@ export const ThemeToggleButton = () => {
 		setTheme(t);
 	};
 
-	// useEffect(() => {
-	// 	if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-	// 		return setTheme(localStorage.getItem('theme'));
-	// 	}
-	// 	if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	// 		return setTheme('dark');
-	// 	}
-	// 	setTheme('light');
-	// }, [setTheme]);
+	useEffect(() => {
+		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+			return setTheme(localStorage.getItem('theme'));
+		}
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			return setTheme('dark');
+		}
+		setTheme('light');
+	}, [setTheme]);
 
 	useEffect(() => {
 		const root = document.documentElement;

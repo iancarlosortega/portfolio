@@ -7,7 +7,7 @@ export const About = () => {
 
 	return (
 		<div className='custom-clip-shadow'>
-			<div className='bg-gradient-to-b md:bg-gradient-to-br from-teal-600 dark:from-teal-800 to-teal-800 dark:to-zinc-800 custom-clip'>
+			<div className='bg-gradient-to-b dark:bg-gradient-to-br md:bg-gradient-to-br from-teal-600 dark:from-teal-800 to-teal-800 dark:to-zinc-800 custom-clip'>
 				<section
 					id='about'
 					className='max-w-[1110px] mx-auto px-4 md:px-12 lg:px-0 pt-24 lg:pt-48 lg:pb-48 lg:mt-24'>

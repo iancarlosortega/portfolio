@@ -14,15 +14,23 @@ html {
   background-size: cover;
 }
 
-@media (min-width: 992px) {
-  .custom-clip-shadow {
-    filter: drop-shadow(0px 0px 25px rgba(91, 91, 91, 0.708))
-  }
+.custom-clip {
+  clip-path: polygon(0 2vh, 100% 0, 250% 80%, 0 100%);
+}
+
+.custom-clip-shadow {
+  filter: drop-shadow(0px 0px 25px rgba(91, 91, 91, 0.708))
 }
 
 @media (min-width: 992px){
   .custom-clip {
     clip-path: polygon(0 10vh, 100% 0, 100% 80%, 0 100%);
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-clip-shadow {
+    filter: drop-shadow(0px 0px 25px rgba(91, 91, 91, 0.708))
   }
 }
 

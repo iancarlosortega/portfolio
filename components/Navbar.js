@@ -1,11 +1,22 @@
+import { DropdownMenu } from './DropDownMenu';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import { DocumentIcon, GithubIcon, LinkedInIcon, YoutubeIcon } from './icons';
 
 export const Navbar = () => {
 	return (
-		<nav className='fixed w-full p-2 md:px-16 md:py-4 z-20 bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border-b border-zinc/30 animate-right-left'>
-			<div className='max-w-[1110px] mx-auto flex items-center justify-between'>
+		<nav className='fixed w-full p-2 md:px-16 md:py-4 z-20 bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border-b border-zinc/30'>
+			{/* Phone Navbar */}
+			<ul className='flex items-center justify-between md:hidden'>
+				<li>
+					<DropdownMenu />
+				</li>
+				<li>
+					<ThemeToggleButton />
+				</li>
+			</ul>
+			{/* Tablet and Desktop Navbar */}
+			<div className='hidden md:flex max-w-[1110px] mx-auto items-center justify-between animate-right-left'>
 				<LanguageSwitcher />
 				<ul className='flex items-center justify-center gap-16'>
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
