@@ -1,11 +1,14 @@
-import { DropdownMenu } from './DropDownMenu';
-import { LanguageSwitcher } from './LanguageSwitcher';
-import { ThemeToggleButton } from './ThemeToggleButton';
+import { classNames } from '../utils';
+import { DropdownMenu, LanguageSwitcher, ThemeToggleButton } from './';
 import { DocumentIcon, GithubIcon, LinkedInIcon, YoutubeIcon } from './icons';
 
 export const Navbar = () => {
 	return (
-		<nav className='fixed w-full p-2 md:px-4 lg:px-16 md:py-4 z-40 bg-white/30 dark:bg-zinc-900/30 backdrop-blur-md border-b border-zinc/30'>
+		<nav
+			className={classNames(
+				'fixed w-full p-2 md:px-4 lg:px-16 md:py-4 z-40 bg-white/30',
+				'dark:bg-zinc-900/30 backdrop-blur-md border-b border-zinc/30'
+			)}>
 			{/* Phone Navbar */}
 			<ul className='flex items-center justify-between md:hidden'>
 				<li>

@@ -1,8 +1,13 @@
+import { classNames } from '../utils';
 import { AtSignIcon, GithubIcon, LinkedInIcon, PhoneIcon } from './icons';
 
 export const Footer = () => {
 	return (
-		<footer className='bg-gray-100 dark:bg-zinc-800 border-t-2 border-light dark:border-zinc-600 flex flex-col md:flex-row md:justify-between gap-6 p-8 mt-8'>
+		<footer
+			className={classNames(
+				'flex flex-col md:flex-row md:justify-between gap-6 p-8 mt-8',
+				'bg-gray-100 dark:bg-zinc-800 border-t-2 border-light dark:border-zinc-600'
+			)}>
 			<div className='flex justify-center gap-12'>
 				<a
 					className='transition-transform duration-300 ease-in hover:-translate-y-1'

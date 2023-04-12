@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
-import { Title } from './Title';
+import { classNames } from '../utils';
+import { Title } from './';
 import { DownloadIcon } from './icons';
 
 export const About = () => {
@@ -8,7 +9,11 @@ export const About = () => {
 
 	return (
 		<div className='custom-clip-shadow'>
-			<div className='bg-gradient-to-b dark:bg-gradient-to-br md:bg-gradient-to-br from-teal-600 dark:from-teal-800 to-teal-800 dark:to-zinc-800 custom-clip'>
+			<div
+				className={classNames(
+					'bg-gradient-to-b  md:bg-gradient-to-br from-teal-600  to-teal-800',
+					'dark:bg-gradient-to-br dark:from-teal-800 dark:to-zinc-800 custom-clip'
+				)}>
 				<section
 					id='about'
 					className='max-w-[1110px] mx-auto px-4 md:px-12 lg:px-0 pt-24 lg:pt-48 lg:pb-48 lg:mt-24'>
@@ -21,7 +26,11 @@ export const About = () => {
 							width={400}
 							height={400}
 						/>
-						<div className='flex flex-col gap-4 items-center text-center text-white text-sm lg:text-lg my-8 md:my-0 px-8 md:px-4 md:basis-1/2'>
+						<div
+							className={classNames(
+								'flex md:basis-1/2 flex-col gap-4 items-center text-center text-white',
+								'text-sm lg:text-lg my-8 md:my-0 px-8 md:px-4'
+							)}>
 							<p>{translate('description.firstParagraph')}</p>
 							<p>{translate('description.secondParagraph')}</p>
 							<p className='mb-4'>

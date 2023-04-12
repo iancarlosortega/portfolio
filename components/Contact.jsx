@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
-import { Title } from './Title';
+import { classNames } from '../utils';
+import { Title } from './';
 import { MessageIcon } from './icons';
 
 export const Contact = () => {
@@ -13,7 +14,11 @@ export const Contact = () => {
 				method='POST'
 				className='flex flex-col gap-8'>
 				<input
-					className='w-full dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
+					className={classNames(
+						'w-full py-3 px-6 border-2 border-light text-secondary',
+						'focus:border-primary focus:outline-none caret-secondary',
+						'dark:bg-secondary dark:text-gray-100  dark:caret-light dark:border-zinc-600 dark:focus:border-primary'
+					)}
 					name='name'
 					type='text'
 					placeholder={translate('name')}
@@ -22,14 +27,22 @@ export const Contact = () => {
 					required
 				/>
 				<input
-					className='w-full dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
+					className={classNames(
+						'w-full py-3 px-6 border-2 border-light text-secondary',
+						'focus:border-primary focus:outline-none caret-secondary',
+						'dark:bg-secondary dark:text-gray-100  dark:caret-light dark:border-zinc-600 dark:focus:border-primary'
+					)}
 					name='email'
 					type='email'
 					placeholder={translate('email')}
 					required
 				/>
 				<textarea
-					className='w-full h-[10rem] resize-none dark:bg-secondary border-2 border-light dark:border-zinc-600 py-3 px-6 text-secondary dark:text-gray-100 focus:border-primary dark:focus:border-primary focus:outline-none caret-secondary dark:caret-light'
+					className={classNames(
+						'w-full h-[10rem] resize-none py-3 px-6 border-2 border-light text-secondary',
+						'focus:border-primary focus:outline-none caret-secondary',
+						'dark:bg-secondary dark:text-gray-100  dark:caret-light dark:border-zinc-600 dark:focus:border-primary'
+					)}
 					name='message'
 					placeholder={translate('message')}
 					minLength={3}

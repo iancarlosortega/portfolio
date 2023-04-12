@@ -1,3 +1,5 @@
+import { classNames } from '../utils';
+
 export const ScrollToTopButton = () => {
 	const handleClick = () => {
 		window.scrollTo({
@@ -10,7 +12,10 @@ export const ScrollToTopButton = () => {
 		<div className='sticky bottom-5 z-40 w-full flex justify-end pr-4 mt-8'>
 			<button
 				onClick={handleClick}
-				className='rounded-full p-5 bg-teal-700 hover:bg-teal-600 transition duration-200 ease-in shadow shadow-teal-800 drop-shadow-2xl'>
+				className={classNames(
+					'rounded-full p-5 bg-teal-700 hover:bg-teal-600 transition duration-200 ease-in',
+					'drop-shadow-[0_0_0.3rem_#00000070] dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
+				)}>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					fill='none'

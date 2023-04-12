@@ -10,4 +10,5 @@ export { Projects } from './Projects';
 export { ScrollToTopButton } from './ScrollToTopButton';
 export { SkillItem } from './SkillItem';
 export { Skills } from './Skills';
+export { ThemeToggleButton } from './ThemeToggleButton';
 export { Title } from './Title';

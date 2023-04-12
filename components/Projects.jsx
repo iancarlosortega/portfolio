@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import { ProjectCard } from './ProjectCard';
-import { Title } from './Title';
+import { ProjectCard, Title } from './';
 
 export const Projects = () => {
 	const { t: translate } = useTranslation('projects');

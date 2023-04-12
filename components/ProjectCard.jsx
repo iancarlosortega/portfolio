@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
+import { classNames } from '../utils';
 import { GithubIcon, PreviewIcon } from './icons';
 
 export const ProjectCard = ({
@@ -14,7 +15,12 @@ export const ProjectCard = ({
 	const { t: translate } = useTranslation('projects');
 
 	return (
-		<div className='bg-white dark:bg-zinc-800 max-w-[60rem] md:min-h-[50rem] lg:min-h-[30rem] flex flex-col gap-10 lg:flex-row my-16 mx-auto py-8 px-6 md:px-16 shadow shadow-gray-400 dark:shadow-gray-600 drop-shadow-4xl'>
+		<div
+			className={classNames(
+				'flex flex-col gap-10 bg-white  max-w-[60rem] md:min-h-[50rem]',
+				'my-16 mx-auto py-8 px-6 md:px-16 lg:flex-row lg:min-h-[30rem]',
+				'shadow shadow-gray-400 drop-shadow-4xl dark:bg-zinc-800 dark:shadow-gray-600'
+			)}>
 			<div
 				className={`${
 					order ? 'lg:order-2' : ''

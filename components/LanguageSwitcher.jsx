@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { Listbox, Transition } from '@headlessui/react';
-import { capitalize, getFlagFromLanguage } from '../utils';
+import { capitalize, classNames, getFlagFromLanguage } from '../utils';
 import { ChevronUpDownIcon } from './icons';
 
 export const LanguageSwitcher = () => {
@@ -32,7 +32,11 @@ export const LanguageSwitcher = () => {
 	return (
 		<Listbox value={language} onChange={handleOnChange}>
 			<div className='relative mt-1'>
-				<Listbox.Button className='relative w-[10rem] cursor-pointer rounded-lg bg-white border border-primary dark:border-zinc-700 dark:bg-zinc-600 py-2 pl-3 pr-10 text-left shadow-sm dark:shadow-gray-500 focus:outline-none sm:text-sm'>
+				<Listbox.Button
+					className={classNames(
+						'relative w-[10rem] py-2 pl-3 pr-10 text-left sm:text-sm shadow-sm cursor-pointer rounded-lg bg-white',
+						'border border-primary focus:outline-none dark:border-zinc-700 dark:bg-zinc-600  dark:shadow-gray-500'
+					)}>
 					<span className='flex items-center gap-2'>
 						<Image
 							src={getFlagFromLanguage(language)}
@@ -51,7 +55,12 @@ export const LanguageSwitcher = () => {
 					leave='transition ease-in duration-100'
 					leaveFrom='opacity-100'
 					leaveTo='opacity-0'>
-					<Listbox.Options className='absolute mt-2 max-h-60 w-full overflow-auto rounded-md bg-white border border-primary dark:border-zinc-700 dark:bg-zinc-600 text-base shadow-sm dark:shadow-gray-500 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+					<Listbox.Options
+						className={classNames(
+							'absolute mt-2 max-h-60 w-full overflow-auto rounded-md text-base sm:text-sm bg-white',
+							'border border-primary dark:border-zinc-700 dark:bg-zinc-600 dark:shadow-gray-500',
+							'ring-1 ring-black ring-opacity-5 focus:outline-none shadow-sm'
+						)}>
 						{locales.map(locale => (
 							<Listbox.Option
 								key={locale}

@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { Tab } from '@headlessui/react';
 import { classNames } from '../utils';
-import { SkillItem, Title } from '.';
+import { SkillItem, Title } from './';
 import { ExpressIcon, NextJsIcon, VercelIcon } from './icons';
 
 export const Skills = () => {
