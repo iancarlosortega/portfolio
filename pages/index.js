@@ -39,12 +39,12 @@ export default function Home() {
 				<meta property='og:locale' content='es_ES' />
 				<meta property='og:locale:alternate' content='en_US' />
 			</Head>
-			<ScrollToTopButton />
 			<Main />
 			<Skills />
 			<Projects />
 			<About />
 			<Contact />
+			<ScrollToTopButton />
 			<Footer />
 		</>
 	);
