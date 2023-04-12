@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next';
 import { Tab } from '@headlessui/react';
 import { classNames } from '../utils';
-import { SkillItem } from './SkillItem';
-import { Title } from './Title';
+import { SkillItem, Title } from './';
+import { ExpressIcon, NextJsIcon, VercelIcon } from './icons';
 
 export const Skills = () => {
 	const { t: translate } = useTranslation('skills');
@@ -48,14 +48,20 @@ export const Skills = () => {
 								<SkillItem imagePath='/icons/javascript.svg' alt='JavaScript' />
 								<SkillItem imagePath='/icons/typescript.svg' alt='TypeScript' />
 								<SkillItem imagePath='/icons/reactjs.svg' alt='ReactJS' />
-								<SkillItem imagePath='/icons/nextdotjs.svg' alt='Next.Js' />
+								<SkillItem
+									icon={<NextJsIcon className='text-black dark:text-white' />}
+									alt='NextJS'
+								/>
 								<SkillItem imagePath='/icons/angular.svg' alt='Angular' />
 							</ul>
 						</Tab.Panel>
 						<Tab.Panel>
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
 								<SkillItem imagePath='/icons/nodejs.svg' alt='Node JS' />
-								<SkillItem imagePath='/icons/express.svg' alt='Express' />
+								<SkillItem
+									icon={<ExpressIcon className='text-black dark:text-white' />}
+									alt='Express'
+								/>
 								<SkillItem imagePath='/icons/mongo.svg' alt='MongoDB' />
 								<SkillItem imagePath='/icons/typescript.svg' alt='TypeScript' />
 								<SkillItem imagePath='/icons/nestjs.svg' alt='NestJS' />
@@ -71,7 +77,10 @@ export const Skills = () => {
 								<SkillItem imagePath='/icons/scrum.svg' alt='Scrum' />
 								<SkillItem imagePath='/icons/webpack.svg' alt='Webpack' />
 								<SkillItem imagePath='/icons/heroku.svg' alt='Heroku' />
-								<SkillItem imagePath='/icons/vercel.svg' alt='Vercel' />
+								<SkillItem
+									icon={<VercelIcon className='text-black dark:text-white' />}
+									alt='Vercel'
+								/>
 							</ul>
 						</Tab.Panel>
 					</Tab.Panels>
