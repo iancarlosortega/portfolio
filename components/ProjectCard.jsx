@@ -53,8 +53,7 @@ export const ProjectCard = ({
 					{codeUrl && (
 						<a href={codeUrl} target='_blank' className='btn'>
 							<span>
-								{translate('code')}{' '}
-								<GithubIcon className='text-primary dark:text-light w-6 h-6' />
+								{translate('code')} <GithubIcon />
 							</span>
 						</a>
 					)}

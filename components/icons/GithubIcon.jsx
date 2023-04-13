@@ -1,4 +1,4 @@
-export const GithubIcon = ({ className = 'text-primary' }) => {
+export const GithubIcon = ({ className = 'w-6 h-6' }) => {
 	return (
 		<svg
 			width='30px'
