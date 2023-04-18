@@ -1,8 +1,11 @@
+import { useTranslation } from 'next-i18next';
 import { classNames } from '../utils';
 import { DropdownMenu, LanguageSwitcher, ThemeToggleButton } from './';
 import { DocumentIcon, GithubIcon, LinkedInIcon, YoutubeIcon } from './icons';
 
 export const Navbar = () => {
+	const { t: translate } = useTranslation('common');
+
 	return (
 		<nav
 			className={classNames(
@@ -25,24 +28,32 @@ export const Navbar = () => {
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 						<a
 							href='https://www.linkedin.com/in/ian-carlos-ortega-05a3a0270/'
-							target='_blank'>
+							target='_blank'
+							rel='noreferrer noopener'>
 							<LinkedInIcon className='text-primary dark:text-light' />
 						</a>
 					</li>
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
-						<a href='https://github.com/iancarlosortega' target='_blank'>
+						<a
+							href='https://github.com/iancarlosortega'
+							target='_blank'
+							rel='noreferrer noopener'>
 							<GithubIcon className='text-primary dark:text-light' />
 						</a>
 					</li>
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
-						<a href='https://www.youtube.com/' target='_blank'>
+						<a
+							href='https://www.youtube.com/'
+							target='_blank'
+							rel='noreferrer noopener'>
 							<YoutubeIcon className='text-primary dark:text-light' />
 						</a>
 					</li>
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 						<a
-							href='https://drive.google.com/file/d/1RZUQ5Zct4BA9uYxNqWSipNos6uC7YDw9/view?usp=sharing'
-							target='_blank'>
+							href={translate('cv-link')}
+							target='_blank'
+							rel='noreferrer noopener'>
 							<DocumentIcon className='text-primary dark:text-light' />
 						</a>
 					</li>

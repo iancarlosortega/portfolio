@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { useTranslation } from 'next-i18next';
 import { Menu, Transition } from '@headlessui/react';
 import { classNames } from '../utils';
 import { LanguageSwitcher } from './';
@@ -11,6 +12,8 @@ import {
 } from './icons';
 
 export const DropdownMenu = () => {
+	const { t: translate } = useTranslation('common');
+
 	return (
 		<Menu as='div' className='relative inline-block text-left'>
 			<div>
@@ -44,7 +47,8 @@ export const DropdownMenu = () => {
 							<a
 								className='flex items-center gap-2'
 								href='https://www.linkedin.com/in/ian-carlos-ortega-05a3a0270/'
-								target='_blank'>
+								target='_blank'
+								rel='noreferrer noopener'>
 								<LinkedInIcon className='text-primary dark:text-light' />
 								LinkedIn
 							</a>
@@ -53,7 +57,8 @@ export const DropdownMenu = () => {
 							<a
 								className='flex items-center gap-2'
 								href='https://github.com/iancarlosortega'
-								target='_blank'>
+								target='_blank'
+								rel='noreferrer noopener'>
 								<GithubIcon className='text-primary dark:text-light' />
 								Github
 							</a>
@@ -62,7 +67,8 @@ export const DropdownMenu = () => {
 							<a
 								className='flex items-center gap-2'
 								href='https://www.youtube.com/'
-								target='_blank'>
+								target='_blank'
+								rel='noreferrer noopener'>
 								<YoutubeIcon className='text-primary dark:text-light' />
 								Youtube
 							</a>
@@ -70,8 +76,9 @@ export const DropdownMenu = () => {
 						<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 							<a
 								className='flex items-center gap-2'
-								href='https://drive.google.com/file/d/1RZUQ5Zct4BA9uYxNqWSipNos6uC7YDw9/view?usp=sharing'
-								target='_blank'>
+								href={translate('cv-link')}
+								target='_blank'
+								rel='noreferrer noopener'>
 								<DocumentIcon className='text-primary dark:text-light' />
 								Currículum Vitae
 							</a>
