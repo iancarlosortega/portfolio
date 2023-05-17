@@ -10,7 +10,7 @@ export const Contact = () => {
 		<section id='contact' className='max-w-[700px] mx-auto px-4 lg:px-0 pt-24'>
 			<Title text={translate('title')} color='secondary' />
 			<form
-				action='https://formsubmit.co/iancarlosortegaleon@gmail.com'
+				action='https://formsubmit.co/f0b3e2e3828c69b84ac4a862c955def8'
 				method='POST'
 				className='flex flex-col gap-8'>
 				<input

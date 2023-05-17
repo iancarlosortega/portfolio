@@ -40,9 +40,9 @@ export default function Home() {
 				<meta property='og:locale:alternate' content='en_US' />
 			</Head>
 			<Main />
-			<Skills />
 			<Projects />
 			<About />
+			<Skills />
 			<Contact />
 			<ScrollToTopButton />
 			<Footer />

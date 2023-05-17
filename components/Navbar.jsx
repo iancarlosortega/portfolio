@@ -41,14 +41,15 @@ export const Navbar = () => {
 							<GithubIcon className='text-primary dark:text-light' />
 						</a>
 					</li>
-					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
+					{/* TODO: Agregar YT cuando hayan videos */}
+					{/* <li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 						<a
 							href='https://www.youtube.com/'
 							target='_blank'
 							rel='noreferrer noopener'>
 							<YoutubeIcon className='text-primary dark:text-light' />
 						</a>
-					</li>
+					</li> */}
 					<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 						<a
 							href={translate('cv-link')}

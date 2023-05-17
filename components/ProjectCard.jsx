@@ -24,14 +24,14 @@ export const ProjectCard = ({
 			<div
 				className={`${
 					order ? 'lg:order-2' : ''
-				} scroll-image shadow drop-shadow-2xl lg:basis-1/2 dark:grayscale-[30%] dark:hover:grayscale-0 transition duration-200`}>
+				} scroll-image shadow drop-shadow-2xl lg:basis-[45%]`}>
 				<Image src={projectImg} alt={title} width={600} height={400} />
 			</div>
-			<div className='lg:basis-1/2'>
-				<h5 className='text-center text-2xl text-primary dark:text-light font-bold'>
+			<div className='lg:basis-[55%]'>
+				<h5 className='text-center text-2xl text-primary dark:text-light font-bold border-b pb-4 border-dashed border-primary dark:border-light'>
 					{title}
 				</h5>
-				<p className='my-6 text-sm text-center text-gray-500 dark:text-gray-100 font-light leading-6'>
+				<p className='my-6 text-center text-gray-500 dark:text-gray-100 font-light leading-6'>
 					{description}
 				</p>
 				{/* Stack */}

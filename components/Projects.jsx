@@ -10,14 +10,14 @@ export const Projects = () => {
 			className='max-w-[1110px] mx-auto px-4 lg:px-0 py-24 md:pt-[12rem]'>
 			<Title text={translate('title')} color='secondary' />
 			<ProjectCard
-				title='FreeMove &#128692;'
+				title='FreeMove'
 				description={translate('freeMove')}
 				stack={['Angular', 'Firebase', 'Mapbox']}
 				demoUrl='https://freemove-aa0c5.web.app/'
 				projectImg='/projects/freemove.jpg'
 			/>
 			<ProjectCard
-				title='UTPL Play &#127909;'
+				title='UTPL Play'
 				description={translate('utplPlay')}
 				stack={['Angular', 'Firebase']}
 				demoUrl='https://play.liidutpl.ec/'
@@ -26,7 +26,7 @@ export const Projects = () => {
 				order={true}
 			/>
 			<ProjectCard
-				title='Teslo Shop &#128085;'
+				title='Teslo Shop'
 				description={translate('tesloShop')}
 				stack={['Next.Js', 'Node.Js', 'MongoDB', 'Docker']}
 				demoUrl='https://teslo-shop-topaz.vercel.app/'
@@ -34,7 +34,7 @@ export const Projects = () => {
 				projectImg='/projects/teslo-shop.jpg'
 			/>
 			<ProjectCard
-				title='Creando Cariño &#127873;'
+				title='Creando Cariño'
 				description={translate('creandoCarino')}
 				stack={['Angular', 'Firebase']}
 				demoUrl='https://creando-carino.web.app/'
@@ -43,7 +43,7 @@ export const Projects = () => {
 				order={true}
 			/>
 			<ProjectCard
-				title='Arch Studio &#127961;'
+				title='Arch Studio'
 				description={translate('archStudio')}
 				stack={['Astro', 'React', 'TailwindCSS']}
 				demoUrl='https://arch-studio-iota.vercel.app/'

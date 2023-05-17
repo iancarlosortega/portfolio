@@ -22,7 +22,7 @@ html {
   filter: drop-shadow(0px 0px 25px rgba(91, 91, 91, 0.708))
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .custom-clip {
     clip-path: polygon(0 10vh, 100% 0, 100% 80%, 0 100%);
   }
@@ -57,7 +57,7 @@ html {
   border: 2px solid #CBE4DE;
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px){
+@media only screen and (max-width: 991px) and (min-width: 768px) {
   .btn {
     flex-basis: 40%;
   }
@@ -135,15 +135,19 @@ html {
   animation: 2s ease fade-in;
 }
 
-@media (min-width: 768px){
+.animate-fade-in-faster {
+  animation: .5s ease-in fade-in;
+}
+
+@media (min-width: 768px) {
   .animate-left-right {
     animation: 2s ease left-right;
   }
-  
+
   .animate-right-left {
     animation: 2s ease right-left;
   }
-} 
+}
 
 @keyframes fade-in {
   0% {

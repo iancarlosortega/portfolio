@@ -63,7 +63,8 @@ export const DropdownMenu = () => {
 								Github
 							</a>
 						</li>
-						<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
+						{/* TODO: Agregar YT cuando hayan videos */}
+						{/* <li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 							<a
 								className='flex items-center gap-2'
 								href='https://www.youtube.com/'
@@ -72,7 +73,7 @@ export const DropdownMenu = () => {
 								<YoutubeIcon className='text-primary dark:text-light' />
 								Youtube
 							</a>
-						</li>
+						</li> */}
 						<li className='cursor-pointer transition-transform duration-300 ease-in hover:-translate-y-1'>
 							<a
 								className='flex items-center gap-2'

@@ -1,6 +1,10 @@
+import { useEffect, useState } from 'react';
 import { classNames } from '../utils';
 
 export const ScrollToTopButton = () => {
+	
+	const [showScrollButton, setShowScrollButton] = useState(false);
+	
 	const handleClick = () => {
 		window.scrollTo({
 			top: 0,
@@ -8,8 +12,26 @@ export const ScrollToTopButton = () => {
 		});
 	};
 
+	const handleScroll = () => {
+		if(window.pageYOffset > 15) {
+			setShowScrollButton(true);
+		} else {
+			setShowScrollButton(false)
+		}
+	}
+
+	useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
+	if(!showScrollButton) return;
+
 	return (
-		<div className='sticky bottom-5 z-40 w-full flex justify-end pr-4 mt-8'>
+		<div className='sticky bottom-5 z-40 w-full flex justify-end pr-4 mt-8 animate-fade-in-faster'>
 			<button
 				onClick={handleClick}
 				className={classNames(
