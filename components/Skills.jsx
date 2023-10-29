@@ -43,14 +43,16 @@ export const Skills = () => {
 					<Tab.Panels className='mt-16 mb-32 md:mb-0 z-20'>
 						<Tab.Panel>
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
-								<SkillItem imagePath='/icons/html.svg' alt='HTML 5' />
-								<SkillItem imagePath='/icons/css3.svg' alt='CSS 3' />
+								<SkillItem imagePath='/icons/html.svg' alt='HTML' />
+								<SkillItem imagePath='/icons/css3.svg' alt='CSS' />
 								<SkillItem imagePath='/icons/javascript.svg' alt='JavaScript' />
 								<SkillItem imagePath='/icons/typescript.svg' alt='TypeScript' />
-								<SkillItem imagePath='/icons/reactjs.svg' alt='ReactJS' />
+								<SkillItem imagePath='/icons/reactjs.svg' alt='React' />
 								<SkillItem
-									icon={<NextJsIcon className='text-black dark:text-white' />}
-									alt='NextJS'
+									icon={
+										<NextJsIcon className='text-black dark:text-white cursor-pointer transition-transform duration-300 ease hover:scale-110' />
+									}
+									alt='NextJs'
 								/>
 								<SkillItem imagePath='/icons/angular.svg' alt='Angular' />
 							</ul>
@@ -59,7 +61,9 @@ export const Skills = () => {
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
 								<SkillItem imagePath='/icons/nodejs.svg' alt='Node JS' />
 								<SkillItem
-									icon={<ExpressIcon className='text-black dark:text-white' />}
+									icon={
+										<ExpressIcon className='text-black dark:text-white cursor-pointer transition-transform duration-300 ease hover:scale-110' />
+									}
 									alt='Express'
 								/>
 								<SkillItem imagePath='/icons/mongo.svg' alt='MongoDB' />

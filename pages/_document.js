@@ -36,7 +36,7 @@ export default function Document() {
 					rel='stylesheet'
 				/>
 			</Head>
-			<body className='bg-gray-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 break-words leading-6 transition-colors duration-500'>
+			<body className='bg-gray-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 transition-colors duration-500'>
 				<Main />
 				<NextScript />
 			</body>

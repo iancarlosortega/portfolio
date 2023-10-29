@@ -10,13 +10,13 @@ export const Footer = () => {
 			)}>
 			<div className='flex justify-center gap-12'>
 				<a
-					className='transition-transform duration-300 ease-in hover:-translate-y-1'
+					className='transition-transform duration-200 ease-in hover:-translate-y-1'
 					href='https://github.com/iancarlosortega'
 					target='_blank'>
 					<GithubIcon className='text-primary dark:text-light' />
 				</a>
 				<a
-					className='transition-transform duration-300 ease-in hover:-translate-y-1'
+					className='transition-transform duration-200 ease-in hover:-translate-y-1'
 					href='https://www.linkedin.com/in/ian-carlos-ortega-05a3a0270/'
 					target='_blank'>
 					<LinkedInIcon className='text-primary dark:text-light' />
