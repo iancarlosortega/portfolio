@@ -1,12 +1,16 @@
 import { useTranslation } from 'next-i18next';
 import { Tab } from '@headlessui/react';
-import { classNames } from '../utils';
 import { SkillItem, Title } from './';
-import { ExpressIcon, NextJsIcon, VercelIcon } from './icons';
+import {
+	backendTechnologies,
+	frontendTechnologies,
+	tools,
+} from '../constants/technologies';
+import { classNames } from '../utils';
 
 export const Skills = () => {
 	const { t: translate } = useTranslation('skills');
-	const categories = ['Front End', 'Back End', translate('tools')];
+	const categories = ['FrontEnd', 'BackEnd', translate('tools')];
 
 	return (
 		<div className='relative'>
@@ -43,48 +47,23 @@ export const Skills = () => {
 					<Tab.Panels className='mt-16 mb-32 md:mb-0 z-20'>
 						<Tab.Panel>
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
-								<SkillItem imagePath='/icons/html.svg' alt='HTML' />
-								<SkillItem imagePath='/icons/css3.svg' alt='CSS' />
-								<SkillItem imagePath='/icons/javascript.svg' alt='JavaScript' />
-								<SkillItem imagePath='/icons/typescript.svg' alt='TypeScript' />
-								<SkillItem imagePath='/icons/reactjs.svg' alt='React' />
-								<SkillItem
-									icon={
-										<NextJsIcon className='text-black dark:text-white cursor-pointer transition-transform duration-300 ease hover:scale-110' />
-									}
-									alt='NextJs'
-								/>
-								<SkillItem imagePath='/icons/angular.svg' alt='Angular' />
+								{frontendTechnologies.map(({ name, icon }) => (
+									<SkillItem key={name} name={name} icon={icon} />
+								))}
 							</ul>
 						</Tab.Panel>
 						<Tab.Panel>
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
-								<SkillItem imagePath='/icons/nodejs.svg' alt='Node JS' />
-								<SkillItem
-									icon={
-										<ExpressIcon className='text-black dark:text-white cursor-pointer transition-transform duration-300 ease hover:scale-110' />
-									}
-									alt='Express'
-								/>
-								<SkillItem imagePath='/icons/mongo.svg' alt='MongoDB' />
-								<SkillItem imagePath='/icons/typescript.svg' alt='TypeScript' />
-								<SkillItem imagePath='/icons/nestjs.svg' alt='NestJS' />
-								<SkillItem imagePath='/icons/postgres.svg' alt='PostgreSQL' />
-								<SkillItem imagePath='/icons/firebase.svg' alt='Firebase' />
+								{backendTechnologies.map(({ name, icon }) => (
+									<SkillItem key={name} name={name} icon={icon} />
+								))}
 							</ul>
 						</Tab.Panel>
 						<Tab.Panel>
 							<ul className='max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in'>
-								<SkillItem imagePath='/icons/git.svg' alt='Git' />
-								<SkillItem imagePath='/icons/postman.svg' alt='Postman' />
-								<SkillItem imagePath='/icons/vscode.svg' alt='Vscode' />
-								<SkillItem imagePath='/icons/scrum.svg' alt='Scrum' />
-								<SkillItem imagePath='/icons/webpack.svg' alt='Webpack' />
-								<SkillItem imagePath='/icons/heroku.svg' alt='Heroku' />
-								<SkillItem
-									icon={<VercelIcon className='text-black dark:text-white' />}
-									alt='Vercel'
-								/>
+								{tools.map(({ name, icon }) => (
+									<SkillItem key={name} name={name} icon={icon} />
+								))}
 							</ul>
 						</Tab.Panel>
 					</Tab.Panels>

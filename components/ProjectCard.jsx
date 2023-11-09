@@ -16,7 +16,7 @@ export const ProjectCard = ({
 	const { t: translate } = useTranslation('projects');
 
 	return (
-		<article className='bg-white dark:bg-zinc-800 rounded-xl max-w-[500px] mx-auto'>
+		<article className='bg-white dark:bg-zinc-800 shadow-md  rounded-xl max-w-[500px] mx-auto'>
 			<header
 				className='relative'
 				onMouseEnter={() => setIsHovering(true)}

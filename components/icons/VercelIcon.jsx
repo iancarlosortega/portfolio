@@ -1,12 +1,8 @@
-export const VercelIcon = ({ className }) => {
+export const VercelIcon = ({
+	className = 'w-20 h-20 text-black dark:text-white',
+}) => {
 	return (
-		<svg
-			width='70px'
-			height='70px'
-			viewBox='0 0 15 15'
-			fill='none'
-			className={className}
-			xmlns='http://www.w3.org/2000/svg'>
+		<svg viewBox='0 0 15 15' className={className}>
 			<path
 				fillRule='evenodd'
 				clipRule='evenodd'

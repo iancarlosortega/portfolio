@@ -116,10 +116,6 @@ html {
   animation: 2s ease fade-in;
 }
 
-.animate-fade-in-faster {
-  animation: .5s ease-in fade-in;
-}
-
 @media (min-width: 768px) {
   .animate-left-right {
     animation: 2s ease left-right;
