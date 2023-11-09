@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { GithubIcon, PreviewIcon } from './icons';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export const ProjectCard = ({
 	title,
@@ -27,24 +28,44 @@ export const ProjectCard = ({
 					height={400}
 					className='w-full aspect-video object-cover rounded-t-xl'
 				/>
-				{isHovering && (
-					<div className='absolute top-0 left-0 z-10 backdrop-blur-[2px] bg-black/50 w-full h-full flex justify-center items-center gap-4'>
-						<a
-							title='Live Demo'
-							href={demoUrl}
-							target='_blank'
-							className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
-							<PreviewIcon />
-						</a>
-						<a
-							title={translate('code')}
-							href={codeUrl}
-							target='_blank'
-							className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
-							<GithubIcon />
-						</a>
-					</div>
-				)}
+				<AnimatePresence>
+					{isHovering && (
+						<motion.div
+							initial={{
+								opacity: '0',
+								backdropFilter: 'blur(0px)',
+								backgroundColor: 'transparent',
+							}}
+							animate={{
+								opacity: isHovering ? 1 : 0,
+								backdropFilter: isHovering ? 'blur(2px)' : 'blur(0px)',
+								backgroundColor: isHovering
+									? 'rgb(0 0 0 / 0.5)'
+									: 'transparent',
+							}}
+							exit={{
+								opacity: '0',
+								backdropFilter: 'blur(0px)',
+							}}
+							transition={{ duration: 0.3 }}
+							className='absolute top-0 left-0 z-10 rounded-t-xl w-full h-full flex justify-center items-center gap-4'>
+							<a
+								title='Live Demo'
+								href={demoUrl}
+								target='_blank'
+								className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
+								<PreviewIcon />
+							</a>
+							<a
+								title={translate('code')}
+								href={codeUrl}
+								target='_blank'
+								className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
+								<GithubIcon />
+							</a>
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</header>
 			<div className='p-4 md:p-8'>
 				<h5 className='text-center text-2xl text-primary dark:text-light font-bold border-b pb-4 border-dashed border-primary dark:border-light'>
