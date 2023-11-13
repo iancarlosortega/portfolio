@@ -29,10 +29,10 @@ export const Main = () => {
 					</h2>
 				</div>
 
-				<div className='flex flex-col gap-4 md:flex-row md:flex-wrap justify-center mt-8 md:mt-28 animate-left-right relative'>
+				<div className='flex flex-col gap-4 md:flex-row md:flex-wrap justify-center mt-8 md:mt-32 animate-left-right relative'>
 					<a href='#experience' className='btn'>
 						<span>{translate('menuItem1')}</span>
-						<ComputerIcon className='absolute hidden md:block w-32 bottom-[40px] z-20 drop-shadow-lg text-[#F2F2F2] dark:text-neutral-800' />
+						<ComputerIcon className='absolute hidden md:block w-32 bottom-[40px] left-auto md:left-5 xl:left-auto z-20 drop-shadow-lg text-[#F2F2F2] dark:text-neutral-800' />
 					</a>
 					<a href='#projects' className='btn'>
 						<span>{translate('menuItem2')}</span>

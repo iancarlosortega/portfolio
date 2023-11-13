@@ -17,7 +17,7 @@ export const Skills = () => {
 			<section
 				id='skills'
 				className={classNames(
-					'h-full min-h-screen overflow-hidden relative flex flex-col items-center pt-24 lg:pt-48',
+					'h-full overflow-hidden relative flex flex-col items-center py-24 lg:py-48',
 					'before:absolute before:-z-20 before:h-[300px] before:w-[380px] before:rounded-full before:bg-gradient-to-br before:opacity-40',
 					'before:from-primary before:to-secondary before:blur-2xl before:content-[""] before:translate-x-1/2 before:-translate-y-10',
 					'after:absolute after:-z-20 after:h-[280px] after:w-[440px] after:rounded-full after:bg-gradient-to-br after:opacity-40',

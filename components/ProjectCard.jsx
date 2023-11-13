@@ -75,11 +75,11 @@ export const ProjectCard = ({
 					{translate(description)}
 				</p>
 				<ul className='my-6 flex flex-wrap justify-center gap-4'>
-					{stack.map(s => (
+					{stack.map(stack => (
 						<li
-							key={s}
+							key={stack}
 							className='px-4 py-2 bg-secondary dark:bg-zinc-900 text-white font-medium text-sm'>
-							{s}
+							{stack}
 						</li>
 					))}
 				</ul>
