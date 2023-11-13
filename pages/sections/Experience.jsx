@@ -19,7 +19,7 @@ export const Experience = () => {
 					<h4 className='font-bold text-lg leading-tight text-primary dark:text-light'>
 						{translate('firstJob.title')}
 					</h4>
-					<p className='text-xs font-bold text-gray-500 italic'>
+					<p className='text-xs font-bold text-gray-500 dark:text-gray-300 italic'>
 						{translate('firstJob.date')}
 					</p>
 					<ul className='mt-3 pl-4 text-gray-500 dark:text-gray-100 list-disc'>
@@ -35,7 +35,7 @@ export const Experience = () => {
 					<h4 className='font-bold text-lg leading-tight text-primary dark:text-light'>
 						{translate('education.title')}
 					</h4>
-					<p className='text-xs font-bold text-gray-500 italic'>
+					<p className='text-xs font-bold text-gray-500 dark:text-gray-300 italic'>
 						{translate('education.date')}
 					</p>
 					<ul className='mt-3 pl-4 text-gray-500 dark:text-gray-100 list-disc'>

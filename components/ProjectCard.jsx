@@ -74,11 +74,11 @@ export const ProjectCard = ({
 				<p className='my-6 text-gray-500 dark:text-gray-100 font-light'>
 					{translate(description)}
 				</p>
-				<ul className='my-6 flex flex-wrap justify-center gap-4'>
+				<ul className='my-6 flex flex-wrap justify-center gap-2'>
 					{stack.map(stack => (
 						<li
 							key={stack}
-							className='px-4 py-2 bg-secondary dark:bg-zinc-900 text-white font-medium text-sm'>
+							className='px-4 py-2 bg-secondary dark:bg-zinc-900 text-white rounded-3xl font-medium text-sm'>
 							{stack}
 						</li>
 					))}

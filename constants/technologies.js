@@ -16,6 +16,8 @@ import {
 	PostmanIcon,
 	ReactIcon,
 	ScrumIcon,
+	SupabaseIcon,
+	TailwindIcon,
 	TypeScriptIcon,
 	VercelIcon,
 	WebPackIcon,
@@ -37,6 +39,10 @@ export const frontendTechnologies = [
 	{
 		name: 'TypeScript',
 		icon: <TypeScriptIcon />,
+	},
+	{
+		name: 'Tailwind',
+		icon: <TailwindIcon />,
 	},
 	{
 		name: 'React',
@@ -80,6 +86,10 @@ export const backendTechnologies = [
 	{
 		name: 'Firebase',
 		icon: <FirebaseIcon />,
+	},
+	{
+		name: 'Supabase',
+		icon: <SupabaseIcon />,
 	},
 ];
 

@@ -38,12 +38,7 @@ export const LanguageSwitcher = () => {
 						'border border-primary focus:outline-none dark:border-zinc-700 dark:bg-zinc-600  dark:shadow-gray-500'
 					)}>
 					<span className='flex items-center gap-2'>
-						<Image
-							src={getFlagFromLanguage(language)}
-							alt={`Flag of ${languageNames.of(language)}`}
-							width={20}
-							height={20}
-						/>
+						{getFlagFromLanguage(language)}
 						{capitalize(languageNames.of(language) ?? language)}
 					</span>
 					<span className='absolute inset-y-0 right-0 flex items-center pr-2'>
@@ -79,12 +74,7 @@ export const LanguageSwitcher = () => {
 											{capitalize(languageNames.of(locale) ?? locale)}
 										</span>
 										<span className='absolute inset-y-0 left-0 flex items-center pl-3'>
-											<Image
-												src={getFlagFromLanguage(locale)}
-												alt={`Flag of ${languageNames.of(locale)}`}
-												width={20}
-												height={20}
-											/>
+											{getFlagFromLanguage(locale)}
 										</span>
 									</>
 								)}

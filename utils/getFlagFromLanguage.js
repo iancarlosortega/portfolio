@@ -1,10 +1,12 @@
+import { SpainFlagIcon, UsaFlagIcon } from '../components/icons';
+
 export function getFlagFromLanguage(lang) {
 	switch (lang) {
 		case 'es':
-			return '/icons/spain.svg';
+			return <SpainFlagIcon />;
 		case 'en':
-			return '/icons/usa.svg';
+			return <UsaFlagIcon />;
 		default:
-			return '/icons/spain.svg';
+			return <UsaFlagIcon />;
 	}
 }
