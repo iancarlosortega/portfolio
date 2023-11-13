@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
-import { classNames } from '../utils';
-import { Title } from './';
-import { MessageIcon } from './icons';
+import { classNames } from '../../utils';
+import { Title } from '../../components';
+import { MessageIcon } from '../../components/icons';
 
 export const Contact = () => {
 	const { t: translate } = useTranslation('contact');

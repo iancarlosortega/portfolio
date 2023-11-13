@@ -1,15 +1,8 @@
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import {
-	About,
-	Contact,
-	Footer,
-	Main,
-	Projects,
-	ScrollToTopButton,
-	Skills,
-} from '../components';
+import { Footer, ScrollToTopButton } from '../components';
+import { About, Contact, Experience, Main, Projects, Skills } from './sections';
 
 const origin = typeof window === 'undefined' ? '' : window.location.origin;
 
@@ -40,6 +33,7 @@ export default function Home() {
 				<meta property='og:locale:alternate' content='en_US' />
 			</Head>
 			<Main />
+			<Experience />
 			<Projects />
 			<About />
 			<Skills />
@@ -57,6 +51,7 @@ export const getStaticProps = async ({ locale }) => ({
 			'home',
 			'skills',
 			'projects',
+			'experience',
 			'about',
 			'contact',
 		])),

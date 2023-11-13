@@ -1,27 +1,27 @@
 import { useTranslation } from 'next-i18next';
 import { Tab } from '@headlessui/react';
-import { SkillItem, Title } from './';
+import { SkillItem, Title } from '../../components';
 import {
 	backendTechnologies,
 	frontendTechnologies,
 	tools,
-} from '../constants/technologies';
-import { classNames } from '../utils';
+} from '../../constants/technologies';
+import { classNames } from '../../utils';
 
 export const Skills = () => {
 	const { t: translate } = useTranslation('skills');
-	const categories = ['FrontEnd', 'BackEnd', translate('tools')];
+	const categories = ['Frontend', 'Backend', translate('tools')];
 
 	return (
 		<div className='relative'>
 			<section
 				id='skills'
 				className={classNames(
-					'h-[100%] min-h-screen overflow-hidden relative flex flex-col justify-center items-center pt-24 md:pt-0',
+					'h-full min-h-screen overflow-hidden relative flex flex-col items-center pt-24 lg:pt-48',
 					'before:absolute before:-z-20 before:h-[300px] before:w-[380px] before:rounded-full before:bg-gradient-to-br before:opacity-40',
-					'before:from-primary before:to-secondary before:blur-2xl before:content-[""] before:translate-x-1/2 before:-translate-y-60 md:before:-translate-y-10',
+					'before:from-primary before:to-secondary before:blur-2xl before:content-[""] before:translate-x-1/2 before:-translate-y-10',
 					'after:absolute after:-z-20 after:h-[280px] after:w-[440px] after:rounded-full after:bg-gradient-to-br after:opacity-40',
-					'after:from-primary after:to-secondary after:blur-2xl after:content-[""] after:-translate-x-[10%] md:after:-translate-x-[30%] after:translate-y-[5rem] md:after:translate-y-[15rem]',
+					'after:from-primary after:to-secondary after:blur-2xl after:content-[""] after:-translate-x-[10%] md:after:-translate-x-[30%] after:translate-y-[15rem]',
 					'before:dark:from-teal-300 before:dark:to-teal-100 before:dark:opacity-10',
 					'after:dark:from-teal-300 after:dark:to-teal-100 after:dark:opacity-10'
 				)}>

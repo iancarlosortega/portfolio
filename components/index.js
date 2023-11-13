@@ -1,14 +1,9 @@
-export { About } from './About';
-export { Contact } from './Contact';
 export { DropdownMenu } from './DropDownMenu';
 export { Footer } from './Footer';
 export { LanguageSwitcher } from './LanguageSwitcher';
-export { Main } from './Main';
 export { Navbar } from './Navbar';
 export { ProjectCard } from './ProjectCard';
-export { Projects } from './Projects';
 export { ScrollToTopButton } from './ScrollToTopButton';
 export { SkillItem } from './SkillItem';
-export { Skills } from './Skills';
 export { ThemeToggleButton } from './ThemeToggleButton';
 export { Title } from './Title';

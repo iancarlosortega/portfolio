@@ -22,9 +22,9 @@ export const Navbar = () => {
 				</li>
 			</ul>
 			{/* Tablet and Desktop Navbar */}
-			<div className='hidden md:flex max-w-[1110px] mx-auto items-center justify-between'>
+			<div className='hidden md:flex max-w-[1110px] mx-auto items-center justify-between relative'>
 				<LanguageSwitcher />
-				<ul className='flex items-center justify-center gap-16'>
+				<ul className='flex items-center justify-center gap-16 absolute top-2 left-0 right-0 mx-auto'>
 					<li className='cursor-pointer transition-transform duration-200 ease-in hover:-translate-y-1'>
 						<a
 							title='LinkedIn'

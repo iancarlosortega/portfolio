@@ -29,13 +29,6 @@ export const Footer = () => {
 						iancarlosortegaleon@gmail.com
 					</p>
 				</div>
-				<div className='hidden md:block w-px h-10 border-r-2 border-light dark:border-zinc-600'></div>
-				<div className='flex items-center gap-2'>
-					<PhoneIcon />
-					<p className='font-medium text-sm text-primary dark:text-light'>
-						+593 995544833
-					</p>
-				</div>
 			</div>
 		</footer>
 	);

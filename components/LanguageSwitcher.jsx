@@ -31,7 +31,7 @@ export const LanguageSwitcher = () => {
 
 	return (
 		<Listbox value={language} onChange={handleOnChange}>
-			<div className='relative mt-1'>
+			<div className='relative z-10 mt-1'>
 				<Listbox.Button
 					className={classNames(
 						'relative w-[10rem] py-2 pl-3 pr-10 text-left sm:text-sm shadow-sm cursor-pointer rounded-lg bg-white',

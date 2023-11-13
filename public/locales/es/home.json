@@ -1,7 +1,8 @@
 {
 	"title": "¡Hola!, soy",
 	"subtitle": "Desarrollador Web",
-	"menuItem1": "Habilidades",
+	"stack": "Mi stack favorito actualmente",
+	"menuItem1": "Experiencia",
 	"menuItem2": "Proyectos",
 	"menuItem3": "Sobre Mí",
 	"menuItem4": "Contacto"

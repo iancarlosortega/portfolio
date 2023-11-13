@@ -1,3 +1,7 @@
+export { ComputerIcon } from './ComputerIcon';
+
+export { BookIcon } from './BookIcon';
+export { SuitCaseIcon } from './SuitCaseIcon';
 export { AngularIcon } from './AngularIcon';
 export { AtSignIcon } from './AtSignIcon';
 export { ChevronUpDownIcon } from './ChevronUpDownIcon';

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
-import { classNames } from '../utils';
-import { Title } from './';
-import { DownloadIcon } from './icons';
+import { classNames } from '../../utils';
+import { Title } from '../../components';
+import { DownloadIcon } from '../../components/icons';
 
 export const About = () => {
 	const { t: translate } = useTranslation(['common', 'about']);
@@ -16,7 +16,7 @@ export const About = () => {
 				)}>
 				<section
 					id='about'
-					className='max-w-[1110px] mx-auto px-4 md:px-12 lg:px-0 py-24 lg:pt-48 lg:pb-48 lg:mt-24'>
+					className='max-w-[1110px] mx-auto px-4 md:px-12 lg:px-0 py-24 lg:pt-48 lg:pb-48'>
 					<Title text={translate('about:title')} color='white' />
 					<div className='flex flex-col md:flex-row gap-6 items-center justify-center pb-12 md:pb-24'>
 						<Image
@@ -29,7 +29,7 @@ export const About = () => {
 						<div
 							className={classNames(
 								'flex md:basis-1/2 flex-col gap-4 items-center text-center text-white',
-								'text-sm lg:text-lg my-8 md:my-0 px-8 md:px-4'
+								'lg:text-lg my-8 md:my-0 px-2 md:px-4'
 							)}>
 							<p>{translate('about:description.firstParagraph')}</p>
 							<p>{translate('about:description.secondParagraph')}</p>
