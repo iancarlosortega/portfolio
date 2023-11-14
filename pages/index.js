@@ -2,7 +2,14 @@ import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Footer, ScrollToTopButton } from '../components';
-import { About, Contact, Experience, Main, Projects, Skills } from './sections';
+import {
+	About,
+	Contact,
+	Experience,
+	Main,
+	Projects,
+	Skills,
+} from '../components/sections';
 
 const origin = typeof window === 'undefined' ? '' : window.location.origin;
 
