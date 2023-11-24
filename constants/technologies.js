@@ -1,13 +1,14 @@
 import {
 	AngularIcon,
+	CloudinaryIcon,
 	CssIcon,
 	DockerIcon,
-	ExpressIcon,
 	FirebaseIcon,
 	GitIcon,
 	HerokuIcon,
 	HtmlIcon,
 	JavaScriptIcon,
+	MapboxIcon,
 	MongoDBIcon,
 	NestJsIcon,
 	NextJsIcon,
@@ -16,11 +17,12 @@ import {
 	PostmanIcon,
 	ReactIcon,
 	ScrumIcon,
+	SocketIOIcon,
 	SupabaseIcon,
 	TailwindIcon,
+	TypeOrmIcon,
 	TypeScriptIcon,
 	VercelIcon,
-	WebPackIcon,
 } from '../components/icons';
 
 export const frontendTechnologies = [
@@ -64,16 +66,16 @@ export const backendTechnologies = [
 		icon: <NodeJsIcon />,
 	},
 	{
-		name: 'Express',
-		icon: <ExpressIcon />,
+		name: 'Socket.io',
+		icon: <SocketIOIcon />,
 	},
 	{
 		name: 'MongoDB',
 		icon: <MongoDBIcon />,
 	},
 	{
-		name: 'TypeScript',
-		icon: <TypeScriptIcon />,
+		name: 'TypeORM',
+		icon: <TypeOrmIcon />,
 	},
 	{
 		name: 'NestJs',
@@ -107,12 +109,12 @@ export const tools = [
 		icon: <DockerIcon />,
 	},
 	{
-		name: 'Scrum',
-		icon: <ScrumIcon />,
+		name: 'Mapbox',
+		icon: <MapboxIcon />,
 	},
 	{
-		name: 'WebPack',
-		icon: <WebPackIcon />,
+		name: 'Cloudinary',
+		icon: <CloudinaryIcon />,
 	},
 	{
 		name: 'Heroku',
@@ -121,5 +123,9 @@ export const tools = [
 	{
 		name: 'Vercel',
 		icon: <VercelIcon />,
+	},
+	{
+		name: 'Scrum',
+		icon: <ScrumIcon />,
 	},
 ];
