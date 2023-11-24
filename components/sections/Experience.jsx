@@ -10,9 +10,9 @@ export const Experience = () => {
 			id='experience'
 			className='max-w-[1110px] mx-auto px-4 xl:px-0 py-24'>
 			<Title text={translate('title')} color='secondary' />
-			<div className='flex flex-col gap-6 mx-auto max-w-[90%] w-[900px] relative py-8'>
+			<div className='flex flex-col gap-6 relative py-8'>
 				<div className='w-1 h-full absolute top-0 left-0 md:right-0 mx-auto bg-light dark:bg-secondary rounded-sm'></div>
-				<div className='rounded-md bg-white dark:bg-zinc-800 shadow-md py-6 px-8 md:translate-x-[2rem] relative w-[90%] md:w-[50%] self-end'>
+				<div className='rounded-md bg-white dark:bg-zinc-800 shadow-md py-6 px-8 relative w-[90%] md:w-[calc(50%-2rem)] self-end'>
 					<div className='bg-primary rounded-full w-12 h-12 p-2 flex items-center justify-center absolute top-2 left-[-56px]'>
 						<SuitCaseIcon className='w-8 h-8 text-white dark:text-zinc-200' />
 					</div>
@@ -28,7 +28,7 @@ export const Experience = () => {
 						<li>{translate('firstJob.item3')}</li>
 					</ul>
 				</div>
-				<div className='rounded-md bg-white dark:bg-zinc-800 shadow-md py-6 px-8 translate-x-[2rem] md:translate-x-[-2rem] relative w-[90%] md:w-[50%]'>
+				<div className='rounded-md bg-white dark:bg-zinc-800 shadow-md py-6 px-8 relative w-[90%] md:w-[calc(50%-2rem)] self-end md:self-start'>
 					<div className='bg-primary rounded-full w-12 h-12 p-2 flex items-center justify-center absolute top-2 left-[-56px] md:left-auto md:right-[-56px]'>
 						<BookIcon className='w-8 h-8 text-white dark:text-zinc-200' />
 					</div>

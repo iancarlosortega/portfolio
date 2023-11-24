@@ -16,7 +16,7 @@ export const Main = () => {
 	return (
 		<main className='h-min-[100%] h-screen flex flex-col overflow-hidden'>
 			<Navbar />
-			<div className='flex-1 flex flex-col items-center justify-center p-8 mt-16 md:mt-20'>
+			<div className='flex-1 flex flex-col items-center justify-center p-8'>
 				<div className='drop-shadow-lg shadow-black dark:shadow-white md:mt-16'>
 					<h2
 						className={classNames(
@@ -50,17 +50,6 @@ export const Main = () => {
 							className='absolute hidden md:block w-32 right-[-70px] -bottom-28 z-20 drop-shadow-lg'
 						/>
 					</a>
-				</div>
-				<div className='mt-16'>
-					<p className='text-sm text-center font-bold text-secondary dark:text-gray-100 uppercase tracking-widest animate-right-left'>
-						{translate('stack')}
-					</p>
-					<div className='flex justify-center gap-4 my-4 [&>*]:cursor-pointer [&>*]:transition-transform [&>*]:duration-300 [&>*]:ease animate-right-left'>
-						<TypeScriptIcon className='w-10 h-10 hover:scale-110' />
-						<ReactIcon className='w-10 h-10 hover:scale-110' />
-						<NextJsIcon className='w-10 h-10 hover:scale-110' />
-						<NestJsIcon className='w-10 h-10 hover:scale-110' />
-					</div>
 				</div>
 			</div>
 		</main>
