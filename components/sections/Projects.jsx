@@ -10,7 +10,7 @@ export const Projects = () => {
 			id='projects'
 			className='max-w-[1110px] mx-auto px-4 xl:px-0 py-24'>
 			<Title text={translate('title')} color='secondary' />
-			<div className='grid lg:grid-cols-2 gap-8'>
+			<div className='grid lg:grid-cols-2 gap-8 lg:gap-12'>
 				{projects.map(
 					({ title, description, stack, demoUrl, codeUrl, imageUrl }) => (
 						<ProjectCard
