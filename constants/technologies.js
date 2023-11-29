@@ -5,7 +5,6 @@ import {
 	DockerIcon,
 	FirebaseIcon,
 	GitIcon,
-	HerokuIcon,
 	HtmlIcon,
 	JavaScriptIcon,
 	MapboxIcon,
@@ -16,6 +15,7 @@ import {
 	PostgresIcon,
 	PostmanIcon,
 	ReactIcon,
+	ReduxIcon,
 	ScrumIcon,
 	SocketIOIcon,
 	SupabaseIcon,
@@ -117,8 +117,8 @@ export const tools = [
 		icon: <CloudinaryIcon />,
 	},
 	{
-		name: 'Heroku',
-		icon: <HerokuIcon />,
+		name: 'Redux',
+		icon: <ReduxIcon />,
 	},
 	{
 		name: 'Vercel',

@@ -1,5 +1,13 @@
 export const projects = [
 	{
+		title: 'Teslo Shop',
+		description: 'tesloShop',
+		stack: ['Next.Js', 'Node.Js', 'MongoDB', 'Docker'],
+		demoUrl: 'https://teslo-shop-topaz.vercel.app/',
+		codeUrl: 'https://github.com/Curso-NextJs/teslo-shop',
+		imageUrl: '/projects/teslo-shop.jpg',
+	},
+	{
 		title: 'FreeMove',
 		description: 'freeMove',
 		stack: ['Angular', 'Firebase', 'Mapbox'],
@@ -7,7 +15,6 @@ export const projects = [
 		codeUrl: 'https://github.com/iancarlosortega/freeMove',
 		imageUrl: '/projects/freemove.jpg',
 	},
-
 	{
 		title: 'UTPL Play',
 		description: 'utplPlay',
@@ -16,16 +23,6 @@ export const projects = [
 		codeUrl: 'https://github.com/iancarlosortega/utplPlay',
 		imageUrl: '/projects/utpl-play.jpg',
 	},
-
-	{
-		title: 'Shoppingify',
-		description: 'shoppingify',
-		stack: ['TypeScript', 'Next.Js', 'TailwindCSS', 'Supabase'],
-		demoUrl: 'https://shoppingify-blond.vercel.app/',
-		codeUrl: 'https://github.com/iancarlosortega/shoppingify',
-		imageUrl: '/projects/shoppingify-dark.jpg',
-	},
-
 	{
 		title: 'Thrullo',
 		description: 'thrullo',
@@ -34,16 +31,22 @@ export const projects = [
 		codeUrl: 'https://github.com/iancarlosortega/thrullo',
 		imageUrl: '/projects/thrullo-light.jpg',
 	},
-
 	{
-		title: 'Teslo Shop',
-		description: 'tesloShop',
-		stack: ['Next.Js', 'Node.Js', 'MongoDB', 'Docker'],
-		demoUrl: 'https://teslo-shop-topaz.vercel.app/',
-		codeUrl: 'https://github.com/Curso-NextJs/teslo-shop',
-		imageUrl: '/projects/teslo-shop.jpg',
+		title: 'Shoppingify',
+		description: 'shoppingify',
+		stack: ['TypeScript', 'Next.Js', 'TailwindCSS', 'Supabase'],
+		demoUrl: 'https://shoppingify-blond.vercel.app/',
+		codeUrl: 'https://github.com/iancarlosortega/shoppingify',
+		imageUrl: '/projects/shoppingify-dark.jpg',
 	},
-
+	{
+		title: 'Chat Group',
+		description: 'chatGroup',
+		stack: ['TypeScript', 'Next.Js', 'NestJS', 'Docker', 'Postgresql'],
+		demoUrl: 'https://chat-group-phi.vercel.app/',
+		codeUrl: 'https://github.com/iancarlosortega/chat-group',
+		imageUrl: '/projects/chat-group.jpg',
+	},
 	{
 		title: 'Creando Cariño',
 		description: 'creandoCarino',
@@ -52,7 +55,6 @@ export const projects = [
 		codeUrl: 'https://github.com/iancarlosortega/creandoCarino',
 		imageUrl: '/projects/creando-carino.jpg',
 	},
-
 	{
 		title: 'Arch Studio',
 		description: 'archStudio',
