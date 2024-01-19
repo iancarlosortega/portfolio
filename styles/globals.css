@@ -113,16 +113,16 @@ html {
 /* ANIMATIONS */
 
 .animate-fade-in {
-  animation: 2s ease fade-in;
+  animation: 1.5s ease fade-in;
 }
 
 @media (min-width: 768px) {
   .animate-left-right {
-    animation: 2s ease left-right;
+    animation: 1.5s ease left-right;
   }
 
   .animate-right-left {
-    animation: 2s ease right-left;
+    animation: 1.5s ease right-left;
   }
 }
 

@@ -1,14 +1,8 @@
+import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import { classNames } from '../../utils';
 import { Navbar } from '../../components';
-import Image from 'next/image';
-import {
-	ComputerIcon,
-	NestJsIcon,
-	NextJsIcon,
-	ReactIcon,
-	TypeScriptIcon,
-} from '../../components/icons';
+import { ComputerIcon } from '../../components/icons';
 
 export const Main = () => {
 	const { t: translate } = useTranslation('home');
