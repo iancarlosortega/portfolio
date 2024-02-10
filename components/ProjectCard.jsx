@@ -53,6 +53,7 @@ export const ProjectCard = ({
 								title='Live Demo'
 								href={demoUrl}
 								target='_blank'
+								rel='noreferrer'
 								className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
 								<PreviewIcon />
 							</a>
@@ -60,6 +61,7 @@ export const ProjectCard = ({
 								title={translate('code')}
 								href={codeUrl}
 								target='_blank'
+								rel='noreferrer'
 								className='border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white'>
 								<GithubIcon />
 							</a>

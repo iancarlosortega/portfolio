@@ -1,10 +1,40 @@
+import { useRef } from 'react';
 import { useTranslation } from 'next-i18next';
-import { classNames } from '../../utils';
+import confetti from 'canvas-confetti';
 import { Title } from '../../components';
+import { classNames } from '../../utils';
 import { MessageIcon } from '../../components/icons';
 
 export const Contact = () => {
+
+	const formRef = useRef(null)
 	const { t: translate } = useTranslation('contact');
+
+	const handleSubmit = async (event) => {
+		event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      body: JSON.stringify(Object.fromEntries(formData)),
+    })
+
+		const { error } = await response.json()
+
+		if (error) {
+			console.error(error)
+			return
+		}
+
+		formRef.current.reset()
+		confetti({
+			particleCount: 100,
+			spread: 70,
+			origin: { y: 0.6, x: 0.5 },
+		});
+
+	}
 
 	return (
 		<section
@@ -12,8 +42,8 @@ export const Contact = () => {
 			className='max-w-[700px] mx-auto px-4 lg:px-0 my-8 bg-transparent'>
 			<Title text={translate('title')} color='secondary' />
 			<form
-				action='https://formsubmit.co/f0b3e2e3828c69b84ac4a862c955def8'
-				method='POST'
+				ref={formRef}
+				onSubmit={handleSubmit}
 				className='flex flex-col gap-8'>
 				<input
 					className={classNames(
