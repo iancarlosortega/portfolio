@@ -32,14 +32,14 @@ export default function Home() {
 				<meta name='google' content='nositelinkssearchbox' />
 				<meta name='google' content='notranslate' />
 
-				<meta name='og:url' content='https://iancarlosortega.com/' />
-				<meta name='og:type' content='website' />
-				<meta name='og:image' content={`${origin}/images/banner.jpg`} />
-				<meta name='og:title' content={translate('title')} />
-				<meta name='og:description' content={translate('description')} />
-				<meta name='og:site_name' content={translate('title')} />
-				<meta name='og:locale' content='es_ES' />
-				<meta name='og:locale:alternate' content='en_US' />
+				<meta property='og:url' content='https://iancarlosortega.com/' />
+				<meta property='og:type' content='website' />
+				<meta property='og:image' content={`${origin}/images/banner.jpg`} />
+				<meta property='og:title' content={translate('title')} />
+				<meta property='og:description' content={translate('description')} />
+				<meta property='og:site_name' content={translate('title')} />
+				<meta property='og:locale' content='es_ES' />
+				<meta property='og:locale:alternate' content='en_US' />
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content={translate('title')} />
