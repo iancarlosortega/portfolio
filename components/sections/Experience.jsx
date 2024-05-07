@@ -16,13 +16,13 @@ export const Experience = () => {
 					<div className='bg-primary rounded-full w-12 h-12 p-2 flex items-center justify-center absolute top-2 left-[-56px]'>
 						<SuitCaseIcon className='w-8 h-8 text-white dark:text-zinc-200' />
 					</div>
-					<h4 className='font-bold text-lg leading-tight text-primary dark:text-light'>
+					<h3 className='font-bold text-lg leading-tight text-primary dark:text-light'>
 						{translate('firstJob.title')}
-					</h4>
+					</h3>
 					<p className='text-xs font-bold text-gray-500 dark:text-gray-300 italic'>
 						{translate('firstJob.date')}
 					</p>
-					<ul className='mt-3 pl-4 text-gray-500 dark:text-gray-100 list-disc'>
+					<ul className='mt-3 pl-3 text-gray-500 dark:text-gray-100 list-disc'>
 						<li>{translate('firstJob.item1')}</li>
 						<li>{translate('firstJob.item2')}</li>
 						<li>{translate('firstJob.item3')}</li>
@@ -32,9 +32,9 @@ export const Experience = () => {
 					<div className='bg-primary rounded-full w-12 h-12 p-2 flex items-center justify-center absolute top-2 left-[-56px] md:left-auto md:right-[-56px]'>
 						<BookIcon className='w-8 h-8 text-white dark:text-zinc-200' />
 					</div>
-					<h4 className='font-bold text-lg leading-tight text-primary dark:text-light'>
+					<h3 className='font-bold text-lg leading-tight text-primary dark:text-light'>
 						{translate('education.title')}
-					</h4>
+					</h3>
 					<p className='text-xs font-bold text-gray-500 dark:text-gray-300 italic'>
 						{translate('education.date')}
 					</p>

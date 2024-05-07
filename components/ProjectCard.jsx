@@ -70,9 +70,9 @@ export const ProjectCard = ({
 				</AnimatePresence>
 			</header>
 			<div className='px-4 py-6 md:px-8'>
-				<h5 className='text-center text-2xl text-primary dark:text-light font-bold border-b pb-4 border-dashed border-primary dark:border-light'>
+				<h3 className='text-center text-2xl text-primary dark:text-light font-bold border-b pb-4 border-dashed border-primary dark:border-light'>
 					{title}
-				</h5>
+				</h3>
 				<p className='my-6 text-gray-500 dark:text-gray-100 font-light'>
 					{translate(description)}
 				</p>

@@ -12,7 +12,7 @@ export const Main = () => {
 			<Navbar />
 			<div className='flex-1 flex flex-col items-center justify-center p-8'>
 				<div className='drop-shadow-lg shadow-black dark:shadow-white md:mt-16'>
-					<h2
+					<h1
 						className={classNames(
 							'uppercase text-3xl md:text-4xl text-secondary dark:text-gray-100 font-bold tracking-wide text-center',
 							'drop-shadow-[0_0_0.3rem_#00000070] dark:drop-shadow-[0_0_0.3rem_#ffffff70] animate-left-right'
@@ -20,7 +20,7 @@ export const Main = () => {
 						{translate('title')}{' '}
 						<span className='text-primary'>Ian Carlos</span> &#128516; <br />
 						{translate('subtitle')}
-					</h2>
+					</h1>
 				</div>
 
 				<div className='flex flex-col gap-4 md:flex-row md:flex-wrap justify-center mt-8 md:mt-32 animate-left-right relative'>
