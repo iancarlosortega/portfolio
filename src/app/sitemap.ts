@@ -7,5 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified: new Date(),
 			priority: 1,
 		},
+		{
+			url: `${process.env.BASE_URL}/en` || "https://iancarlosortega.com/en",
+			lastModified: new Date(),
+			priority: 1,
+		},
 	];
 }
