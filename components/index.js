@@ -1,9 +1,0 @@
-export { DropdownMenu } from './DropDownMenu';
-export { Footer } from './Footer';
-export { LanguageSwitcher } from './LanguageSwitcher';
-export { Navbar } from './Navbar';
-export { ProjectCard } from './ProjectCard';
-export { ScrollToTopButton } from './ScrollToTopButton';
-export { SkillItem } from './SkillItem';
-export { ThemeToggleButton } from './ThemeToggleButton';
-export { Title } from './Title';

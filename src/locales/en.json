@@ -1,0 +1,94 @@
+{
+	"seo": {
+		"title": "Ian Carlos Ortega | Web Developer",
+		"description": "Full Stack Web Developer, with experience in web and mobile application development. Knowledge in last technologies and clean code.",
+		"keywords": "Web Developer, Full Stack Web Developer, Angular Web Developer, React Web Developer, Next.Js Web Developer, Node.Js Web Developer, Express Web Developer, MongoDB Web Developer, Firebase Web Developer"
+	},
+	"home": {
+		"title": "Hi!, I'm",
+		"subtitle": "Web Developer",
+		"stack": "My favorite stack",
+		"menuItem1": "Experience",
+		"menuItem2": "Projects",
+		"menuItem3": "About Me",
+		"menuItem4": "Contact"
+	},
+	"languages": {
+		"es": "Spanish",
+		"en": "English"
+	},
+	"contact": {
+		"cv-link": "https://docs.google.com/document/d/1lzfId6m1oND0wZvpOKrA0S8uF8NlGJft/edit?usp=sharing&ouid=107103227392274620780&rtpof=true&sd=true",
+		"title": "Contact",
+		"name": "Full Name",
+		"email": "Email",
+		"message": "Hi! What can I do for you?",
+		"send": "Send Message"
+	},
+	"experience": {
+		"title": "Experience",
+		"thirdJob": {
+			"title": "Frontend Developer (Relative Engine)",
+			"date": "(July, 2024 - actual)",
+			"item1": "Development of a web application for managing events, library, and blog for <a>CIAT</a> using <b>Next.js</b>.",
+			"item2": "Handle <b>multiple languages</b> in the application.",
+			"item3": "<b>Unit tests</b> and functional tests to improve the quality of the code.",
+			"item4": "Optimized <b>SEO</b> following the best practices to improve the visibility of the library and blog.",
+			"item5": "Mastered the use of <b>Git</b> and <b>GitHub</b> with branches, pull requests, and conflict resolution."
+		},
+		"secondJob": {
+			"title": "Freelancer Developer",
+			"date": "(November,2023 - June,2024)",
+			"item1": "Developed <b>multi-platform</b> system with web, mobile and backend for client in the e-commerce industry.",
+			"item2": "Integration of <b>notifications</b> in real-time using <b>WebSockets</b>.",
+			"item3": "Management of projects, handle tasks, and communicate with <b>clients</b>.",
+			"item4": "Integration of <b>CI/CD</b> pipelines and deploy applications.",
+			"item5": "In the section projects you can find the project called <b>Inproalimentos</b> which is the one I learned the most of these topics I mentioned as freelancer."
+		},
+		"firstJob": {
+			"title": "Odoo ERP Programmer (Lojagas)",
+			"date": "(March,2023 - October,2023)",
+			"item1": "Development of <b>customized modules</b> focused on the accounting department.",
+			"item2": "Customization of reports in excel and pdf format to <b>automate</b> the workflow between the production area and the administrative part.",
+			"item3": "Handling of <b>SQL queries</b> to obtain the data required for the reports.",
+			"item4": "Collaborated with other developers, improving my <b>soft skills</b> and teamwork, while writing cleaner, scalable, and maintainable code."
+		},
+		"education": {
+			"title": "Computer Science Engineer",
+			"date": "(2018 - 2023)",
+			"item1": "Algorithms and programming logic in real-life case-oriented projects.",
+			"item2": "Fundamentals in software development and architecture for scalable applications.",
+			"item3": "Web, mobile and game development.",
+			"item4": "Management of databases, networks, artificial intelligence and cybersecurity."
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"code": "Code",
+		"freeMove": "The web platform will show them a detailed statistical analysis of the data collected, such as how many calories they have burned, the kilometers traveled, the average speed and show snapshots of the most relevant moments in their journeys.",
+		"utplPlay": "Allows its users to find educational content, provided by the Universidad Técnica Particular de Loja, in a more enjoyable and organized way according to the different faculties and subjects taught by teachers of the establishment.",
+		"tesloShop": "With a simple but minimalist design, Teslo seeks to increase its sales through an online platform that has essential functionalities for any online store such as the shopping cart or the payment gateway for both Paypal and credit cards.",
+		"creandoCarino": "It's an ecommerce that provides personalized gifts according to the preferences of the user or request a gift that is already shown in the catalog of the platform, which has a great diversity of types of gifts for different special moments.",
+		"archStudio": "It's a website which aims to show the services and projects carried out by an architect, in order to increase the number of clients and thus generate more income. The website has a minimalist and modern design.",
+		"shoppingify": "It offers a user-friendly app that simplifies your shopping experience. Create customized shopping lists effortlessly, track your purchase history, and gain valuable insights with detailed statistics.",
+		"thrullo": "Thrullo is your go-to project management app, offering an intuitive platform that simplifies project organization and collaboration. Create customizable project boards, assign tasks, track progress, and access insightful analytics.",
+		"chatGroup": "Revolutionize your communication with our cutting-edge realtime messaging app. Experience instant, seamless conversations with friends and colleagues, enhanced by real-time message delivery."
+	},
+	"about": {
+		"title": "About me",
+		"description": {
+			"firstParagraph": "I'm a Computer Science professional with a solid academic background and practical experience in software development. Graduated from the Universidad Técnica Particular de Loja (2023), I have acquired advanced technical skills and a deep understanding of the fundamental principles of computer science.",
+			"secondParagraph": "Always open to learning new technologies required within the company to add greater value to it and its projects.",
+			"thirdParagraph": "In my free time, I enjoy listening to music, playing video games, go to the gym, spending time with my family or friends, and taking my pet for a walk."
+		},
+		"download": "Currículum"
+	},
+	"skills": {
+		"title": "Skills",
+		"tools": "Tools"
+	},
+	"validations": {
+		"send-message": "Thanks for your message! I'll get back to you soon.",
+		"send-error": "Error sending message, please try again later."
+	}
+}

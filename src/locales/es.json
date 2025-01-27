@@ -1,0 +1,94 @@
+{
+	"seo": {
+		"title": "Ian Carlos Ortega | Desarrollador Web",
+		"description": "Desarrollador Web Full Stack, con experiencia en el desarrollo de aplicaciones web y móviles. Conocimiento en las últimas tecnologías y código limpio.",
+		"keywords": "Desarrollador Web, Desarrollador Web Full Stack, Desarrollador Web Angular, Desarrollador Web React, Desarrollador Web Next.Js, Desarrollador Web Node.Js, Desarrollador Web Express, Desarrollador Web MongoDB, Desarrollador Web Firebase"
+	},
+	"home": {
+		"title": "¡Hola!, soy",
+		"subtitle": "Desarrollador Web",
+		"stack": "Mi stack favorito",
+		"menuItem1": "Experiencia",
+		"menuItem2": "Proyectos",
+		"menuItem3": "Sobre Mí",
+		"menuItem4": "Contacto"
+	},
+	"languages": {
+		"es": "Español",
+		"en": "Inglés"
+	},
+	"contact": {
+		"cv-link": "https://docs.google.com/document/d/1Rkand6lrYcmbd9wqefb8SQy8Ug16JUao/edit?usp=sharing&ouid=107103227392274620780&rtpof=true&sd=true",
+		"title": "Contacto",
+		"name": "Nombres y Apellidos",
+		"email": "Correo Electrónico",
+		"message": "¡Hola! ¿En qué puedo ayudarte?",
+		"send": "Enviar Mensaje"
+	},
+	"experience": {
+		"title": "Experiencia",
+		"thirdJob": {
+			"title": "Frontend Developer (Relative Engine)",
+			"date": "(Julio, 2024 - actualidad)",
+			"item1": "Desarrollo de una aplicación web para la gestión de eventos, biblioteca y blog para <a>CIAT</a> utilizando <b>Next.js</b>.",
+			"item2": "Manejo de <b>múltiples idiomas</b> en la aplicación.",
+			"item3": "<b>Pruebas unitarias</b> y funcionales para mejorar la calidad del código.",
+			"item4": "Optimización de <b>SEO</b> siguiendo las mejores prácticas para mejorar la visibilidad de la biblioteca y blog.",
+			"item5": "Dominio en el uso de <b>Git</b> y <b>GitHub</b> con ramas, pull requests y solución de conflictos."
+		},
+		"secondJob": {
+			"title": "Desarrollador Freelance",
+			"date": "(Noviembre, 2023 - Junio, 2024)",
+			"item1": "Desarrollo de un sistema <b>multiplataforma</b> con web, móvil y backend para un cliente en la industria de e-commerce.",
+			"item2": "Integración de <b>notificaciones</b> en tiempo real utilizando <b>WebSockets</b>.",
+			"item3": "Gestión proyectos, manejar tareas y comunicarme con <b>clientes</b>.",
+			"item4": "Integrar pipelines de <b>CI/CD</b> y desplegar aplicaciones.",
+			"item5": "En la sección de proyectos puedes encontrar el proyecto llamado <b>Inproalimentos</b>, que es donde aprendí la mayoría de los temas mencionados como freelancer."
+		},
+		"firstJob": {
+			"title": "Programador ERP Odoo (Lojagas)",
+			"date": "(Marzo, 2023 - Octubre, 2023)",
+			"item1": "Desarrollo de <b>módulos personalizados</b> enfocados en el departamento de contabilidad.",
+			"item2": "Personalización de reportes en formato Excel y PDF para <b>automatizar</b> el flujo de trabajo entre el área de producción y la parte administrativa.",
+			"item3": "Gestión de <b>consultas SQL</b> para obtener los datos requeridos para los reportes.",
+			"item4": "Colaboré con otros desarrolladores, mejorando así mis <b>habilidades blandas </b> y trabajo en equipo, además de escribir un código más limpio, escalable y mantenible."
+		},
+		"education": {
+			"title": "Ingeniero en Ciencias de la Computación",
+			"date": "(2018 - 2023)",
+			"item1": "Algoritmos y lógica de programación orientados a proyectos de casos reales.",
+			"item2": "Fundamentos en desarrollo y arquitectura de software para aplicaciones escalables.",
+			"item3": "Desarrollo web, móvil y de videojuegos.",
+			"item4": "Gestión de bases de datos, redes, inteligencia artificial y ciberseguridad."
+		}
+	},
+	"projects": {
+		"title": "Proyectos",
+		"code": "Código",
+		"freeMove": "Proporciona un análisis estadístico exhaustivo de los datos recopilados por atletas, incluyendo información sobre las calorías quemadas, distancia recorrida, velocidad promedio, y resalta momentos destacados en los trayectos.",
+		"utplPlay": "Facilita a los usuarios la búsqueda de contenido educativo de la Universidad Técnica Particular de Loja, organizándolo de manera atractiva y ordenada según facultades y materias impartidas por los docentes de la institución.",
+		"tesloShop": "Con un diseño simple pero minimalista, Teslo comprende funcionalidades indispensables para cualquier tienda en línea como el carrito de compras o la pasarela de pagos tanto para Paypal como para tarjetas de crédito.",
+		"creandoCarino": "Es una tienda online que brinda regalos personalizados según las preferencias del usuario o solicitando algún regalo que se muestre ya en el catálogo de la plataforma, la cual tiene una gran variedad para diferentes ocasiones.",
+		"archStudio": "Muestra los servicios y proyectos realizados por un arquitecto, para lograr aumentar el número de sus clientes y así poder generar más ingresos. El sitio web cuenta con un diseño minimalista y moderno.",
+		"shoppingify": "Simplifica tu experiencia creando listas de compras personalizadas sin esfuerzo, realiza un seguimiento de tu historial de compras y obtén información valiosa con estadísticas detalladas.",
+		"thrullo": "Una aplicación de gestión de proyectos para simplificar la organización y colaboración en equipos. Crea tableros de proyectos personalizables, asigna tareas y realiza un seguimiento del progreso.",
+		"chatGroup": "Revoluciona tu comunicación con nuestra avanzada aplicación de mensajería en tiempo real. Experimenta conversaciones instantáneas y fluidas con amigos y colegas, mejoradas por la entrega de mensajes en tiempo real."
+	},
+	"about": {
+		"title": "Sobre Mí",
+		"description": {
+			"firstParagraph": "Soy un profesional en Ciencias de la Computación con una sólida formación académica y experiencia práctica en el desarrollo de software. Graduado en la Universidad Técnica Particular de Loja (2023), he adquirido habilidades técnicas avanzadas y una comprensión profunda de los principios fundamentales de la informática.",
+			"secondParagraph": "Estoy dispuesto a aprender nuevas tecnologías para aportar un mayor valor a la empresa y sus proyectos.",
+			"thirdParagraph": "En mi tiempo libre, disfruto de la música, los videojuegos, ir al gimnasio, la compañía de mi familia y amigos, y pasear a mi mascota."
+		},
+		"download": "Currículum"
+	},
+	"skills": {
+		"title": "Habilidades",
+		"tools": "Herramientas"
+	},
+	"validations": {
+		"send-message": "¡Gracias por tu mensaje! Te contactaremos en breve.",
+		"send-error": "Error al enviar el mensaje, por favor inténtelo de nuevo más tarde."
+	}
+}
