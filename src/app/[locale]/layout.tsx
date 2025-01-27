@@ -51,7 +51,7 @@ export default async function RootLayout({ children, params }: Props) {
 			<body
 				className={`${dmSans.className} bg-gray-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-300 transition-colors duration-500`}>
 				<NextIntlClientProvider messages={messages}>
-					<ThemeProvider defaultTheme="system" attribute="class" enableSystem>
+					<ThemeProvider defaultTheme="light" attribute="class" enableSystem>
 						<Header />
 						{children}
 						<ScrollToTopButton />
