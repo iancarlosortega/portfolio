@@ -27,7 +27,7 @@ export const ArrowUpIcon = ({ className }: Props) => {
 		<svg
 			viewBox="0 0 24 24"
 			strokeWidth={1.5}
-			stroke="#fff"
+			stroke="currentColor"
 			className={cn("size-20", className)}>
 			<title>ArrowUpIcon</title>
 			<path
