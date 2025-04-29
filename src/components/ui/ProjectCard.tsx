@@ -1,11 +1,11 @@
-"use client";
-
-import { useState } from "react";
+import { FC, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { PreviewIcon, GithubIcon } from "@/components/icons";
 
-interface Props {
+// Project types
+export interface ProjectProps {
 	title: string;
 	description: string;
 	stack: string[];
@@ -14,21 +14,66 @@ interface Props {
 	imageUrl: string;
 }
 
-export const ProjectCard = ({
+interface ProjectCardProps extends ProjectProps {
+	index: number;
+	onClick: () => void;
+	size: "small" | "medium" | "large";
+}
+
+export const ProjectCard: FC<ProjectCardProps> = ({
 	title,
 	description,
 	stack,
 	demoUrl,
 	codeUrl,
 	imageUrl,
-}: Props) => {
+	index,
+	onClick,
+	size,
+}) => {
 	const [isHovering, setIsHovering] = useState(false);
 	const translate = useTranslations("projects");
 
+	// Define size classes
+	const sizeClasses = {
+		small: "row-span-1 col-span-1",
+		medium: "row-span-1 col-span-2",
+		large: "row-span-2 col-span-2",
+	};
+
+	const cardVariants = {
+		hidden: {
+			opacity: 0,
+			y: 20,
+		},
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.5,
+				delay: index * 0.1,
+			},
+		},
+	};
+
 	return (
-		<article className="bg-white dark:bg-zinc-800 shadow-md rounded-xl mx-auto">
-			<header
-				className="relative"
+		<motion.article
+			className={`bg-white dark:bg-zinc-800 shadow-md rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${sizeClasses[size]}`}
+			variants={cardVariants}
+			initial="hidden"
+			animate="visible"
+			onClick={onClick}
+			whileHover={{
+				boxShadow:
+					"0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+				transition: {
+					duration: 0.3,
+					ease: "easeOut",
+				},
+			}}
+			whileTap={{ scale: 0.98 }}>
+			<div
+				className="relative h-full"
 				onMouseEnter={() => setIsHovering(true)}
 				onMouseLeave={() => setIsHovering(false)}>
 				<Image
@@ -36,62 +81,61 @@ export const ProjectCard = ({
 					alt={title}
 					width={600}
 					height={400}
-					className="w-full aspect-video object-cover rounded-t-xl"
+					className={`w-full h-full object-cover transition-transform duration-500 ${isHovering ? "scale-110" : "scale-100"}`}
 				/>
-				<div
-					className={`absolute top-0 left-0 z-10 w-full h-full flex justify-center items-center gap-4 rounded-t-xl transition-all duration-300 ${
-						isHovering
-							? "opacity-100 backdrop-blur-sm bg-black/50"
-							: "opacity-0 backdrop-blur-none bg-transparent"
-					}`}>
+
+				{/* Action buttons - animated on hover */}
+				<div className="absolute top-3 right-3 flex gap-2 z-20">
 					<a
 						title="Live Demo"
 						href={demoUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white">
-						<PreviewIcon />
+						className="p-2 bg-white/90 hover:bg-white text-primary rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						onClick={(e) => e.stopPropagation()}>
+						<PreviewIcon className="w-5 h-5" />
 					</a>
 					<a
 						title={translate("code")}
 						href={codeUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="border p-3 border-white text-white rounded-full hover:text-primary hover:border-primary transition-colors duration-200 hover:bg-white">
-						<GithubIcon className="size-6" />
+						className="p-2 bg-white/90 hover:bg-white text-primary rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						onClick={(e) => e.stopPropagation()}>
+						<GithubIcon className="w-5 h-5" />
 					</a>
 				</div>
-			</header>
-			<div className="px-4 py-6 md:px-8">
-				<h3 className="text-center text-2xl text-primary dark:text-light font-bold border-b pb-4 border-dashed border-primary dark:border-light">
-					{title}
-				</h3>
-				<p className="my-6 text-gray-500 dark:text-gray-100 font-light">
-					{translate(description)}
-				</p>
-				<ul className="my-6 flex flex-wrap justify-center gap-2">
-					{stack.map((tech) => (
-						<li
-							key={tech}
-							className="px-4 py-2 bg-secondary dark:bg-zinc-900 text-white rounded-3xl font-medium text-sm">
-							{tech}
-						</li>
-					))}
-				</ul>
-				{/* Links on Mobile */}
-				<footer className="flex flex-col lg:hidden md:flex-row items-center justify-center gap-4">
-					<a href={demoUrl} target="_blank" rel="noreferrer" className="btn">
-						<span>
-							Demo <PreviewIcon />
-						</span>
-					</a>
-					<a href={codeUrl} target="_blank" rel="noreferrer" className="btn">
-						<span>
-							{translate("code")} <GithubIcon className="size-6" />
-						</span>
-					</a>
-				</footer>
+
+				{/* Project info overlay - simplified without tech stack icons */}
+				<motion.div
+					className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 flex flex-col justify-end"
+					initial={{ opacity: 0 }}
+					animate={{
+						opacity: isHovering ? 1 : 0,
+						transition: { duration: 0.3 },
+					}}>
+					<motion.h3
+						className="text-xl font-bold text-white"
+						initial={{ y: 20, opacity: 0 }}
+						animate={{
+							y: isHovering ? 0 : 20,
+							opacity: isHovering ? 1 : 0,
+						}}
+						transition={{ duration: 0.3 }}>
+						{title}
+					</motion.h3>
+					<motion.p
+						className="text-white/90 mt-1 line-clamp-2 text-sm"
+						initial={{ y: 15, opacity: 0 }}
+						animate={{
+							y: isHovering ? 0 : 15,
+							opacity: isHovering ? 1 : 0,
+						}}
+						transition={{ duration: 0.3, delay: 0.1 }}>
+						{translate(description)}
+					</motion.p>
+				</motion.div>
 			</div>
-		</article>
+		</motion.article>
 	);
 };

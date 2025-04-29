@@ -64,6 +64,9 @@
 	},
 	"projects": {
 		"title": "Projects",
+		"techStack": "Technologies",
+		"liveDemo": "Live Demo",
+		"sourceCode": "Source Code",
 		"code": "Code",
 		"freeMove": "The web platform will show them a detailed statistical analysis of the data collected, such as how many calories they have burned, the kilometers traveled, the average speed and show snapshots of the most relevant moments in their journeys.",
 		"utplPlay": "Allows its users to find educational content, provided by the Universidad Técnica Particular de Loja, in a more enjoyable and organized way according to the different faculties and subjects taught by teachers of the establishment.",

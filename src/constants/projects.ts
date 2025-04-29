@@ -40,6 +40,14 @@ export const projects = [
 		imageUrl: "/images/projects/chat-group.jpg",
 	},
 	{
+		title: "Arch Studio",
+		description: "archStudio",
+		stack: ["Astro", "React", "TailwindCSS"],
+		demoUrl: "https://arch-studio-iota.vercel.app/",
+		codeUrl: "https://github.com/iancarlosortega/astro-studio",
+		imageUrl: "/images/projects/arch-studio.jpg",
+	},
+	{
 		title: "UTPL Play",
 		description: "utplPlay",
 		stack: ["Angular", "Firebase"],
@@ -55,12 +63,5 @@ export const projects = [
 		codeUrl: "https://github.com/iancarlosortega/creandoCarino",
 		imageUrl: "/images/projects/creando-carino.jpg",
 	},
-	{
-		title: "Arch Studio",
-		description: "archStudio",
-		stack: ["Astro", "React", "TailwindCSS"],
-		demoUrl: "https://arch-studio-iota.vercel.app/",
-		codeUrl: "https://github.com/iancarlosortega/astro-studio",
-		imageUrl: "/images/projects/arch-studio.jpg",
-	},
+	
 ];

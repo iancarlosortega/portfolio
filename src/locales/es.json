@@ -64,6 +64,9 @@
 	},
 	"projects": {
 		"title": "Proyectos",
+		"techStack": "Tecnologías",
+		"liveDemo": "Ver en vivo",
+		"sourceCode": "Código fuente",
 		"code": "Código",
 		"freeMove": "Proporciona un análisis estadístico exhaustivo de los datos recopilados por atletas, incluyendo información sobre las calorías quemadas, distancia recorrida, velocidad promedio, y resalta momentos destacados en los trayectos.",
 		"utplPlay": "Facilita a los usuarios la búsqueda de contenido educativo de la Universidad Técnica Particular de Loja, organizándolo de manera atractiva y ordenada según facultades y materias impartidas por los docentes de la institución.",
