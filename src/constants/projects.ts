@@ -13,7 +13,7 @@ export const projects = [
 		stack: ["TypeScript", "Next.Js", "TailwindCSS", "Supabase"],
 		demoUrl: "https://thrullo.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/thrullo",
-		imageUrl: "/images/projects/thrullo-light.jpg",
+		imageUrl: "/images/projects/thrullo.png",
 	},
 	{
 		title: "FreeMove",
@@ -21,15 +21,7 @@ export const projects = [
 		stack: ["Angular", "Firebase", "Mapbox"],
 		demoUrl: "https://freemove-aa0c5.web.app/",
 		codeUrl: "https://github.com/iancarlosortega/freeMove",
-		imageUrl: "/images/projects/freemove.jpg",
-	},
-	{
-		title: "Shoppingify",
-		description: "shoppingify",
-		stack: ["TypeScript", "Next.Js", "TailwindCSS", "Supabase"],
-		demoUrl: "https://shoppingify-blond.vercel.app/",
-		codeUrl: "https://github.com/iancarlosortega/shoppingify",
-		imageUrl: "/images/projects/shoppingify-dark.jpg",
+		imageUrl: "/images/projects/freemove.png",
 	},
 	{
 		title: "Chat Group - Realtime",
@@ -37,7 +29,15 @@ export const projects = [
 		stack: ["TypeScript", "Next.Js", "NestJS", "Docker", "Postgresql"],
 		demoUrl: "https://chat-group-phi.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/chat-group",
-		imageUrl: "/images/projects/chat-group.jpg",
+		imageUrl: "/images/projects/chat-group.png",
+	},
+	{
+		title: "Shoppingify",
+		description: "shoppingify",
+		stack: ["TypeScript", "Next.Js", "TailwindCSS", "Supabase"],
+		demoUrl: "https://shoppingify-blond.vercel.app/",
+		codeUrl: "https://github.com/iancarlosortega/shoppingify",
+		imageUrl: "/images/projects/shoppingify.png",
 	},
 	{
 		title: "Arch Studio",
@@ -53,7 +53,7 @@ export const projects = [
 		stack: ["Angular", "Firebase"],
 		demoUrl: "https://play.liidutpl.ec/",
 		codeUrl: "https://github.com/iancarlosortega/utplPlay",
-		imageUrl: "/images/projects/utpl-play.jpg",
+		imageUrl: "/images/projects/utpl-play.png",
 	},
 	{
 		title: "Creando Cariño",
@@ -63,5 +63,4 @@ export const projects = [
 		codeUrl: "https://github.com/iancarlosortega/creandoCarino",
 		imageUrl: "/images/projects/creando-carino.jpg",
 	},
-	
 ];

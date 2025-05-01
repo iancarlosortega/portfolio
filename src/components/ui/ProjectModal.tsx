@@ -201,16 +201,18 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 										target="_blank"
 										rel="noreferrer"
 										className="btn flex items-center justify-center gap-2">
-										<span>{translate("liveDemo")}</span>
-										<PreviewIcon />
+										<span>
+											{translate("liveDemo")} <PreviewIcon />
+										</span>
 									</a>
 									<a
 										href={project.codeUrl}
 										target="_blank"
 										rel="noreferrer"
 										className="btn flex items-center justify-center gap-2">
-										<span>{translate("code")}</span>
-										<GithubIcon className="w-6 h-6" />
+										<span>
+											{translate("code")} <GithubIcon className="w-6 h-6" />
+										</span>
 									</a>
 								</div>
 							</div>

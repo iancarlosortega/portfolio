@@ -36,9 +36,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 
 	// Define size classes
 	const sizeClasses = {
-		small: "row-span-1 col-span-1",
-		medium: "row-span-1 col-span-2",
-		large: "row-span-2 col-span-2",
+		small: "md:row-span-1 md:col-span-1",
+		medium: "md:row-span-1 md:col-span-2",
+		large: "md:row-span-2 md:col-span-2",
 	};
 
 	const cardVariants = {
@@ -58,7 +58,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 
 	return (
 		<motion.article
-			className={`bg-white dark:bg-zinc-800 shadow-md rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${sizeClasses[size]}`}
+			className={`bg-white dark:bg-zinc-800 shadow-md rounded-xl overflow-hidden cursor-pointer transition-all duration-300 aspect-square md:aspect-auto ${sizeClasses[size]}`}
 			variants={cardVariants}
 			initial="hidden"
 			animate="visible"
@@ -79,8 +79,8 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 				<Image
 					src={imageUrl}
 					alt={title}
-					width={600}
-					height={400}
+					width={1600}
+					height={1200}
 					className={`w-full h-full object-cover transition-transform duration-500 ${isHovering ? "scale-110" : "scale-100"}`}
 				/>
 
@@ -91,7 +91,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						href={demoUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="p-2 bg-white/90 hover:bg-white text-primary rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-transform duration-300"
 						onClick={(e) => e.stopPropagation()}>
 						<PreviewIcon className="w-5 h-5" />
 					</a>
@@ -100,7 +100,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						href={codeUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="p-2 bg-white/90 hover:bg-white text-primary rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-transform duration-300"
 						onClick={(e) => e.stopPropagation()}>
 						<GithubIcon className="w-5 h-5" />
 					</a>

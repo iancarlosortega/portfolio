@@ -48,21 +48,21 @@ export const Skills = () => {
 					</TabList>
 					<TabPanels className="mt-16 mb-32 md:mb-0 z-20">
 						<TabPanel>
-							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in">
+							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in mx-auto">
 								{frontendTechnologies.map(({ name, icon }) => (
 									<SkillItem key={name} name={name} icon={icon} />
 								))}
 							</ul>
 						</TabPanel>
 						<TabPanel>
-							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in">
+							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in mx-auto">
 								{backendTechnologies.map(({ name, icon }) => (
 									<SkillItem key={name} name={name} icon={icon} />
 								))}
 							</ul>
 						</TabPanel>
 						<TabPanel>
-							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in">
+							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in mx-auto">
 								{tools.map(({ name, icon }) => (
 									<SkillItem key={name} name={name} icon={icon} />
 								))}

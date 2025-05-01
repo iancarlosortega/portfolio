@@ -64,14 +64,14 @@ export const Projects: FC = () => {
 	};
 
 	return (
-		<section id="projects" className="max-w-7xl mx-auto px-4 xl:px-0 py-24">
+		<section id="projects" className="max-w-7xl mx-auto px-4 py-24">
 			<motion.div variants={titleVariants} initial="hidden" animate="visible">
 				<Title text={translate("title")} color="secondary" />
 			</motion.div>
 
 			<motion.div
 				ref={projectsRef}
-				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-[minmax(200px,auto)] gap-4 md:gap-6 mt-8"
+				className="grid grid-cols-1 md:grid-cols-4 auto-rows-[minmax(200px,auto)] gap-4 md:gap-6 mt-8"
 				variants={containerVariants}
 				initial="hidden"
 				animate="visible">
