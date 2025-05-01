@@ -1,7 +1,7 @@
-import { FC, useState } from "react";
+import { FC, useState, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { motion, useInView } from "framer-motion";
 import { PreviewIcon, GithubIcon } from "@/components/icons";
 
 // Project types
@@ -23,7 +23,6 @@ interface ProjectCardProps extends ProjectProps {
 export const ProjectCard: FC<ProjectCardProps> = ({
 	title,
 	description,
-	stack,
 	demoUrl,
 	codeUrl,
 	imageUrl,
@@ -33,6 +32,12 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
 	const [isHovering, setIsHovering] = useState(false);
 	const translate = useTranslations("projects");
+	const cardRef = useRef<HTMLDivElement>(null);
+	const isInView = useInView(cardRef, {
+		once: true,
+		amount: 0.1,
+		margin: "0px 0px -100px 0px",
+	});
 
 	// Define size classes
 	const sizeClasses = {
@@ -41,37 +46,39 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 		large: "md:row-span-2 md:col-span-2",
 	};
 
+	// Entrance animation variants
 	const cardVariants = {
 		hidden: {
 			opacity: 0,
-			y: 20,
+			y: 30,
 		},
 		visible: {
 			opacity: 1,
 			y: 0,
 			transition: {
-				duration: 0.5,
-				delay: index * 0.1,
+				duration: 0.8,
+				ease: "easeOut",
+				delay: index * 0.05,
 			},
 		},
 	};
 
 	return (
 		<motion.article
-			className={`bg-white dark:bg-zinc-800 shadow-md rounded-xl overflow-hidden cursor-pointer transition-all duration-300 aspect-square md:aspect-auto ${sizeClasses[size]}`}
+			ref={cardRef}
+			className={`bg-white dark:bg-zinc-800 shadow-md rounded-xl overflow-hidden cursor-pointer transition-shadow duration-300 aspect-square md:aspect-auto ${sizeClasses[size]}`}
 			variants={cardVariants}
 			initial="hidden"
-			animate="visible"
+			animate={isInView ? "visible" : "hidden"}
 			onClick={onClick}
 			whileHover={{
 				boxShadow:
 					"0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-				transition: {
-					duration: 0.3,
-					ease: "easeOut",
-				},
 			}}
-			whileTap={{ scale: 0.98 }}>
+			whileTap={{ scale: 0.98 }}
+			style={{
+				willChange: "opacity, transform", // Optimize performance
+			}}>
 			<div
 				className="relative h-full"
 				onMouseEnter={() => setIsHovering(true)}
@@ -91,7 +98,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						href={demoUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-all duration-300"
 						onClick={(e) => e.stopPropagation()}>
 						<PreviewIcon className="w-5 h-5" />
 					</a>
@@ -100,7 +107,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						href={codeUrl}
 						target="_blank"
 						rel="noreferrer"
-						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-transform duration-300"
+						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-all duration-300"
 						onClick={(e) => e.stopPropagation()}>
 						<GithubIcon className="w-5 h-5" />
 					</a>
@@ -112,8 +119,8 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 					initial={{ opacity: 0 }}
 					animate={{
 						opacity: isHovering ? 1 : 0,
-						transition: { duration: 0.3 },
-					}}>
+					}}
+					transition={{ duration: 0.3 }}>
 					<motion.h3
 						className="text-xl font-bold text-white"
 						initial={{ y: 20, opacity: 0 }}

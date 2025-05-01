@@ -2766,3 +2766,48 @@ export const CircleCheckIcon = ({ className }: Props) => {
 		</svg>
 	);
 };
+
+export const CloseIcon = ({ className = "w-6 h-6" }) => (
+	<svg
+		className={className}
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke="currentColor">
+		<path
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={2}
+			d="M6 18L18 6M6 6l12 12"
+		/>
+	</svg>
+);
+
+export const ArrowRightIcon = ({ className = "w-6 h-6" }) => (
+	<svg
+		width={24}
+		height={24}
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		strokeWidth={2}
+		strokeLinecap="round"
+		strokeLinejoin="round"
+		className={className}>
+		<path d="m9 18 6-6-6-6" />
+	</svg>
+);
+
+export const ArrowLeftIcon = ({ className = "w-6 h-6" }) => (
+	<svg
+		width={24}
+		height={24}
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		strokeWidth={2}
+		strokeLinecap="round"
+		strokeLinejoin="round"
+		className={className}>
+		<path d="m15 18-6-6 6-6" />
+	</svg>
+);

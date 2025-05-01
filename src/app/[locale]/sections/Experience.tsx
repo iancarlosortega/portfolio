@@ -21,11 +21,7 @@ interface ExperienceCardProps {
 	inView: boolean;
 }
 
-interface RichTextProps {
-	chunks: ReactNode;
-}
-
-const ExperienceCard: FC<ExperienceCardProps> = ({ item, index, inView }) => {
+const ExperienceCard: FC<ExperienceCardProps> = ({ item, index }) => {
 	const t = useTranslations("experience");
 	const cardRef = useRef<HTMLDivElement>(null);
 	const cardInView = useInView(cardRef, { once: true, amount: 0.2 });
@@ -40,7 +36,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ item, index, inView }) => {
 			opacity: 1,
 			x: 0,
 			transition: {
-				duration: 0.5,
+				duration: 0.3,
 				delay: 0.2 + index * 0.1,
 			},
 		},

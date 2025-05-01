@@ -35,7 +35,7 @@ export const ScrollToTopButton = () => {
 	return (
 		<div
 			className={cn(
-				"sticky bottom-5 z-40 w-full flex justify-end pr-4 mt-8 transition-opacity duration-200",
+				"fixed bottom-5 z-40 w-full flex justify-end pr-4 transition-opacity duration-200",
 				{
 					"opacity-100": isVisible,
 					"opacity-0 pointer-events-none": !isVisible,
