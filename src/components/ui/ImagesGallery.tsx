@@ -131,7 +131,7 @@ export const ImageGallery = ({
 		<div className="w-full max-w-4xl mx-auto">
 			{/* Main Image Container */}
 			<div
-				className="relative overflow-hidden bg-default-900 rounded-lg h-[300px] lg:h-[550px] mb-4 cursor-grab active:cursor-grabbing"
+				className="relative overflow-hidden bg-default-900 rounded-md h-[300px] lg:h-[550px] mb-4 cursor-grab active:cursor-grabbing"
 				onMouseEnter={() => setIsAutoplay(false)}
 				onMouseLeave={handleMouseLeave}
 				onMouseDown={handleMouseDown}
