@@ -12,6 +12,7 @@ export interface ProjectProps {
 	demoUrl: string;
 	codeUrl: string;
 	imageUrl: string;
+	features: string[];
 }
 
 interface ProjectCardProps extends ProjectProps {

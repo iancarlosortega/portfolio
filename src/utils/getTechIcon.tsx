@@ -1,5 +1,6 @@
 import { JSX } from "react";
 import {
+	AstroIcon,
 	ReactIcon,
 	NextJsIcon,
 	NodeJsIcon,
@@ -22,6 +23,7 @@ import {
 
 export const getTechIcon = (tech: string) => {
 	const iconMap: Record<string, JSX.Element> = {
+		Astro: <AstroIcon className="w-6 h-6" />,
 		React: <ReactIcon className="w-6 h-6 text-[#61DAFB]" />,
 		"Next.Js": <NextJsIcon className="w-6 h-6 dark:text-white" />,
 		"Node.js": <NodeJsIcon className="w-6 h-6 text-[#68A063]" />,

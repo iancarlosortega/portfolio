@@ -156,7 +156,7 @@ export const ImageGallery = ({
 								width={1500}
 								height={1200}
 								loading="lazy"
-								className="w-full h-full object-contain border rounded-md"
+								className="w-full h-full object-contain border dark:border-gray-500 rounded-md"
 								draggable="false"
 							/>
 						</div>
@@ -206,7 +206,7 @@ export const ImageGallery = ({
 								<Image
 									src={image}
 									alt={`Thumbnail ${index + 1}`}
-									className="w-full h-full object-cover border"
+									className="w-full h-full object-cover border rounded-md"
 									width={80}
 									height={80}
 									loading="lazy"

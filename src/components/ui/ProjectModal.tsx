@@ -29,7 +29,6 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 	if (!project) return null;
 
 	const images = generateImages(project.description);
-	console.log({ images });
 
 	const modalVariants = {
 		hidden: {
@@ -97,12 +96,25 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 							<div className="flex-1 p-6 md:p-8 order-1 md:order-2">
 								<h2 className="text-3xl font-bold text-primary dark:text-light mb-6 border-b pb-4 border-dashed border-primary dark:border-light">
 									{project.title}
-								</h2>
-
+								</h2>{" "}
 								<p className="text-gray-600 dark:text-gray-200 mb-8 text-lg">
 									{translate(project.description)}
 								</p>
-
+								{/* Project features */}
+								<div className="mb-8">
+									<h3 className="text-xl font-semibold mb-4 text-primary dark:text-light">
+										{translate("features")}
+									</h3>
+									<ul className="list-disc pl-5 space-y-2">
+										{project.features.map((feature, index) => (
+											<li
+												key={index}
+												className="text-gray-600 dark:text-gray-200">
+												{translate(feature)}
+											</li>
+										))}
+									</ul>
+								</div>
 								{/* Tech Stack with icons */}
 								<div className="mb-8">
 									<h3 className="text-xl font-semibold mb-4 text-primary dark:text-light">
@@ -121,7 +133,6 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 										))}
 									</div>
 								</div>
-
 								{/* Links */}
 								<div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
 									<a

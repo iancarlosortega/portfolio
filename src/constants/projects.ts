@@ -6,6 +6,7 @@ export const projects = [
 	// 	demoUrl: 'https://teslo-shop-topaz.vercel.app/',
 	// 	codeUrl: 'https://github.com/Curso-NextJs/teslo-shop',
 	// 	imageUrl: '/images/projects/teslo-shop.jpg',
+	//  features: ['tesloFeature1', 'tesloFeature2', 'tesloFeature3', 'tesloFeature4']
 	// },
 	{
 		title: "Thrullo",
@@ -14,6 +15,12 @@ export const projects = [
 		demoUrl: "https://thrullo.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/thrullo",
 		imageUrl: "/images/projects/thrullo.png",
+		features: [
+			"thrulloFeature1",
+			"thrulloFeature2",
+			"thrulloFeature3",
+			"thrulloFeature4",
+		],
 	},
 	{
 		title: "FreeMove",
@@ -22,6 +29,12 @@ export const projects = [
 		demoUrl: "https://freemove-aa0c5.web.app/",
 		codeUrl: "https://github.com/iancarlosortega/freeMove",
 		imageUrl: "/images/projects/freemove.png",
+		features: [
+			"freeMoveFeature1",
+			"freeMoveFeature2",
+			"freeMoveFeature3",
+			"freeMoveFeature4",
+		],
 	},
 	{
 		title: "Chat Group - Realtime",
@@ -30,6 +43,12 @@ export const projects = [
 		demoUrl: "https://chat-group-phi.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/chat-group",
 		imageUrl: "/images/projects/chat-group.png",
+		features: [
+			"chatGroupFeature1",
+			"chatGroupFeature2",
+			"chatGroupFeature3",
+			"chatGroupFeature4",
+		],
 	},
 	{
 		title: "Shoppingify",
@@ -38,6 +57,12 @@ export const projects = [
 		demoUrl: "https://shoppingify-blond.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/shoppingify",
 		imageUrl: "/images/projects/shoppingify.png",
+		features: [
+			"shoppingifyFeature1",
+			"shoppingifyFeature2",
+			"shoppingifyFeature3",
+			"shoppingifyFeature4",
+		],
 	},
 	{
 		title: "Arch Studio",
@@ -46,6 +71,12 @@ export const projects = [
 		demoUrl: "https://arch-studio-iota.vercel.app/",
 		codeUrl: "https://github.com/iancarlosortega/astro-studio",
 		imageUrl: "/images/projects/arch-studio.jpg",
+		features: [
+			"archStudioFeature1",
+			"archStudioFeature2",
+			"archStudioFeature3",
+			"archStudioFeature4",
+		],
 	},
 	{
 		title: "UTPL Play",
@@ -54,6 +85,12 @@ export const projects = [
 		demoUrl: "https://play.liidutpl.ec/",
 		codeUrl: "https://github.com/iancarlosortega/utplPlay",
 		imageUrl: "/images/projects/utpl-play.png",
+		features: [
+			"utplPlayFeature1",
+			"utplPlayFeature2",
+			"utplPlayFeature3",
+			"utplPlayFeature4",
+		],
 	},
 	{
 		title: "Creando Cariño",
@@ -62,5 +99,11 @@ export const projects = [
 		demoUrl: "https://creando-carino.web.app/",
 		codeUrl: "https://github.com/iancarlosortega/creandoCarino",
 		imageUrl: "/images/projects/creando-carino.jpg",
+		features: [
+			"creandoCarinoFeature1",
+			"creandoCarinoFeature2",
+			"creandoCarinoFeature3",
+			"creandoCarinoFeature4",
+		],
 	},
 ];

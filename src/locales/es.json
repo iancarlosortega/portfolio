@@ -65,6 +65,7 @@
 	"projects": {
 		"title": "Proyectos",
 		"techStack": "Tecnologías",
+		"features": "Características Principales",
 		"liveDemo": "Ver en vivo",
 		"sourceCode": "Código fuente",
 		"code": "Código",
@@ -75,7 +76,42 @@
 		"archStudio": "Muestra los servicios y proyectos realizados por un arquitecto, para lograr aumentar el número de sus clientes y así poder generar más ingresos. El sitio web cuenta con un diseño minimalista y moderno.",
 		"shoppingify": "Simplifica tu experiencia creando listas de compras personalizadas sin esfuerzo, realiza un seguimiento de tu historial de compras y obtén información valiosa con estadísticas detalladas.",
 		"thrullo": "Una aplicación de gestión de proyectos para simplificar la organización y colaboración en equipos. Crea tableros de proyectos personalizables, asigna tareas y realiza un seguimiento del progreso.",
-		"chatGroup": "Revoluciona tu comunicación con nuestra avanzada aplicación de mensajería en tiempo real. Experimenta conversaciones instantáneas y fluidas con amigos y colegas, mejoradas por la entrega de mensajes en tiempo real."
+		"chatGroup": "Revoluciona tu comunicación con nuestra avanzada aplicación de mensajería en tiempo real. Experimenta conversaciones instantáneas y fluidas con amigos y colegas, mejoradas por la entrega de mensajes en tiempo real.",
+
+		"thrulloFeature1": "Gestión intuitiva de tableros con arrastrar y soltar",
+		"thrulloFeature2": "Asignación de tareas y configuración de prioridades",
+		"thrulloFeature3": "Comentarios colaborativos y compartición de archivos",
+		"thrulloFeature4": "Etiquetas personalizables y categorías de tareas",
+
+		"freeMoveFeature1": "Seguimiento en tiempo real de actividades físicas",
+		"freeMoveFeature2": "Estadísticas detalladas de calorías quemadas y distancia recorrida",
+		"freeMoveFeature3": "Visualización de rutas en mapas interactivos",
+		"freeMoveFeature4": "Historial de actividades con análisis de rendimiento",
+
+		"chatGroupFeature1": "Mensajería en tiempo real con entrega instantánea",
+		"chatGroupFeature2": "Creación y gestión de chats grupales",
+		"chatGroupFeature3": "Indicadores de presencia y notificaciones de escritura",
+		"chatGroupFeature4": "Historial de mensajes y funcionalidad de búsqueda",
+
+		"shoppingifyFeature1": "Creación y gestión sencilla de listas de compra",
+		"shoppingifyFeature2": "Categorización y organización de artículos",
+		"shoppingifyFeature3": "Seguimiento del historial de compras y análisis",
+		"shoppingifyFeature4": "Estadísticas sobre hábitos de compra",
+
+		"archStudioFeature1": "Portafolio de proyectos con filtrado",
+		"archStudioFeature2": "Perfiles de miembros del equipo y áreas de especialización",
+		"archStudioFeature3": "Descripciones de servicios con información detallada",
+		"archStudioFeature4": "Formulario de contacto interactivo con mapa de ubicación",
+
+		"utplPlayFeature1": "Contenido educativo categorizado por facultad",
+		"utplPlayFeature2": "Reproductor de video con controles de reproducción",
+		"utplPlayFeature3": "Búsqueda y filtrado de contenido",
+		"utplPlayFeature4": "Cuentas de usuario con seguimiento de progreso",
+
+		"creandoCarinoFeature1": "Personalización de regalos a medida",
+		"creandoCarinoFeature2": "Catálogo de regalos categorizado con filtros",
+		"creandoCarinoFeature3": "Proceso de pago seguro",
+		"creandoCarinoFeature4": "Seguimiento de pedidos y estado de entrega"
 	},
 	"about": {
 		"title": "Sobre Mí",

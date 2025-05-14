@@ -65,6 +65,7 @@
 	"projects": {
 		"title": "Projects",
 		"techStack": "Technologies",
+		"features": "Key Features",
 		"liveDemo": "Live Demo",
 		"sourceCode": "Source Code",
 		"code": "Code",
@@ -75,7 +76,42 @@
 		"archStudio": "It's a website which aims to show the services and projects carried out by an architect, in order to increase the number of clients and thus generate more income. The website has a minimalist and modern design.",
 		"shoppingify": "It offers a user-friendly app that simplifies your shopping experience. Create customized shopping lists effortlessly, track your purchase history, and gain valuable insights with detailed statistics.",
 		"thrullo": "Thrullo is your go-to project management app, offering an intuitive platform that simplifies project organization and collaboration. Create customizable project boards, assign tasks, track progress, and access insightful analytics.",
-		"chatGroup": "Revolutionize your communication with our cutting-edge realtime messaging app. Experience instant, seamless conversations with friends and colleagues, enhanced by real-time message delivery."
+		"chatGroup": "Revolutionize your communication with our cutting-edge realtime messaging app. Experience instant, seamless conversations with friends and colleagues, enhanced by real-time message delivery.",
+
+		"thrulloFeature1": "Intuitive drag-and-drop board management",
+		"thrulloFeature2": "Task assignment and priority setting",
+		"thrulloFeature3": "Collaborative commenting and file sharing",
+		"thrulloFeature4": "Customizable labels and task categories",
+
+		"freeMoveFeature1": "Real-time tracking of physical activities",
+		"freeMoveFeature2": "Detailed statistics of calories burned and distance covered",
+		"freeMoveFeature3": "Route visualization on interactive maps",
+		"freeMoveFeature4": "Activity history with performance analytics",
+
+		"chatGroupFeature1": "Real-time messaging with instant delivery",
+		"chatGroupFeature2": "Group chat creation and management",
+		"chatGroupFeature3": "User presence indicators and typing notifications",
+		"chatGroupFeature4": "Message history and search functionality",
+
+		"shoppingifyFeature1": "Easy shopping list creation and management",
+		"shoppingifyFeature2": "Item categorization and organization",
+		"shoppingifyFeature3": "Purchase history tracking and analysis",
+		"shoppingifyFeature4": "Statistical insights on shopping habits",
+
+		"archStudioFeature1": "Portfolio showcase with project filtering",
+		"archStudioFeature2": "Team member profiles and expertise",
+		"archStudioFeature3": "Service descriptions with detailed information",
+		"archStudioFeature4": "Interactive contact form with location map",
+
+		"utplPlayFeature1": "Categorized educational content by faculty",
+		"utplPlayFeature2": "Video player with playback controls",
+		"utplPlayFeature3": "Content search and filtering options",
+		"utplPlayFeature4": "User accounts with progress tracking",
+
+		"creandoCarinoFeature1": "Personalized gift customization",
+		"creandoCarinoFeature2": "Categorized gift catalog with filters",
+		"creandoCarinoFeature3": "Secure checkout process",
+		"creandoCarinoFeature4": "Order tracking and delivery status"
 	},
 	"about": {
 		"title": "About me",
