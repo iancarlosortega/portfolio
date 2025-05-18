@@ -7,13 +7,11 @@ import {
 	GitIcon,
 	HtmlIcon,
 	JavaScriptIcon,
-	MapboxIcon,
 	MongoDBIcon,
 	NestJSIcon,
 	NextJsIcon,
 	NodeJsIcon,
 	PostgresIcon,
-	PostmanIcon,
 	ReactIcon,
 	ScrumIcon,
 	SocketIOIcon,
@@ -21,8 +19,10 @@ import {
 	TailwindIcon,
 	DrizzleIcon,
 	TypeScriptIcon,
-	VercelIcon,
 	ZustandIcon,
+	JestIcon,
+	AWSIcon,
+	FigmaIcon,
 } from "@/components/icons";
 
 export const frontendTechnologies = [
@@ -101,16 +101,16 @@ export const tools = [
 		icon: <GitIcon />,
 	},
 	{
-		name: "Postman",
-		icon: <PostmanIcon />,
+		name: "Jest",
+		icon: <JestIcon />,
 	},
 	{
 		name: "Docker",
 		icon: <DockerIcon />,
 	},
 	{
-		name: "Mapbox",
-		icon: <MapboxIcon />,
+		name: "Figma",
+		icon: <FigmaIcon />,
 	},
 	{
 		name: "Cloudinary",
@@ -121,11 +121,11 @@ export const tools = [
 		icon: <ZustandIcon />,
 	},
 	{
-		name: "Vercel",
-		icon: <VercelIcon />,
+		name: "AWS",
+		icon: <AWSIcon />,
 	},
 	{
 		name: "Scrum",
 		icon: <ScrumIcon />,
-	},
+	}
 ];

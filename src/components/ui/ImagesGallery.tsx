@@ -128,10 +128,10 @@ export const ImageGallery = ({
 	};
 
 	return (
-		<div className="w-full max-w-4xl mx-auto">
+		<div>
 			{/* Main Image Container */}
 			<div
-				className="relative overflow-hidden bg-default-900 rounded-md h-[300px] lg:h-[550px] mb-4 cursor-grab active:cursor-grabbing"
+				className="relative overflow-hidden bg-default-900 rounded-md h-[200px] md:h-[350px] lg:h-[450px] xl:h-[500px] mb-4 cursor-grab active:cursor-grabbing"
 				onMouseEnter={() => setIsAutoplay(false)}
 				onMouseLeave={handleMouseLeave}
 				onMouseDown={handleMouseDown}
@@ -156,7 +156,7 @@ export const ImageGallery = ({
 								width={1500}
 								height={1200}
 								loading="lazy"
-								className="w-full h-full object-contain border dark:border-gray-500 rounded-md"
+								className="w-full h-auto object-cover border dark:border-gray-500 rounded-md"
 								draggable="false"
 							/>
 						</div>

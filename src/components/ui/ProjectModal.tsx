@@ -91,9 +91,9 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 						</button>
 
 						{/* Reorganized container - mobile: stacked (info first), desktop: side-by-side */}
-						<div className="flex flex-col xl:flex-row h-full">
+						<div className="flex flex-col xl:flex-row h-full items-center">
 							{/* Project details - Shows first on mobile */}
-							<div className="flex-1 p-6 md:p-8 order-1 md:order-2">
+							<div className="xl:min-w-[500px] flex-1 p-6 md:p-8 order-1 md:order-2">
 								<h2 className="text-3xl font-bold text-primary dark:text-light mb-6 border-b pb-4 border-dashed border-primary dark:border-light">
 									{project.title}
 								</h2>{" "}
