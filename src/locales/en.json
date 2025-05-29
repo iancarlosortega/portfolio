@@ -28,7 +28,7 @@
 	"experience": {
 		"title": "Experience",
 		"thirdJob": {
-			"title": "Frontend Developer (Relative Engine)",
+			"title": "Frontend Developer",
 			"date": "(July, 2024 - actual)",
 			"item1": "Development of a web application for managing events, library, and blog for <a>CIAT</a> using <b>Next.js</b>.",
 			"item2": "Handle <b>multiple languages</b> in the application.",
