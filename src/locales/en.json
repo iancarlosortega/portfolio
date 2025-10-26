@@ -27,9 +27,20 @@
 	},
 	"experience": {
 		"title": "Experience",
+		"fourthJob": {
+			"title": "Backend Developer (Estudio Cactus)",
+			"date": "(June, 2025 - present)",
+			"item1": "Development of a <b>SAAS</b> application for managing logistics and port operations using <b>NestJS</b> and <b>Mongo DB</b>.",
+			"item2": "Clean architecture and Domain Driven Design.",
+			"item3": "Query optimizations and improved response times using <b>Redis</b> for caching strategies.",
+			"item4": "Implementation of <b>multi-channel notifications</b> system for email, push notifications, and in-app alerts.",
+			"item5": "Handle <b>multiple languages</b> for content using <b>AWS Translator</b>.",
+			"item6": "<b>Unit tests</b> and functional tests to improve the quality of the code.",
+			"item7": "CI/CD implementation using <b>Bitbucket Pipelines</b> for automated testing and deployment."
+		},
 		"thirdJob": {
-			"title": "Frontend Developer",
-			"date": "(July, 2024 - actual)",
+			"title": "Frontend Developer (Relative Engine)",
+			"date": "(July, 2024 - June, 2025)",
 			"item1": "Development of a web application for managing events, library, and blog for <a>CIAT</a> using <b>Next.js</b>.",
 			"item2": "Handle <b>multiple languages</b> in the application.",
 			"item3": "<b>Unit tests</b> and functional tests to improve the quality of the code.",
@@ -54,7 +65,7 @@
 			"item4": "Collaborated with other developers, improving my <b>soft skills</b> and teamwork, while writing cleaner, scalable, and maintainable code."
 		},
 		"education": {
-			"title": "Computer Science Engineer",
+			"title": "Computer Science Engineer (UTPL)",
 			"date": "(2018 - 2023)",
 			"item1": "Algorithms and programming logic in real-life case-oriented projects.",
 			"item2": "Fundamentals in software development and architecture for scalable applications.",
@@ -69,6 +80,9 @@
 		"liveDemo": "Live Demo",
 		"sourceCode": "Source Code",
 		"code": "Code",
+		"sara": "A comprehensive platform for CIAT that integrates three main modules: Events management for creating and organizing virtual, in-person, and hybrid events with dynamic registration forms; a Library with resource management, reviews, and public SEO-optimized pages; and a Blog with content management, reviews, and optimized public interface.",
+		"stowlog": "A modular SaaS platform designed for port and logistics facilities management. Integrates multiple security and operational modules including visitor management with digital check-ins and real-time tracking, suspension management for behavioral sanctions, geoposition tracking for personnel and equipment with 360º facility views, and automated safety induction training for staff and contractors.",
+		"inproalimentos": "A complete e-commerce solution with a public-facing storefront for customers to browse and purchase products, coupled with a comprehensive admin dashboard for managing users, orders, inventory, sales analytics, and all business operations. Built to streamline the entire sales process from product catalog to order fulfillment.",
 		"freeMove": "The web platform will show them a detailed statistical analysis of the data collected, such as how many calories they have burned, the kilometers traveled, the average speed and show snapshots of the most relevant moments in their journeys.",
 		"utplPlay": "Allows its users to find educational content, provided by the Universidad Técnica Particular de Loja, in a more enjoyable and organized way according to the different faculties and subjects taught by teachers of the establishment.",
 		"tesloShop": "With a simple but minimalist design, Teslo seeks to increase its sales through an online platform that has essential functionalities for any online store such as the shopping cart or the payment gateway for both Paypal and credit cards.",
@@ -77,6 +91,21 @@
 		"shoppingify": "It offers a user-friendly app that simplifies your shopping experience. Create customized shopping lists effortlessly, track your purchase history, and gain valuable insights with detailed statistics.",
 		"thrullo": "Thrullo is your go-to project management app, offering an intuitive platform that simplifies project organization and collaboration. Create customizable project boards, assign tasks, track progress, and access insightful analytics.",
 		"chatGroup": "Revolutionize your communication with our cutting-edge realtime messaging app. Experience instant, seamless conversations with friends and colleagues, enhanced by real-time message delivery.",
+
+		"saraFeature1": "Event management: Create virtual, in-person, and hybrid events with participant invitations",
+		"saraFeature2": "Dynamic registration forms with customizable fields for each event",
+		"saraFeature3": "Library with resource management, reviews, and SEO-optimized public pages",
+		"saraFeature4": "Blog management with content creation, reviews, and public SEO interface",
+
+		"stowlogFeature1": "Visitor management with digital check-ins, real-time tracking, and pre-authorization features",
+		"stowlogFeature2": "Suspension system for behavioral sanctions with automated notifications and access control",
+		"stowlogFeature3": "Geoposition tracking with 360º facility views, restricted zones, and threat detection",
+		"stowlogFeature4": "Automated safety induction training with compliance tracking and reduced onboarding time",
+
+		"inproalimentosFeature1": "Public e-commerce storefront with product catalog, shopping cart, and secure checkout",
+		"inproalimentosFeature2": "Comprehensive admin dashboard for managing users, roles, and permissions",
+		"inproalimentosFeature3": "Order management system with real-time tracking and status updates",
+		"inproalimentosFeature4": "Sales analytics and inventory management with detailed reporting and insights",
 
 		"thrulloFeature1": "Intuitive drag-and-drop board management",
 		"thrulloFeature2": "Task assignment and priority setting",

@@ -1,13 +1,49 @@
 export const projects = [
-	// {
-	// 	title: 'Teslo Shop',
-	// 	description: 'tesloShop',
-	// 	stack: ['Next.Js', 'Node.Js', 'MongoDB', 'Docker'],
-	// 	demoUrl: 'https://teslo-shop-topaz.vercel.app/',
-	// 	codeUrl: 'https://github.com/Curso-NextJs/teslo-shop',
-	// 	imageUrl: '/images/projects/teslo-shop.jpg',
-	//  features: ['tesloFeature1', 'tesloFeature2', 'tesloFeature3', 'tesloFeature4']
-	// },
+	{
+		title: "Stowlog",
+		description: "stowlog",
+		stack: ["TypeScript", "NestJS", "MongoDB", "Redis"],
+		demoUrl: "https://www.stowlog.com/",
+		imageUrl: "/images/projects/stowlog.png",
+		features: [
+			"stowlogFeature1",
+			"stowlogFeature2",
+			"stowlogFeature3",
+			"stowlogFeature4",
+		],
+		imageCount: 7,
+	},
+
+	{
+		title: "Inproalimentos",
+		description: "inproalimentos",
+		stack: [
+			"TypeScript",
+			"Next.Js",
+			"TailwindCSS",
+			"Expo",
+			"NestJS",
+			"PostgreSQL",
+		],
+		demoUrl: "https://sara.ciat.org",
+		imageUrl: "/images/projects/sara.png",
+		features: [
+			"inproalimentosFeature1",
+			"inproalimentosFeature2",
+			"inproalimentosFeature3",
+			"inproalimentosFeature4",
+		],
+		imageCount: 5,
+	},
+	{
+		title: "Sara",
+		description: "sara",
+		stack: ["TypeScript", "Next.Js", "TailwindCSS"],
+		demoUrl: "https://sara.ciat.org/public/library",
+		imageUrl: "/images/projects/sara.png",
+		features: ["saraFeature1", "saraFeature2", "saraFeature3", "saraFeature4"],
+		imageCount: 13,
+	},
 	{
 		title: "Thrullo",
 		description: "thrullo",
@@ -21,6 +57,7 @@ export const projects = [
 			"thrulloFeature3",
 			"thrulloFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "FreeMove",
@@ -35,6 +72,7 @@ export const projects = [
 			"freeMoveFeature3",
 			"freeMoveFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "Chat Group - Realtime",
@@ -49,6 +87,7 @@ export const projects = [
 			"chatGroupFeature3",
 			"chatGroupFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "Shoppingify",
@@ -63,6 +102,7 @@ export const projects = [
 			"shoppingifyFeature3",
 			"shoppingifyFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "Arch Studio",
@@ -77,6 +117,7 @@ export const projects = [
 			"archStudioFeature3",
 			"archStudioFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "UTPL Play",
@@ -91,6 +132,7 @@ export const projects = [
 			"utplPlayFeature3",
 			"utplPlayFeature4",
 		],
+		imageCount: 5,
 	},
 	{
 		title: "Creando Cariño",
@@ -105,5 +147,6 @@ export const projects = [
 			"creandoCarinoFeature3",
 			"creandoCarinoFeature4",
 		],
+		imageCount: 5,
 	},
 ];

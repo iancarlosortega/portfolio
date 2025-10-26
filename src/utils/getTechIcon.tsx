@@ -19,6 +19,8 @@ import {
 	ZustandIcon,
 	MapboxIcon,
 	DockerIcon,
+	RedisIcon,
+	ExpoIcon,
 } from "@/components/icons";
 
 export const getTechIcon = (tech: string) => {
@@ -43,6 +45,8 @@ export const getTechIcon = (tech: string) => {
 		Zustand: <ZustandIcon className="w-6 h-6" />,
 		Mapbox: <MapboxIcon className="w-6 h-6" />,
 		Docker: <DockerIcon className="w-6 h-6" />,
+		Redis: <RedisIcon className="w-6 h-6" />,
+		Expo: <ExpoIcon className="w-6 h-6" />,
 	};
 
 	return (

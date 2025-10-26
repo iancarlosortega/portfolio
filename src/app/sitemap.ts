@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 1,
 		},
 		{
-			url: `${process.env.BASE_URL}/en` || "https://iancarlosortega.com/en",
+			url: `${process.env.BASE_URL}/es` || "https://iancarlosortega.com/es",
 			lastModified: new Date(),
 			priority: 1,
 		},

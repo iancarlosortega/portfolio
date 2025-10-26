@@ -18,9 +18,9 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 }) => {
 	const translate = useTranslations("projects");
 
-	const generateImages = (folder: string) => {
+	const generateImages = (folder: string, count: number) => {
 		const images: string[] = [];
-		for (let i = 1; i <= 5; i++) {
+		for (let i = 1; i <= count; i++) {
 			images.push(`/images/projects/${folder}/${i}.png`);
 		}
 		return images;
@@ -28,7 +28,7 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 
 	if (!project) return null;
 
-	const images = generateImages(project.description);
+	const images = generateImages(project.description, project.imageCount);
 
 	const modalVariants = {
 		hidden: {
@@ -144,15 +144,17 @@ export const ProjectModal: FC<ProjectModalProps> = ({
 											{translate("liveDemo")} <PreviewIcon />
 										</span>
 									</a>
-									<a
-										href={project.codeUrl}
-										target="_blank"
-										rel="noreferrer"
-										className="btn !w-full flex items-center justify-center gap-2">
-										<span>
-											{translate("code")} <GithubIcon className="w-6 h-6" />
-										</span>
-									</a>
+									{project.codeUrl && (
+										<a
+											href={project.codeUrl}
+											target="_blank"
+											rel="noreferrer"
+											className="btn !w-full flex items-center justify-center gap-2">
+											<span>
+												{translate("code")} <GithubIcon className="w-6 h-6" />
+											</span>
+										</a>
+									)}
 								</div>
 							</div>
 

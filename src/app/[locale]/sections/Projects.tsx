@@ -16,15 +16,18 @@ export const Projects: FC = () => {
 	const translate = useTranslations("projects");
 	const projectsRef = useRef<HTMLDivElement>(null);
 
-	// Define project sizes for the bento grid layout - refactored for better balance
+	// Define project sizes for the bento grid layout - balanced design with emphasis on real projects
 	const projectSizes: ("small" | "medium" | "large")[] = [
-		"large", // First project (2x2)
-		"small", // Second project (2x1)
-		"small", // Third project (1x1)
-		"medium", // Fourth project (1x1)
-		"medium", // Fifth project (2x1)
-		"large", // Sixth project (2x1) - changed from small to medium
-		"medium", // Seventh project (1x1)
+		"medium",
+		"large",
+		"medium",
+		"large",
+		"small",
+		"small",
+		"medium",
+		"medium",
+		"large",
+		"medium",
 	];
 
 	const handleOpenModal = (project: ProjectProps) => {
@@ -38,7 +41,6 @@ export const Projects: FC = () => {
 		document.body.style.overflow = "auto"; // Re-enable scrolling
 	};
 
-	// Animation variants for the projects title
 	const titleVariants = {
 		hidden: { opacity: 0, y: -20 },
 		visible: {
@@ -51,7 +53,6 @@ export const Projects: FC = () => {
 		},
 	};
 
-	// Animation variants for the projects container
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {

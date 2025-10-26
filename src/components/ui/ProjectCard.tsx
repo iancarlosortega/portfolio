@@ -10,9 +10,10 @@ export interface ProjectProps {
 	description: string;
 	stack: string[];
 	demoUrl: string;
-	codeUrl: string;
+	codeUrl?: string;
 	imageUrl: string;
 	features: string[];
+	imageCount: number;
 }
 
 interface ProjectCardProps extends ProjectProps {
@@ -103,15 +104,17 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 						onClick={(e) => e.stopPropagation()}>
 						<PreviewIcon className="w-5 h-5" />
 					</a>
-					<a
-						title={translate("code")}
-						href={codeUrl}
-						target="_blank"
-						rel="noreferrer"
-						className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-all duration-300"
-						onClick={(e) => e.stopPropagation()}>
-						<GithubIcon className="w-5 h-5" />
-					</a>
+					{codeUrl && (
+						<a
+							title={translate("code")}
+							href={codeUrl}
+							target="_blank"
+							rel="noreferrer"
+							className="p-2 bg-white/90 hover:bg-white text-neutral-600 rounded-full shadow-md hover:scale-110 transition-all duration-300"
+							onClick={(e) => e.stopPropagation()}>
+							<GithubIcon className="w-5 h-5" />
+						</a>
+					)}
 				</div>
 
 				{/* Project info overlay - simplified without tech stack icons */}

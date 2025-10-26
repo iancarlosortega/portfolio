@@ -27,9 +27,20 @@
 	},
 	"experience": {
 		"title": "Experiencia",
+		"fourthJob": {
+			"title": "Desarrollador Backend (Estudio Cactus)",
+			"date": "(Junio, 2025 - actualidad)",
+			"item1": "Desarrollo de una aplicación <b>SAAS</b> para la gestión de operaciones logísticas y portuarias usando <b>NestJS</b> y <b>Mongo DB</b>.",
+			"item2": "Arquitectura limpia y Domain Driven Design.",
+			"item3": "Optimización de consultas y mejora de tiempos de respuesta usando <b>Redis</b> para estrategias de caché.",
+			"item4": "Implementación de sistema de <b>notificaciones multicanal</b> para correo electrónico, notificaciones push y alertas en la aplicación.",
+			"item5": "Manejo de <b>múltiples idiomas</b> para el contenido utilizando <b>AWS Translator</b>.",
+			"item6": "<b>Pruebas unitarias</b> y funcionales para mejorar la calidad del código.",
+			"item7": "Implementación de CI/CD usando <b>Bitbucket Pipelines</b> para pruebas y despliegue automatizado."
+		},
 		"thirdJob": {
-			"title": "Desarrollador Frontend",
-			"date": "(Julio, 2024 - actualidad)",
+			"title": "Desarrollador Frontend (Relative Engine)",
+			"date": "(Julio, 2024 - Junio, 2025)",
 			"item1": "Desarrollo de una aplicación web para la gestión de eventos, biblioteca y blog para <a>CIAT</a> utilizando <b>Next.js</b>.",
 			"item2": "Manejo de <b>múltiples idiomas</b> en la aplicación.",
 			"item3": "<b>Pruebas unitarias</b> y funcionales para mejorar la calidad del código.",
@@ -54,7 +65,7 @@
 			"item4": "Colaboré con otros desarrolladores, mejorando así mis <b>habilidades blandas </b> y trabajo en equipo, además de escribir un código más limpio, escalable y mantenible."
 		},
 		"education": {
-			"title": "Ingeniero en Ciencias de la Computación",
+			"title": "Ingeniero en Ciencias de la Computación (UTPL)",
 			"date": "(2018 - 2023)",
 			"item1": "Algoritmos y lógica de programación orientados a proyectos de casos reales.",
 			"item2": "Fundamentos en desarrollo y arquitectura de software para aplicaciones escalables.",
@@ -69,6 +80,9 @@
 		"liveDemo": "Ver en vivo",
 		"sourceCode": "Código fuente",
 		"code": "Código",
+		"sara": "Una plataforma integral para CIAT que integra tres módulos principales: Gestión de eventos para crear y organizar eventos virtuales, presenciales e híbridos con formularios de registro dinámicos; una Biblioteca con gestión de recursos, reseñas y páginas públicas optimizadas para SEO; y un Blog con gestión de contenido, reseñas e interfaz pública optimizada.",
+		"stowlog": "Una plataforma SaaS modular diseñada para la gestión de instalaciones portuarias y logísticas. Integra múltiples módulos de seguridad y operación incluyendo gestión de visitantes con check-ins digitales y seguimiento en tiempo real, gestión de suspensiones para sanciones de comportamiento, seguimiento de geoposición de personal y equipos con vistas 360º de las instalaciones, y capacitación automatizada de inducción de seguridad para personal y contratistas.",
+		"inproalimentos": "Una solución completa de comercio electrónico con una tienda pública para que los clientes naveguen y compren productos, junto con un panel de administración integral para gestionar usuarios, pedidos, inventario, análisis de ventas y todas las operaciones del negocio. Diseñado para optimizar todo el proceso de ventas desde el catálogo de productos hasta el cumplimiento de pedidos.",
 		"freeMove": "Proporciona un análisis estadístico exhaustivo de los datos recopilados por atletas, incluyendo información sobre las calorías quemadas, distancia recorrida, velocidad promedio, y resalta momentos destacados en los trayectos.",
 		"utplPlay": "Facilita a los usuarios la búsqueda de contenido educativo de la Universidad Técnica Particular de Loja, organizándolo de manera atractiva y ordenada según facultades y materias impartidas por los docentes de la institución.",
 		"tesloShop": "Con un diseño simple pero minimalista, Teslo comprende funcionalidades indispensables para cualquier tienda en línea como el carrito de compras o la pasarela de pagos tanto para Paypal como para tarjetas de crédito.",
@@ -77,6 +91,21 @@
 		"shoppingify": "Simplifica tu experiencia creando listas de compras personalizadas sin esfuerzo, realiza un seguimiento de tu historial de compras y obtén información valiosa con estadísticas detalladas.",
 		"thrullo": "Una aplicación de gestión de proyectos para simplificar la organización y colaboración en equipos. Crea tableros de proyectos personalizables, asigna tareas y realiza un seguimiento del progreso.",
 		"chatGroup": "Revoluciona tu comunicación con nuestra avanzada aplicación de mensajería en tiempo real. Experimenta conversaciones instantáneas y fluidas con amigos y colegas, mejoradas por la entrega de mensajes en tiempo real.",
+
+		"saraFeature1": "Gestión de eventos: Crear eventos virtuales, presenciales e híbridos con invitación de participantes",
+		"saraFeature2": "Formularios de registro dinámicos con campos personalizables para cada evento",
+		"saraFeature3": "Biblioteca con gestión de recursos, reseñas y páginas públicas optimizadas para SEO",
+		"saraFeature4": "Gestión de blog con creación de contenido, reseñas e interfaz pública con SEO",
+
+		"stowlogFeature1": "Gestión de visitantes con check-ins digitales, seguimiento en tiempo real y funciones de preautorización",
+		"stowlogFeature2": "Sistema de suspensiones para sanciones de comportamiento con notificaciones automáticas y control de acceso",
+		"stowlogFeature3": "Seguimiento de geoposición con vistas 360º de instalaciones, zonas restringidas y detección de amenazas",
+		"stowlogFeature4": "Capacitación automatizada de inducción de seguridad con seguimiento de cumplimiento y reducción de tiempos",
+
+		"inproalimentosFeature1": "Tienda online pública con catálogo de productos, carrito de compras y pago seguro",
+		"inproalimentosFeature2": "Panel de administración integral para gestionar usuarios, roles y permisos",
+		"inproalimentosFeature3": "Sistema de gestión de pedidos con seguimiento en tiempo real y actualizaciones de estado",
+		"inproalimentosFeature4": "Análisis de ventas y gestión de inventario con reportes detallados e información estratégica",
 
 		"thrulloFeature1": "Gestión intuitiva de tableros con arrastrar y soltar",
 		"thrulloFeature2": "Asignación de tareas y configuración de prioridades",

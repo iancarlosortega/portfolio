@@ -17,12 +17,12 @@ import {
 	SocketIOIcon,
 	SupabaseIcon,
 	TailwindIcon,
-	DrizzleIcon,
 	TypeScriptIcon,
 	ZustandIcon,
 	JestIcon,
 	AWSIcon,
 	FigmaIcon,
+	RedisIcon,
 } from "@/components/icons";
 
 export const frontendTechnologies = [
@@ -74,8 +74,8 @@ export const backendTechnologies = [
 		icon: <MongoDBIcon />,
 	},
 	{
-		name: "DrizzleORM",
-		icon: <DrizzleIcon />,
+		name: "Redis",
+		icon: <RedisIcon />,
 	},
 	{
 		name: "NestJS",
@@ -127,5 +127,5 @@ export const tools = [
 	{
 		name: "Scrum",
 		icon: <ScrumIcon />,
-	}
+	},
 ];
