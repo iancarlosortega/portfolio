@@ -58,8 +58,7 @@ export const DesktopHeader = () => {
 						<a
 							title="CV"
 							href={translate("cv-link")}
-							target="_blank"
-							rel="noreferrer noopener">
+							download>
 							<DocumentIcon
 								className={cn("text-primary transition-colors", {
 									"text-white": isInTargetSection,

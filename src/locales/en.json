@@ -18,7 +18,7 @@
 		"en": "English"
 	},
 	"contact": {
-		"cv-link": "https://docs.google.com/document/d/1lzfId6m1oND0wZvpOKrA0S8uF8NlGJft/edit?usp=sharing&ouid=107103227392274620780&rtpof=true&sd=true",
+		"cv-link": "/cv/CV-IAN-CARLOS-ORTEGA-EN.pdf",
 		"title": "Contact",
 		"name": "Full Name",
 		"email": "Email",
@@ -33,10 +33,8 @@
 			"item1": "Development of a <b>SAAS</b> application for managing logistics and port operations using <b>NestJS</b> and <b>Mongo DB</b>.",
 			"item2": "Clean architecture and Domain Driven Design.",
 			"item3": "Query optimizations and improved response times using <b>Redis</b> for caching strategies.",
-			"item4": "Implementation of <b>multi-channel notifications</b> system for email, push notifications, and in-app alerts.",
-			"item5": "Handle <b>multiple languages</b> for content using <b>AWS Translator</b>.",
-			"item6": "<b>Unit tests</b> and functional tests to improve the quality of the code.",
-			"item7": "CI/CD implementation using <b>Bitbucket Pipelines</b> for automated testing and deployment."
+			"item4": "Design and integration of a <b>multi-channel notifications</b> system for email, push notifications, and in-app alerts.",
+			"item5": "Incorporation of <b>i18n</b> for email templates and <b>API</b> responses."
 		},
 		"thirdJob": {
 			"title": "Frontend Developer (Relative Engine)",

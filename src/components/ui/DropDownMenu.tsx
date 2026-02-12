@@ -78,8 +78,7 @@ export const DropdownMenu = () => {
 							<a
 								className="flex items-center gap-2"
 								href={translate("cv-link")}
-								target="_blank"
-								rel="noreferrer noopener">
+								download>
 								<DocumentIcon className="text-primary dark:text-light" />
 								Currículum Vitae
 							</a>
