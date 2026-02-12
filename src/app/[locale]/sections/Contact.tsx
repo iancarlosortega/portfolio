@@ -1,7 +1,7 @@
 "use client";
 
 import Form from "next/form";
-import { useActionState, useEffect } from "react";
+import { useActionState, useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { useTranslations } from "next-intl";
 import { Title } from "@/components/ui/Title";
@@ -14,14 +14,23 @@ type Status = "pristine" | "success" | "error";
 export const Contact = () => {
 	const translate = useTranslations("contact");
 	const translateValidations = useTranslations("validations");
+	const [formMountTime] = useState(() => Date.now());
 
 	const [status, formAction, isPending] = useActionState<Status, FormData>(
 		async (status: Status, formData: FormData) => {
 			const name = formData.get("name") as string;
 			const email = formData.get("email") as string;
 			const message = formData.get("message") as string;
+			const honeypot = formData.get("website") as string;
+			const timestamp = formData.get("timestamp") as string;
 
-			const result = await sendContactFormMessage({ name, email, message });
+			const result = await sendContactFormMessage({
+				name,
+				email,
+				message,
+				honeypot,
+				timestamp: Number(timestamp),
+			});
 
 			return result as Status;
 		},
@@ -44,6 +53,17 @@ export const Contact = () => {
 			className="max-w-2xl mx-auto px-4 lg:px-0 my-8 bg-transparent">
 			<Title text={translate("title")} color="secondary" />
 			<Form action={formAction} className="flex flex-col gap-8">
+				{/* Honeypot field - hidden from users */}
+				<input
+					name="website"
+					type="text"
+					tabIndex={-1}
+					autoComplete="off"
+					className="absolute -left-[9999px]"
+					aria-hidden="true"
+				/>
+				{/* Timestamp for time-based validation */}
+				<input name="timestamp" type="hidden" value={formMountTime} />
 				<input
 					name="name"
 					type="text"
