@@ -18,16 +18,15 @@ export const Projects: FC = () => {
 
 	// Define project sizes for the bento grid layout - balanced design with emphasis on real projects
 	const projectSizes: ("small" | "medium" | "large")[] = [
+		"large",
+		"medium",
+		"large",
 		"medium",
 		"large",
 		"medium",
 		"large",
 		"small",
 		"small",
-		"medium",
-		"medium",
-		"large",
-		"medium",
 	];
 
 	const handleOpenModal = (project: ProjectProps) => {

@@ -41,8 +41,7 @@ export const About = () => {
 							<a
 								className="btn btn-secondary"
 								href={translateContact("cv-link") ?? "#"}
-								target="_blank"
-								rel="noreferrer noopener">
+								download>
 								<span>
 									{translateAbout("download")} <DownloadIcon />
 								</span>
