@@ -21,6 +21,7 @@ import {
 	DockerIcon,
 	RedisIcon,
 	ExpoIcon,
+	RabbitMQIcon,
 } from "@/components/icons";
 
 export const getTechIcon = (tech: string) => {
@@ -47,6 +48,7 @@ export const getTechIcon = (tech: string) => {
 		Docker: <DockerIcon className="w-6 h-6" />,
 		Redis: <RedisIcon className="w-6 h-6" />,
 		Expo: <ExpoIcon className="w-6 h-6" />,
+		RabbitMQ: <RabbitMQIcon className="w-6 h-6" />,
 	};
 
 	return (

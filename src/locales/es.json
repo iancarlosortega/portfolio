@@ -1,12 +1,12 @@
 {
 	"seo": {
-		"title": "Ian Carlos Ortega | Desarrollador Web",
-		"description": "Desarrollador Web Full Stack, con experiencia en el desarrollo de aplicaciones web y móviles. Conocimiento en las últimas tecnologías y código limpio.",
-		"keywords": "Desarrollador Web, Desarrollador Web Full Stack, Desarrollador Web Angular, Desarrollador Web React, Desarrollador Web Next.Js, Desarrollador Web Node.Js, Desarrollador Web Express, Desarrollador Web MongoDB, Desarrollador Web Firebase"
+		"title": "Ian Carlos Ortega | Ingeniero Backend",
+		"description": "Ingeniero Backend especializado en Node.js y NestJS, construyendo plataformas SaaS orientadas a eventos y basadas en Domain Driven Design. Experiencia con MongoDB, Redis, RabbitMQ y diseño de sistemas distribuidos.",
+		"keywords": "Ingeniero Backend, Desarrollador Node.js, Desarrollador NestJS, Desarrollador Backend TypeScript, MongoDB, Redis, RabbitMQ, Domain Driven Design, Arquitectura Orientada a Eventos, Desarrollador de APIs"
 	},
 	"home": {
 		"title": "¡Hola!, soy",
-		"subtitle": "Desarrollador Web",
+		"subtitle": "Ingeniero Backend",
 		"stack": "Mi stack favorito",
 		"menuItem1": "Experiencia",
 		"menuItem2": "Proyectos",
@@ -30,11 +30,13 @@
 		"fourthJob": {
 			"title": "Desarrollador Backend (Estudio Cactus)",
 			"date": "(Junio, 2025 - actualidad)",
-			"item1": "Desarrollo de una aplicación <b>SAAS</b> para la gestión de operaciones logísticas y portuarias usando <b>NestJS</b> y <b>Mongo DB</b>.",
-			"item2": "Arquitectura limpia y Domain Driven Design.",
-			"item3": "Optimización de consultas y mejora de tiempos de respuesta usando <b>Redis</b> para estrategias de caché.",
-			"item4": "Diseño e integración de un sistema de <b>notificaciones multicanal</b> para correo electrónico, notificaciones push y alertas en la aplicación.",
-			"item5": "Incorporación de <b>i18n</b> en plantillas de correos electrónicos y respuestas de la <b>API</b>."
+			"item1": "Trabajo en el backend de una plataforma <b>SaaS</b> multi-tenant para operaciones portuarias y logísticas, construida con <b>NestJS</b>, <b>TypeScript</b> y <b>MongoDB</b>.",
+			"item2": "Diseñé varios módulos como <b>bounded contexts</b> usando <b>Domain Driven Design</b> y arquitectura hexagonal, para mantener la lógica de negocio separada de la infraestructura.",
+			"item3": "Construí un sistema de auditoría donde los eventos se encadenan por hash para que no puedan alterarse sin dejar rastro, con respaldos periódicos en <b>S3</b> y verificaciones programadas para detectar manipulaciones a tiempo.",
+			"item4": "Implementé el patrón transactional outbox con <b>RabbitMQ</b> para publicar eventos entre servicios de forma confiable, incluso si algo falla a la mitad.",
+			"item5": "Rediseñé el control de acceso basado en roles con <b>CASL</b>, pasando de validaciones genéricas por rol a permisos específicos que reflejan lo que cada usuario puede hacer realmente.",
+			"item6": "Agregué lectura de documentos con <b>IA</b> usando <b>Google GenAI</b> para extraer y validar automáticamente datos de documentos de identidad.",
+			"item7": "También dediqué tiempo a rendimiento: caché con <b>Redis</b>, bloqueos distribuidos, trabajos en segundo plano con <b>Bull</b>, e <b>i18n</b> en respuestas de la API y plantillas de correo."
 		},
 		"thirdJob": {
 			"title": "Desarrollador Frontend (Relative Engine)",
@@ -79,7 +81,7 @@
 		"sourceCode": "Código fuente",
 		"code": "Código",
 		"sara": "Una plataforma integral para CIAT que integra tres módulos principales: Gestión de eventos para crear y organizar eventos virtuales, presenciales e híbridos con formularios de registro dinámicos; una Biblioteca con gestión de recursos, reseñas y páginas públicas optimizadas para SEO; y un Blog con gestión de contenido, reseñas e interfaz pública optimizada.",
-		"stowlog": "Una plataforma SaaS modular diseñada para la gestión de instalaciones portuarias y logísticas. Integra múltiples módulos de seguridad y operación incluyendo gestión de visitantes con check-ins digitales y seguimiento en tiempo real, gestión de suspensiones para sanciones de comportamiento, seguimiento de geoposición de personal y equipos con vistas 360º de las instalaciones, y capacitación automatizada de inducción de seguridad para personal y contratistas.",
+		"stowlog": "Una plataforma SaaS modular diseñada para la gestión de instalaciones portuarias y logísticas. Integra múltiples módulos de seguridad y operación incluyendo gestión de visitantes con check-ins digitales y seguimiento en tiempo real, gestión de suspensiones para sanciones de comportamiento, seguimiento de geoposición de personal y equipos con vistas 360º de las instalaciones, y capacitación automatizada de inducción de seguridad para personal y contratistas. Formo parte del equipo de backend que la construye, y me he encargado principalmente de los módulos de auditoría, legal, formación, visitas e inducciones de seguridad.",
 		"inproalimentos": "Una solución completa de comercio electrónico con una tienda pública para que los clientes naveguen y compren productos, junto con un panel de administración integral para gestionar usuarios, pedidos, inventario, análisis de ventas y todas las operaciones del negocio. Diseñado para optimizar todo el proceso de ventas desde el catálogo de productos hasta el cumplimiento de pedidos.",
 		"freeMove": "Proporciona un análisis estadístico exhaustivo de los datos recopilados por atletas, incluyendo información sobre las calorías quemadas, distancia recorrida, velocidad promedio, y resalta momentos destacados en los trayectos.",
 		"utplPlay": "Facilita a los usuarios la búsqueda de contenido educativo de la Universidad Técnica Particular de Loja, organizándolo de manera atractiva y ordenada según facultades y materias impartidas por los docentes de la institución.",
@@ -143,8 +145,8 @@
 	"about": {
 		"title": "Sobre Mí",
 		"description": {
-			"firstParagraph": "Soy un profesional en Ciencias de la Computación con una sólida formación académica y experiencia práctica en el desarrollo de software. Graduado en la Universidad Técnica Particular de Loja (2023), he adquirido habilidades técnicas avanzadas y una comprensión profunda de los principios fundamentales de la informática.",
-			"secondParagraph": "Estoy dispuesto a aprender nuevas tecnologías para aportar un mayor valor a la empresa y sus proyectos.",
+			"firstParagraph": "Soy ingeniero en Ciencias de la Computación, graduado de la Universidad Técnica Particular de Loja en 2023. Empecé haciendo full stack, pero con el tiempo fui inclinándome cada vez más hacia el backend, y ahí me quedé.",
+			"secondParagraph": "Antes de escribir código me gusta entender bien el problema: cómo se mueven los datos, qué lo puede romper, cómo se va a usar más adelante. Eso me evita sobre-ingenierizar algo simple o, peor, quedarme corto en algo que necesita crecer. Venir del frontend también ayuda. Ya estuve del otro lado de una API mal hecha, así que trato de no construir una.",
 			"thirdParagraph": "En mi tiempo libre, disfruto de la música, los videojuegos, ir al gimnasio, la compañía de mi familia y amigos, y pasear a mi mascota."
 		},
 		"download": "Currículum"

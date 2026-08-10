@@ -3,7 +3,6 @@ import {
 	CloudinaryIcon,
 	CssIcon,
 	DockerIcon,
-	FirebaseIcon,
 	GitIcon,
 	HtmlIcon,
 	JavaScriptIcon,
@@ -23,6 +22,7 @@ import {
 	AWSIcon,
 	FigmaIcon,
 	RedisIcon,
+	RabbitMQIcon,
 } from "@/components/icons";
 
 export const frontendTechnologies = [
@@ -86,8 +86,8 @@ export const backendTechnologies = [
 		icon: <PostgresIcon />,
 	},
 	{
-		name: "Firebase",
-		icon: <FirebaseIcon />,
+		name: "RabbitMQ",
+		icon: <RabbitMQIcon />,
 	},
 	{
 		name: "Supabase",

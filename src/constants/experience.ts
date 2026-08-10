@@ -17,7 +17,9 @@ export const experience: ExperienceItem[] = [
 			"fourthJob.item2",
 			"fourthJob.item3",
 			"fourthJob.item4",
-			"fourthJob.item5"
+			"fourthJob.item5",
+			"fourthJob.item6",
+			"fourthJob.item7"
 		],
 	},
 	{

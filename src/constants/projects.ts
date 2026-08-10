@@ -11,7 +11,7 @@ export const projects = [
 	{
 		title: "Stowlog",
 		description: "stowlog",
-		stack: ["TypeScript", "NestJS", "MongoDB", "Redis"],
+		stack: ["TypeScript", "NestJS", "MongoDB", "Redis", "RabbitMQ"],
 		demoUrl: "https://www.stowlog.com/",
 		imageUrl: "/images/projects/stowlog.png",
 		features: [

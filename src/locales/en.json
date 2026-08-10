@@ -1,12 +1,12 @@
 {
 	"seo": {
-		"title": "Ian Carlos Ortega | Web Developer",
-		"description": "Full Stack Web Developer, with experience in web and mobile application development. Knowledge in last technologies and clean code.",
-		"keywords": "Web Developer, Full Stack Web Developer, Angular Web Developer, React Web Developer, Next.Js Web Developer, Node.Js Web Developer, Express Web Developer, MongoDB Web Developer, Firebase Web Developer"
+		"title": "Ian Carlos Ortega | Backend Engineer",
+		"description": "Backend Engineer specialized in Node.js and NestJS, building event-driven, domain-driven SaaS platforms. Experience with MongoDB, Redis, RabbitMQ, and distributed system design.",
+		"keywords": "Backend Engineer, Node.js Developer, NestJS Developer, TypeScript Backend Developer, MongoDB, Redis, RabbitMQ, Domain Driven Design, Event Driven Architecture, API Developer"
 	},
 	"home": {
 		"title": "Hi!, I'm",
-		"subtitle": "Web Developer",
+		"subtitle": "Backend Engineer",
 		"stack": "My favorite stack",
 		"menuItem1": "Experience",
 		"menuItem2": "Projects",
@@ -30,11 +30,13 @@
 		"fourthJob": {
 			"title": "Backend Developer (Estudio Cactus)",
 			"date": "(June, 2025 - present)",
-			"item1": "Development of a <b>SAAS</b> application for managing logistics and port operations using <b>NestJS</b> and <b>Mongo DB</b>.",
-			"item2": "Clean architecture and Domain Driven Design.",
-			"item3": "Query optimizations and improved response times using <b>Redis</b> for caching strategies.",
-			"item4": "Design and integration of a <b>multi-channel notifications</b> system for email, push notifications, and in-app alerts.",
-			"item5": "Incorporation of <b>i18n</b> for email templates and <b>API</b> responses."
+			"item1": "Working on the backend of a multi-tenant <b>SaaS</b> platform for port and logistics operations, built with <b>NestJS</b>, <b>TypeScript</b> and <b>MongoDB</b>.",
+			"item2": "Designed several modules as <b>bounded contexts</b> using <b>Domain Driven Design</b> and hexagonal architecture, to keep business logic isolated from infrastructure.",
+			"item3": "Built an audit log system where events are chained by hash so they can't be silently altered, with periodic backups to <b>S3</b> and scheduled checks to catch tampering early.",
+			"item4": "Set up the transactional outbox pattern with <b>RabbitMQ</b> so events get published reliably between services, even if something fails halfway through.",
+			"item5": "Reworked role-based access control with <b>CASL</b>, moving from broad role checks to specific permission codes that map to what a user can actually do.",
+			"item6": "Added <b>AI</b>-based document reading with <b>Google GenAI</b> to pull and validate data from identity documents automatically.",
+			"item7": "Also spent time on performance: <b>Redis</b> caching, distributed locks, background jobs with <b>Bull</b>, and <b>i18n</b> support across API responses and email templates."
 		},
 		"thirdJob": {
 			"title": "Frontend Developer (Relative Engine)",
@@ -79,7 +81,7 @@
 		"sourceCode": "Source Code",
 		"code": "Code",
 		"sara": "A comprehensive platform for CIAT that integrates three main modules: Events management for creating and organizing virtual, in-person, and hybrid events with dynamic registration forms; a Library with resource management, reviews, and public SEO-optimized pages; and a Blog with content management, reviews, and optimized public interface.",
-		"stowlog": "A modular SaaS platform designed for port and logistics facilities management. Integrates multiple security and operational modules including visitor management with digital check-ins and real-time tracking, suspension management for behavioral sanctions, geoposition tracking for personnel and equipment with 360º facility views, and automated safety induction training for staff and contractors.",
+		"stowlog": "A modular SaaS platform designed for port and logistics facilities management. Integrates multiple security and operational modules including visitor management with digital check-ins and real-time tracking, suspension management for behavioral sanctions, geoposition tracking for personnel and equipment with 360º facility views, and automated safety induction training for staff and contractors. I'm part of the backend team building it, and I've mostly worked on the audit, legal, training, visits and safety induction modules.",
 		"inproalimentos": "A complete e-commerce solution with a public-facing storefront for customers to browse and purchase products, coupled with a comprehensive admin dashboard for managing users, orders, inventory, sales analytics, and all business operations. Built to streamline the entire sales process from product catalog to order fulfillment.",
 		"freeMove": "The web platform will show them a detailed statistical analysis of the data collected, such as how many calories they have burned, the kilometers traveled, the average speed and show snapshots of the most relevant moments in their journeys.",
 		"utplPlay": "Allows its users to find educational content, provided by the Universidad Técnica Particular de Loja, in a more enjoyable and organized way according to the different faculties and subjects taught by teachers of the establishment.",
@@ -143,8 +145,8 @@
 	"about": {
 		"title": "About me",
 		"description": {
-			"firstParagraph": "I'm a Computer Science professional with a solid academic background and practical experience in software development. Graduated from the Universidad Técnica Particular de Loja (2023), I have acquired advanced technical skills and a deep understanding of the fundamental principles of computer science.",
-			"secondParagraph": "Always open to learning new technologies required within the company to add greater value to it and its projects.",
+			"firstParagraph": "I'm a Computer Science engineer, graduated from Universidad Técnica Particular de Loja in 2023. I started out doing full stack work, but over time I kept gravitating toward the backend, and that's where I've stayed.",
+			"secondParagraph": "Before I start writing code, I like to actually understand the problem: how the data moves, what breaks it, how it'll probably be used down the road. It saves me from over-engineering something simple or, worse, painting myself into a corner on something that needs to grow. Having done frontend for a while helps too. I've been on the other side of a bad API, so I try hard not to build one.",
 			"thirdParagraph": "In my free time, I enjoy listening to music, playing video games, go to the gym, spending time with my family or friends, and taking my pet for a walk."
 		},
 		"download": "Currículum"

@@ -13,7 +13,7 @@ import { cn } from "@/utils/classNames";
 
 export const Skills = () => {
 	const translate = useTranslations("skills");
-	const categories = ["Frontend", "Backend", translate("tools")];
+	const categories = ["Backend", "Frontend", translate("tools")];
 	return (
 		<div className="relative">
 			<section
@@ -49,14 +49,14 @@ export const Skills = () => {
 					<TabPanels className="mt-16 mb-32 md:mb-0 z-20">
 						<TabPanel>
 							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in mx-auto">
-								{frontendTechnologies.map(({ name, icon }) => (
+								{backendTechnologies.map(({ name, icon }) => (
 									<SkillItem key={name} name={name} icon={icon} />
 								))}
 							</ul>
 						</TabPanel>
 						<TabPanel>
 							<ul className="max-w-[30rem] h-[25rem] md:h-[15rem] flex gap-12 flex-wrap justify-center animate-fade-in mx-auto">
-								{backendTechnologies.map(({ name, icon }) => (
+								{frontendTechnologies.map(({ name, icon }) => (
 									<SkillItem key={name} name={name} icon={icon} />
 								))}
 							</ul>
