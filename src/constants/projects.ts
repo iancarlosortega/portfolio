@@ -1,13 +1,6 @@
-export const projects = [
-	{
-		title: "Sara",
-		description: "sara",
-		stack: ["TypeScript", "React", "TailwindCSS", "Next.Js"],
-		demoUrl: "https://sara.ciat.org/public/library",
-		imageUrl: "/images/projects/sara.png",
-		features: ["saraFeature1", "saraFeature2", "saraFeature3", "saraFeature4"],
-		imageCount: 13,
-	},
+import type { ProjectProps } from "@/components/ui/ProjectCard";
+
+export const projects: ProjectProps[] = [
 	{
 		title: "Stowlog",
 		description: "stowlog",
@@ -21,6 +14,7 @@ export const projects = [
 			"stowlogFeature4",
 		],
 		imageCount: 7,
+		size: "anchor",
 	},
 	// {
 	// 	title: "Inproalimentos",
@@ -42,6 +36,7 @@ export const projects = [
 	// 		"inproalimentosFeature4",
 	// 	],
 	// 	imageCount: 5,
+	// 	size: "tile",
 	// },
 	{
 		title: "Thrullo",
@@ -57,6 +52,7 @@ export const projects = [
 			"thrulloFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
 	},
 	{
 		title: "FreeMove",
@@ -72,6 +68,23 @@ export const projects = [
 			"freeMoveFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
+	},
+	{
+		title: "Creando Cariño",
+		description: "creandoCarino",
+		stack: ["Angular", "Firebase"],
+		demoUrl: "https://creando-carino.web.app/",
+		codeUrl: "https://github.com/iancarlosortega/creandoCarino",
+		imageUrl: "/images/projects/creando-carino.jpg",
+		features: [
+			"creandoCarinoFeature1",
+			"creandoCarinoFeature2",
+			"creandoCarinoFeature3",
+			"creandoCarinoFeature4",
+		],
+		imageCount: 5,
+		size: "wide",
 	},
 	{
 		title: "Arch Studio",
@@ -87,6 +100,7 @@ export const projects = [
 			"archStudioFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
 	},
 	{
 		title: "Shoppingify",
@@ -102,22 +116,18 @@ export const projects = [
 			"shoppingifyFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
 	},
 
 	{
-		title: "Creando Cariño",
-		description: "creandoCarino",
-		stack: ["Angular", "Firebase"],
-		demoUrl: "https://creando-carino.web.app/",
-		codeUrl: "https://github.com/iancarlosortega/creandoCarino",
-		imageUrl: "/images/projects/creando-carino.jpg",
-		features: [
-			"creandoCarinoFeature1",
-			"creandoCarinoFeature2",
-			"creandoCarinoFeature3",
-			"creandoCarinoFeature4",
-		],
-		imageCount: 5,
+		title: "Sara",
+		description: "sara",
+		stack: ["TypeScript", "React", "TailwindCSS", "Next.Js"],
+		demoUrl: "https://sara.ciat.org/public/library",
+		imageUrl: "/images/projects/sara.png",
+		features: ["saraFeature1", "saraFeature2", "saraFeature3", "saraFeature4"],
+		imageCount: 13,
+		size: "anchor",
 	},
 	{
 		title: "UTPL Play",
@@ -133,6 +143,7 @@ export const projects = [
 			"utplPlayFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
 	},
 
 	{
@@ -149,5 +160,6 @@ export const projects = [
 			"chatGroupFeature4",
 		],
 		imageCount: 5,
+		size: "tile",
 	},
 ];

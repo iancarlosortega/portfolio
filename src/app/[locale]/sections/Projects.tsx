@@ -16,19 +16,6 @@ export const Projects: FC = () => {
 	const translate = useTranslations("projects");
 	const projectsRef = useRef<HTMLDivElement>(null);
 
-	// Define project sizes for the bento grid layout - balanced design with emphasis on real projects
-	const projectSizes: ("small" | "medium" | "large")[] = [
-		"large",
-		"medium",
-		"large",
-		"medium",
-		"large",
-		"medium",
-		"large",
-		"small",
-		"small",
-	];
-
 	const handleOpenModal = (project: ProjectProps) => {
 		setSelectedProject(project);
 		setModalOpen(true);
@@ -71,7 +58,7 @@ export const Projects: FC = () => {
 
 			<motion.div
 				ref={projectsRef}
-				className="grid grid-cols-1 md:grid-cols-4 auto-rows-[minmax(200px,auto)] gap-4 md:gap-6 mt-8"
+				className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 auto-rows-[minmax(200px,auto)] lg:auto-rows-[minmax(180px,auto)] gap-4 md:gap-6 mt-8"
 				variants={containerVariants}
 				initial="hidden"
 				animate="visible">
@@ -81,7 +68,6 @@ export const Projects: FC = () => {
 						{...project}
 						index={index}
 						onClick={() => handleOpenModal(project)}
-						size={projectSizes[index] || "small"}
 					/>
 				))}
 			</motion.div>

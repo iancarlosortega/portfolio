@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import { motion, useInView } from "framer-motion";
 import { PreviewIcon, GithubIcon } from "@/components/icons";
 
+export type ProjectSize = "tile" | "wide" | "anchor";
+
 // Project types
 export interface ProjectProps {
 	title: string;
@@ -14,12 +16,12 @@ export interface ProjectProps {
 	imageUrl: string;
 	features: string[];
 	imageCount: number;
+	size: ProjectSize;
 }
 
 interface ProjectCardProps extends ProjectProps {
 	index: number;
 	onClick: () => void;
-	size: "small" | "medium" | "large";
 }
 
 export const ProjectCard: FC<ProjectCardProps> = ({
@@ -42,10 +44,17 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 	});
 
 	// Define size classes
-	const sizeClasses = {
-		small: "md:row-span-1 md:col-span-1",
-		medium: "md:row-span-1 md:col-span-2",
-		large: "md:row-span-2 md:col-span-2",
+	const sizeClasses: Record<ProjectSize, string> = {
+		tile: "md:col-span-1 md:row-span-1 lg:col-span-1",
+		wide: "md:col-span-2 md:row-span-1 lg:col-span-2",
+		anchor: "md:col-span-2 md:row-span-2 lg:col-span-4",
+	};
+
+	// Hint the browser toward the right image variant per slot size
+	const imageSizes: Record<ProjectSize, string> = {
+		tile: "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 200px",
+		wide: "(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 400px",
+		anchor: "(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 850px",
 	};
 
 	// Entrance animation variants
@@ -88,9 +97,9 @@ export const ProjectCard: FC<ProjectCardProps> = ({
 				<Image
 					src={imageUrl}
 					alt={title}
-					width={1600}
-					height={1200}
-					className={`w-full h-full object-cover transition-transform duration-500 ${isHovering ? "scale-110" : "scale-100"}`}
+					fill
+					sizes={imageSizes[size]}
+					className={`object-cover transition-transform duration-500 ${isHovering ? "scale-110" : "scale-100"}`}
 				/>
 
 				{/* Action buttons - animated on hover */}
